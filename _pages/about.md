@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-This is Dr. Youngwoo Seo's professional site.
+I'm YoungWoo Seo and currently a senior director of Autonomous System Dev, Hyperloop One.
 
