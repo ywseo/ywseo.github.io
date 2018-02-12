@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-I'm YoungWoo Seo and currently a senior director of Autonomous System Dev, Hyperloop One.
+Diverse leadership and expertise focused on developing cutting-edge, robotic systems through the combination of hands-on experience and in-depth understanding of robotics.
 
