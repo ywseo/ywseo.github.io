@@ -5,7 +5,7 @@ permalink: /publication/2015-10-01-paper-title-number-2
 excerpt: ''
 date: 2015-01-01
 venue: 'JFR'
-paperurl: ''
+paperurl: 'http://onlinelibrary.wiley.com/doi/10.1002/rob.21576/abstract'
 ---
 For urban driving, knowledge of ego-vehicle’s position is a critical piece of information that
 enables advanced driver-assistance systems or self-driving cars to execute safety-related, au-
@@ -21,5 +21,7 @@ without observations of lane-markings, the number road-lanes and identifying the
 the road-lane on the roadway that our vehicle happens to be driving on. Testings the pro-
 posed algorithms against inter-city and inter-state highway videos showed promising results
 in terms of counting the number of road-lanes and the indices of the current road-lanes.
+
+[Download paper here](http://onlinelibrary.wiley.com/doi/10.1002/rob.21576/abstract)
 
 Young-Woo Seo and Myung Hwangbo, A computer vision system for lateral localization, <i>Journal of Field Robotics</i>, 32(7): 1004-1014, 2015.
