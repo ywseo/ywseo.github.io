@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-Diverse leadership and expertise focused on developing cutting-edge, robotic systems through the combination of hands-on experience and in-depth understanding of robotics.
+I'm YoungWoo Seo and currently a senior director, Hyperloop-One. I have diverse experience on leadership and expertise focused on developing cutting-edge, robotic systems through the combination of hands-on experience and in-depth understanding of robotics.
 
