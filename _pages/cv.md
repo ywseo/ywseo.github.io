@@ -9,14 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Robotics, [the Robotics Institute](http://www.ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), 2012
-* M.S. in Robotics, [the Robotics Institute](http://www.ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), 2007
-* M.S. in Computer Science, School of Computer Science and Engineering, Seoul National University, 2000
-* B.S. in Computer Science, Dept of Computer Science, Konkuk University, 1998.
-
-Work experience
+Work Experience
 ======
 * Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Present<br/>
 Leading the effort of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
@@ -53,4 +46,11 @@ on Systems, Man and Cybernetics (SMC-12).
 2007 DARPA Urban Challenge, Victorville, CA.
 * Jan 2007 – Apr 2012: Received Graduate Research Assistant Fellowship (full tuition and
 stipend) from the Robotics Institute, School of Computer Science, Carnegie Mellon University
-* May 2006: Awarded Best Paper Honorable Mention (second
+* May 2006: Awarded Best Paper Honorable Mention (second prize)
+
+Education
+======
+* Ph.D in Robotics, [the Robotics Institute](http://www.ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), 2012
+* M.S. in Robotics, [the Robotics Institute](http://www.ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), 2007
+* M.S. in Computer Science, School of Computer Science and Engineering, Seoul National University, 2000
+* B.S. in Computer Science, Dept of Computer Science, Konkuk University, 1998.
