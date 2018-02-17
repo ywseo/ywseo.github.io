@@ -46,7 +46,7 @@ on Systems, Man and Cybernetics (SMC-12).
 2007 DARPA Urban Challenge, Victorville, CA.
 * Jan 2007 – Apr 2012: Received Graduate Research Assistant Fellowship (full tuition and
 stipend) from the Robotics Institute, School of Computer Science, Carnegie Mellon University
-* May 2006: Awarded Best Paper Honorable Mention (second prize)
+* May 2006: Awarded Best Paper Honorable Mention (second prize) from the IEEE International Conference on Intelligence and Security Informatics (ISI-2006)
 
 Education
 ======
