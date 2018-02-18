@@ -14,7 +14,7 @@ Work Experience
 * Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Present<br/>
 Leading the effort of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, [Autel Robotics](http://www.autelrobotics.com), Aug 2016 - Jun 2017<br/>
-Led the effort of developing autonomous flight stacks for the company's next generation drone.
+Led a team of engineers to deliver a target tracking pipeline.
 * Senior Scientist, Special Project Group, [Apple Inc](http://www.apple.com), Nov 2014 - Jul 2016<br/>
 Led a team of engineers and contributed to deliver a part of Apple's next generation products.
 * Consultant, Cruise Automation Inc., Aug 2014 - Oct 2014<br/>
@@ -34,8 +34,7 @@ Honors and Awards
 ======
 * Aug 2017: Delivered the opening keynote, “Envisioning the Future of Mobility” at Autonomous
 Vehicles (AV17), Detroit, MI.
-* Nov 2013: Received CIT, Carnegie Institute of Technology, Headliner Award from Col-
-lege of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
+* Nov 2013: Received CIT, Carnegie Institute of Technology, Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
 dedications of the members of the GM-CMU, Autonomous Driving Collaborative Research Lab for
 demonstrating autonomous driving of a robotic car on public roads. These demos were reported at
 many news medias including CBS Evening News, IEEE Spectrum, the Associated Press, CNBC,
