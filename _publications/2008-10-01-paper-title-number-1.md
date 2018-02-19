@@ -1,14 +1,14 @@
 ---
-title: "A perception mechanism for supporting autonomous intersection handling in urban driving"
+title: "Addressing insider threat through cost-sensitive document classification"
 collection: publications
 permalink: /publication/2008-10-01-paper-title-number-1
 excerpt: ''
 date: 2008-10-01
-venue: 'IROS-08'
-paperurl: 'http://ieeexplore.ieee.org/document/4651162/'
+venue: 'Terrorism Informatics'
+paperurl: 'https://link.springer.com/chapter/10.1007%2F978-0-387-71613-8_21'
 ---
-Knowledge of the driving environment is essential for robotic vehicles to comply with traffic rules while autonomously traversing intersections. However, due to limited sensing coverage and continuous changes in driving conditions, rigidly-mounted sensors may not guarantee coverage of all regions of interest, all the time. Unobserved regions around intersections increase uncertainty in driving conditions. This paper describes a dynamic sensor planning method that searches for the optimal angles of two pointable sensors to maximally cover relevant unobserved regions of interest. The obtained angles are used to adjust the orientations of the pointable sensors and hence reduce uncertainty around intersections. Simulation results show that the sensor planning method increases the percentage of covered area. In addition to the sensor pointing problem, we provide an initial discussion of how to reason about occlusions in an urban environment. Occlusions caused by structures and other environmental features can increase uncertainty in driving environments. An occlusion handling method is used to detect these occlusions and enable our vehicle to model the presence of occluded regions. An awareness of occlusions enables safer driving decisions.
+Most organizations use computerized security systems to manage and protect their confidential information. While security is mostly concerned with prevention of attacks from outsiders, security breaches by insiders have recently gained increasing attention from the security community. In this chapter, we describe a cost-sensitive document classification scheme which forms the basis for determining the legitimacy of confidential access by insiders. Our scheme enforces compliance with the “need to know” security principle, namely that the requests for access are authorized only if the content of the requested information is relevant to the requester’s current information analysis project. First, we formulate such content-based authorization, i.e., whether to accept or reject access requests as a binary classification problem. Second, we implement this problem in a costsensitive learning framework in which the cost caused by incorrect decision is different according to the relative importance of the error types; false positive and false negative. In particular, the cost for a false positive (i.e., accepting a security violating request) is considered more expensive than that of false negative (i.e., rejecting a valid request). The former is a serious security problem because confidential information, which should not be revealed, can be accessed. We experimentally compared various costsensitive classifiers with conventional error-minimizing classifiers. Our results indicate that costing using logistic regression showed the best performance, in terms of the smallest cost paid, the lowest false positive rate, and the relatively low false negative rate.
 
-[Download paper here](http://ieeexplore.ieee.org/document/4651162/)
+[Download paper here](https://link.springer.com/chapter/10.1007%2F978-0-387-71613-8_21)
 
-Young-Woo Seo and Chris Urmson, A perception mechanism for supporting autonomous intersection handling in urban driving, In <i>Proceedings of the International Conference on Intelligent Robots and Systems</i> (IROS-08), pp. 1830-1835, 2008. 
+Young-Woo Seo and Katia Sycara, Addressing insider threat through cost-sensitive document classification, <i>Terrorism Informatics</i>, Chap. 21, pp. 451-472, 2008. 

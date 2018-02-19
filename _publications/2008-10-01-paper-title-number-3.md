@@ -1,14 +1,32 @@
 ---
-title: "Addressing insider threat through cost-sensitive document classification"
+title: "Autonomous driving in urban environments: Boss and the urban challenge"
 collection: publications
 permalink: /publication/2008-10-01-paper-title-number-3
 excerpt: ''
 date: 2008-10-01
-venue: 'Terrorism Informatics'
-paperurl: 'https://link.springer.com/chapter/10.1007%2F978-0-387-71613-8_21'
+venue: 'JFR'
+paperurl: 'http://www.fieldrobotics.org/users/alonzo/pubs/papers/JFR_08_Boss.pdf'
 ---
-Most organizations use computerized security systems to manage and protect their confidential information. While security is mostly concerned with prevention of attacks from outsiders, security breaches by insiders have recently gained increasing attention from the security community. In this chapter, we describe a cost-sensitive document classification scheme which forms the basis for determining the legitimacy of confidential access by insiders. Our scheme enforces compliance with the “need to know” security principle, namely that the requests for access are authorized only if the content of the requested information is relevant to the requester’s current information analysis project. First, we formulate such content-based authorization, i.e., whether to accept or reject access requests as a binary classification problem. Second, we implement this problem in a costsensitive learning framework in which the cost caused by incorrect decision is different according to the relative importance of the error types; false positive and false negative. In particular, the cost for a false positive (i.e., accepting a security violating request) is considered more expensive than that of false negative (i.e., rejecting a valid request). The former is a serious security problem because confidential information, which should not be revealed, can be accessed. We experimentally compared various costsensitive classifiers with conventional error-minimizing classifiers. Our results indicate that costing using logistic regression showed the best performance, in terms of the smallest cost paid, the lowest false positive rate, and the relatively low false negative rate.
+Boss is an autonomous vehicle that uses on-board sensors (global positioning system,
+lasers, radars, and cameras) to track other vehicles, detect static obstacles, and localize
+itself relative to a road model. A three-layer planning system combines mission, behavioral,
+and motion planning to drive in urban environments. The mission planning layer
+considers which street to take to achieve a mission goal. The behavioral layer determines
+when to change lanes and precedence at intersections and performs error recovery maneuvers.
+The motion planning layer selects actions to avoid obstacles while making progress
+toward local goals. The system was developed from the ground up to address the requirements
+of the DARPA Urban Challenge using a spiral system development process with
+a heavy emphasis on regular, regressive system testing. During the National Qualification
+Event and the 85-km Urban Challenge Final Event, Boss demonstrated some of its
+capabilities, qualifying first and winning the challenge.
 
-[Download paper here](https://link.springer.com/chapter/10.1007%2F978-0-387-71613-8_21)
+[Download paper here](http://www.fieldrobotics.org/users/alonzo/pubs/papers/JFR_08_Boss.pdf)
 
-Young-Woo Seo and Katia Sycara, Addressing insider threat through cost-sensitive document classification, <i>Terrorism Informatics</i>, Chap. 21, pp. 451-472, 2008. 
+Chris Urmson, Joshua Anhalt, Drew Bagnell, Christopher Baker, Robert Bittner, M. N. Clark, John
+Dolan, Dave Duggins, Tugrul Galatali, Chris Geyer, Michele Gittleman, Sam Harbaugh, Martial
+Hebert, Thomas M. Howard, Sascha Kolski, Alonzo Kelly, Maxim Likhachev, Matt McNaughton,
+Nick Miller, Kevin Peterson, Brian Pilnick, Raj Rajkumar, Paul Rybski, Bryan Salesky, Young-
+Woo Seo, Sanjiv Singh, Jarrod Snider, Anthony Stentz, William Red Whittaker, Ziv Wolkow-
+icki, Jason Ziglar, Hong Bae, Thomas Brown, Daniel Demitrish, Bakhtiar Litkouhi, Jim Nickolaou,
+Varsha Sadekar, Wende Zhang, Joshua Struble, Michael Taylor, Michael Darms, and Dave Fergu-
+son, Autonomous driving in urban environments: Boss and the urban challenge, <i>Journal of Field Robotics: Special Issue on the 2007 DARPA Urban Challenge</i>, Part I, 25(8): 425-466, 2008. 
