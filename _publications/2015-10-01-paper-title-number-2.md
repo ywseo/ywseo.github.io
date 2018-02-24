@@ -21,4 +21,4 @@ in terms of counting the number of road-lanes and the indices of the current roa
 
 [Download paper here](http://onlinelibrary.wiley.com/doi/10.1002/rob.21576/abstract)
 
-Young-Woo Seo and Myung Hwangbo, A computer vision system for lateral localization, <i>Journal of Field Robotics</i>, 32(7): 1004-1014, 2015.
+**Young-Woo Seo** and Myung Hwangbo, A computer vision system for lateral localization, <i>Journal of Field Robotics</i>, 32(7): 1004-1014, 2015.

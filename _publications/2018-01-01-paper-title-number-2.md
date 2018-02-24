@@ -22,4 +22,4 @@ the experiments with three, real-world datasets, our method demonstrates its eff
 handheld camera and by the Google street view, and 3) from the images of a same location taken
 daytime and nighttime.
 
-Chih-Chung Chou, YoungWoo Seo, and Chieh-Chih Wang, A two-stage sampling for robust feature matching, <i>Journal of Field Robotics</i>, ROB-17-0013, in press, 2018.
+Chih-Chung Chou, **YoungWoo Seo**, and Chieh-Chih Wang, A two-stage sampling for robust feature matching, <i>Journal of Field Robotics</i>, ROB-17-0013, in press, 2018.
