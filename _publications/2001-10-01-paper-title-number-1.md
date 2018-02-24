@@ -11,4 +11,4 @@ Document filtering is increasingly deployed in Web environments to reduce inform
 
 [Download paper here](https://www.ri.cmu.edu/publications/personalized-web-document-filtering-using-reinforcement-learning/)
 
-Byoung-Tak Zhang and Young-Woo Seo, Personalized web-document filtering using reinforcement learning, <i>Applied Artificial Intelligence</i>, 15(7): 665-685, 2001. 
+Byoung-Tak Zhang and **Young-Woo Seo**, Personalized web-document filtering using reinforcement learning, <i>Applied Artificial Intelligence</i>, 15(7): 665-685, 2001. 

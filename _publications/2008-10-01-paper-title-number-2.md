@@ -11,4 +11,4 @@ Knowledge of the driving environment is essential for robotic vehicles to comply
 
 [Download paper here](http://ieeexplore.ieee.org/document/4651162/)
 
-Young-Woo Seo and Chris Urmson, A perception mechanism for supporting autonomous intersection handling in urban driving, In <i>Proceedings of the International Conference on Intelligent Robots and Systems</i> (IROS-08), pp. 1830-1835, 2008. 
+**Young-Woo Seo** and Chris Urmson, A perception mechanism for supporting autonomous intersection handling in urban driving, In <i>Proceedings of the International Conference on Intelligent Robots and Systems</i> (IROS-08), pp. 1830-1835, 2008. 

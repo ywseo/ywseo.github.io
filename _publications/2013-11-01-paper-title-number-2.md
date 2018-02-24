@@ -11,4 +11,4 @@ To be deployed in the real world, a self-driving car must be capable of respondi
 
 [Download paper here](http://ieeexplore.ieee.org/document/6728384/)
 
-JongHo Lee, Young-Woo Seo and David Wettergreen, Kernel-based traffic sign tracking to improve highway workzone recognitioni for reliable autonomous driving, In <i>Proceedings of the IEEE International Conference on Intelligent Transportation Systems</i> (ITSC-13), pp. 1131-1136, 2013. 
+JongHo Lee, **Young-Woo Seo** and David Wettergreen, Kernel-based traffic sign tracking to improve highway workzone recognitioni for reliable autonomous driving, In <i>Proceedings of the IEEE International Conference on Intelligent Transportation Systems</i> (ITSC-13), pp. 1131-1136, 2013. 

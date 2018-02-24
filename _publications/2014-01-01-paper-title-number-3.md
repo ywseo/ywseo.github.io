@@ -11,4 +11,4 @@ Our earlier lane-marking detection method identified lane-markings appearing on 
 
 [Download paper here](http://ieeexplore.ieee.org/document/6856467/)
 
-Young-Woo Seo and Ragnunathan (Raj) Rajkumar, Utilizing instantaneous driving direction for enhancing lane-marking detection, In <i>Proceedings of the IEEE Intelligent Vehicles Symposium</i> (IV-14), pp. 170-175, 2014. 
+**Young-Woo Seo** and Ragnunathan (Raj) Rajkumar, Utilizing instantaneous driving direction for enhancing lane-marking detection, In <i>Proceedings of the IEEE Intelligent Vehicles Symposium</i> (IV-14), pp. 170-175, 2014. 

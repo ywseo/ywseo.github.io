@@ -15,4 +15,4 @@ during 45 days. The proposed method showed superior performance in personalized 
 
 [Download paper here](https://dl.acm.org/citation.cfm?id=337546)
 
-Young-Woo Seo and Byoung-Tak Zhang, Learning user’s preferences by analyzing web-browsing behaviors, In <i>Proceedings of the ACM International Conference on Autonomous Agents</i> (AA-00), pp. 381-387, 2000. 
+**Young-Woo Seo** and Byoung-Tak Zhang, Learning user’s preferences by analyzing web-browsing behaviors, In <i>Proceedings of the ACM International Conference on Autonomous Agents</i> (AA-00), pp. 381-387, 2000. 

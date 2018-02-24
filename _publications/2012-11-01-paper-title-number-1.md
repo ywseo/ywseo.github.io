@@ -14,4 +14,4 @@ Our methods, based on experiments using inter-city highway ortho-images, show pr
 
 [Download paper here](https://dl.acm.org/citation.cfm?doid=2424321.2424336)
 
-Young-Woo Seo, Chris Urmson and David Wettergreen, Exploiting publicly available cartographic resources for aerial image analysis, In <i>Proceedings of the ACM SIG SPATIAL International Conference on Advances in Geographic Information System</i> (GIS-12), pp. 109-118, 2012. 
+**Young-Woo Seo**, Chris Urmson and David Wettergreen, Exploiting publicly available cartographic resources for aerial image analysis, In <i>Proceedings of the ACM SIG SPATIAL International Conference on Advances in Geographic Information System</i> (GIS-12), pp. 109-118, 2012. 

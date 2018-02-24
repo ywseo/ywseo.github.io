@@ -11,4 +11,4 @@ This study aims at developing a method that predicts the CPU usage patterns of s
 
 [Download paper here](http://ieeexplore.ieee.org/document/6974391/)
 
-Young-Woo Seo, Junsung Kim and Ragnunathan (Raj) Rajkumar, Predicting dynamic computational workload of a self-driving car, In <i>Proceedings of the IEEE International Conference on Systems, Man and Cybernetics</i> (SMC-14), pp. 3030-3035, 2014. 
+**Young-Woo Seo**, Junsung Kim and Ragnunathan (Raj) Rajkumar, Predicting dynamic computational workload of a self-driving car, In <i>Proceedings of the IEEE International Conference on Systems, Man and Cybernetics</i> (SMC-14), pp. 3030-3035, 2014. 

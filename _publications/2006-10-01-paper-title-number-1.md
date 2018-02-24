@@ -11,4 +11,4 @@ In many organizations, it is common to control access to confidential informatio
 
 [Download paper here](https://link.springer.com/chapter/10.1007/11760146_11)
 
-Young-Woo Seo and Katia Sycara, Cost-sensitive access control for illegitimate confidential access by insiders, In <i>Proceedings of the International Conference on Intelligence and Security Informatics</i> (ISI-06), pp. 117-128, 2006. (awarded the best paper honorable mention.)
+**Young-Woo Seo** and Katia Sycara, Cost-sensitive access control for illegitimate confidential access by insiders, In <i>Proceedings of the International Conference on Intelligence and Security Informatics</i> (ISI-06), pp. 117-128, 2006. (awarded the best paper honorable mention.)

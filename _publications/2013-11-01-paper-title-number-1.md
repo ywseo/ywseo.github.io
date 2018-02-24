@@ -11,4 +11,4 @@ To be deployed in the real-world, automatic and semi-automatic systems should un
 
 [Download paper here](http://ieeexplore.ieee.org/document/6696986/)
 
-JongHo Lee, Young-Woo Seo and David Wettergreen, Kernel-based tracking for improving sign detection performance, In <i>Proceedings of the IEEE International Conference on Intelligent Robots and Systems</i> (IROS-13), pp. 4388-4393, 2013. 
+JongHo Lee, **Young-Woo Seo** and David Wettergreen, Kernel-based tracking for improving sign detection performance, In <i>Proceedings of the IEEE International Conference on Intelligent Robots and Systems</i> (IROS-13), pp. 4388-4393, 2013. 

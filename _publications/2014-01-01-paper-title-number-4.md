@@ -11,4 +11,4 @@ This paper presents a new method of detecting and tracking the boundaries of dri
 
 [Download paper here](http://ieeexplore.ieee.org/document/6916256/?arnumber=6916256)
 
-Young-Woo Seo and Ragnunathan (Raj) Rajkumar, Detection and tracking of boundary of unmarked roads, In <i>Proceedings of the 17th International Conference on Information Fusion</i> (Fusion-14), 2014. 
+**Young-Woo Seo** and Ragnunathan (Raj) Rajkumar, Detection and tracking of boundary of unmarked roads, In <i>Proceedings of the 17th International Conference on Information Fusion</i> (Fusion-14), 2014. 

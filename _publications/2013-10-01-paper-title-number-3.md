@@ -25,4 +25,4 @@ performance in detecting lane-changing maneuvers.
 
 [Download paper here](http://www.cs.cmu.edu/~youngwoo/doc/ppniv-13-ywseo.pdf)
 
-Young-Woo Seo and Ragnunathan (Raj) Rajkumar, Use of a monocular camera to analyze a ground vehicle's lateral movements for reliable autonomous city driving, In <i>Proceedings of the 5th IEEE IROS Workshop on Planning, Perception and Navigation for Intelligent Vehicles</i> (PPNIV-13), 2013. 
+**Young-Woo Seo** and Ragnunathan (Raj) Rajkumar, Use of a monocular camera to analyze a ground vehicle's lateral movements for reliable autonomous city driving, In <i>Proceedings of the 5th IEEE IROS Workshop on Planning, Perception and Navigation for Intelligent Vehicles</i> (PPNIV-13), 2013. 

@@ -11,4 +11,4 @@ Most organizations use computerized security systems to manage and protect their
 
 [Download paper here](https://link.springer.com/chapter/10.1007%2F978-0-387-71613-8_21)
 
-Young-Woo Seo and Katia Sycara, Addressing insider threat through cost-sensitive document classification, <i>Terrorism Informatics</i>, Chap. 21, pp. 451-472, 2008. 
+**Young-Woo Seo** and Katia Sycara, Addressing insider threat through cost-sensitive document classification, <i>Terrorism Informatics</i>, Chap. 21, pp. 451-472, 2008. 

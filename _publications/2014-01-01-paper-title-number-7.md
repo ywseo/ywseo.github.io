@@ -24,4 +24,4 @@ initial detection accuracy and the reliability of the tracking.
 
 [Download paper here](http://ieeexplore.ieee.org/document/6957994/)
 
-Young-Woo Seo and Ragnunathan (Raj) Rajkumar, A vision system for detecting and tracking of stop-lines, In <i>Proceedings of the 17th IEEE International Conference on Intelligent Transportation System</i> (ITSC-14), pp. 1970-1975, 2014. 
+**Young-Woo Seo** and Ragnunathan (Raj) Rajkumar, A vision system for detecting and tracking of stop-lines, In <i>Proceedings of the 17th IEEE International Conference on Intelligent Transportation System</i> (ITSC-14), pp. 1970-1975, 2014. 

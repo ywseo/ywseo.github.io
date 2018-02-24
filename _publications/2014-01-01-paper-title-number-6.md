@@ -31,4 +31,4 @@ number of road-lanes and the indices of the current road-lanes.
 
 [Download paper here](http://ieeexplore.ieee.org/document/6957859/)
 
-Young-Woo Seo and Ragnunathan (Raj) Rajkumar, Tracking and estimation of ego-vehicle's state for lateral localization, In <i>Proceedings of the 17th IEEE International Conference on Intelligent Transportation System</i> (ITSC-14), pp. 1251-1257, 2014. 
+**Young-Woo Seo** and Ragnunathan (Raj) Rajkumar, Tracking and estimation of ego-vehicle's state for lateral localization, In <i>Proceedings of the 17th IEEE International Conference on Intelligent Transportation System</i> (ITSC-14), pp. 1251-1257, 2014. 

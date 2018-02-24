@@ -11,4 +11,4 @@ This article describes how the modeling and simulation environment of the OneSAF
 
 [Download paper here](http://journals.sagepub.com/doi/abs/10.1177/0037549704050348)
 
-Joseph A. Giampapa, Katia Sycara, Sean Owens, Robin Glinton, Young-Woo Seo, Bin Yu, Charles E. Grindle, and Michael Lewis, Extending the OneSAF testbed into a C4ISR testbed, <i>Simulation: Special Issue on Military Simulation Systems and Command and Control Systems Interoperability</i>, 80(12): 681-691, 2004. 
+Joseph A. Giampapa, Katia Sycara, Sean Owens, Robin Glinton, **Young-Woo Seo**, Bin Yu, Charles E. Grindle, and Michael Lewis, Extending the OneSAF testbed into a C4ISR testbed, <i>Simulation: Special Issue on Military Simulation Systems and Command and Control Systems Interoperability</i>, 80(12): 681-691, 2004. 

@@ -11,4 +11,4 @@ An autonomous robotic vehicle can drive through and park in a lot more reliably 
 
 [Download paper here](http://ieeexplore.ieee.org/document/5650331/)
 
-Young-Woo Seo, Chris Urmson, David Wettergreen, and Jin-Woo Lee, Building lane-graphs for autonomous parking, In <i>Proceedings of the IEEE International Conference on Intelligent Robots and Systems</i> (IROS-10), pp. 6052-6057, 2010. 
+**Young-Woo Seo**, Chris Urmson, David Wettergreen, and Jin-Woo Lee, Building lane-graphs for autonomous parking, In <i>Proceedings of the IEEE International Conference on Intelligent Robots and Systems</i> (IROS-10), pp. 6052-6057, 2010. 

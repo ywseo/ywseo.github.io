@@ -11,4 +11,4 @@ A self-driving car, to be deployed in real-world driving environments, must be c
 
 [Download paper here](http://ieeexplore.ieee.org/document/6907100/)
 
-Hyunggi Cho, Young-Woo Seo, B.V.K. Vijaya Kumar, and Ragnunathan (Raj) Rajkumar, A multi-sensor fusion system for moving object detection and tracking in urban driving environments, In <i>Proceedings of the IEEE International Conference on Robotics and Automation</i> (ICRA-14), pp. 1836-1843, 2014. 
+Hyunggi Cho, **Young-Woo Seo**, B.V.K. Vijaya Kumar, and Ragnunathan (Raj) Rajkumar, A multi-sensor fusion system for moving object detection and tracking in urban driving environments, In <i>Proceedings of the IEEE International Conference on Robotics and Automation</i> (ICRA-14), pp. 1836-1843, 2014. 

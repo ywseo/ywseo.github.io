@@ -39,4 +39,4 @@ problem.
 
 [Download paper here](https://www.ijcai.org/Proceedings/09/Papers/305.pdf)
 
-Young-Woo Seo, Nathan Ratliff and Chris Urmson, Self-supervised aerial image analysis for extracting parking lot structure, In <i>Proceedings of the Twenty-First International Joint Conference on Artificial Intelligence</i> (IJCAI-09), pp. 1837-1842, 2009. 
+**Young-Woo Seo**, Nathan Ratliff and Chris Urmson, Self-supervised aerial image analysis for extracting parking lot structure, In <i>Proceedings of the Twenty-First International Joint Conference on Artificial Intelligence</i> (IJCAI-09), pp. 1837-1842, 2009. 

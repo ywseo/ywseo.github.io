@@ -11,4 +11,4 @@ This paper describes a method for learning user's interests in the Web-based per
 
 [Download paper here](https://dl.acm.org/citation.cfm?id=325859)
 
-Young-Woo Seo and Byoung-Tak Zhang, A reinforcement learning agent for personalized information filtering, In <i>Proceedings of the International Conference on Intelligent User Interfaces</i> (IUI-00), pp. 248-251, 2000. 
+**Young-Woo Seo** and Byoung-Tak Zhang, A reinforcement learning agent for personalized information filtering, In <i>Proceedings of the International Conference on Intelligent User Interfaces</i> (IUI-00), pp. 248-251, 2000. 

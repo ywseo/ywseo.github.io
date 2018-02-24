@@ -29,4 +29,4 @@ hundreds of urban scene images.
 
 [Download paper here](http://www.cs.cmu.edu/~youngwoo/doc/ppniv-14-ywseo.pdf)
 
-Young-Woo Seo and Ragnunathan (Raj) Rajkumar, Detection and tracking of the vanishing point on a horizon for automotive applications, In <i>Proceedings of the 6th IEEE IROS Workshop on Planning, Perception and Navigation for Intelligent Vehicles</i> (PPNIV-14), 2014. 
+**Young-Woo Seo** and Ragnunathan (Raj) Rajkumar, Detection and tracking of the vanishing point on a horizon for automotive applications, In <i>Proceedings of the 6th IEEE IROS Workshop on Planning, Perception and Navigation for Intelligent Vehicles</i> (PPNIV-14), 2014. 

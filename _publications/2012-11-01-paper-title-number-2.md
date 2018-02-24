@@ -12,4 +12,4 @@ We tested the accuracy and robustness of our algorithms with high-resolution, in
 
 [Download paper here](https://dl.acm.org/citation.cfm?doid=2424321.2424401)
 
-Young-Woo Seo, Chris Urmson and David Wettergreen, Ortho-image analysis for producing lane-level highway maps, In <i>Proceedings of the ACM SIG SPATIAL International Conference on Advances in Geographic Information System</i> (GIS-12), pp. 506-509, 2012. 
+**Young-Woo Seo**, Chris Urmson and David Wettergreen, Ortho-image analysis for producing lane-level highway maps, In <i>Proceedings of the ACM SIG SPATIAL International Conference on Advances in Geographic Information System</i> (GIS-12), pp. 506-509, 2012. 

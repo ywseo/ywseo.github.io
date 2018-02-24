@@ -11,4 +11,4 @@ In many different applications on the Web, distributed agents would like to disc
 
 [Download paper here](http://ieeexplore.ieee.org/document/1565564/)
 
-Young-Woo Seo and Katia Sycara, Exploiting multi-agent interactions for identifying the best-payoff information source, In <i>Proceedings of the IEEE/ACM International Conference on Intelligent Agent Technology</i> (IAT-05), pp. 344-350, 2005. 
+**Young-Woo Seo** and Katia Sycara, Exploiting multi-agent interactions for identifying the best-payoff information source, In <i>Proceedings of the IEEE/ACM International Conference on Intelligent Agent Technology</i> (IAT-05), pp. 344-350, 2005. 

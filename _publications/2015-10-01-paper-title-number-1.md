@@ -11,4 +11,4 @@ In order to be deployed in real-world driving environments, autonomous ground ve
 
 [Download paper here](http://ieeexplore.ieee.org/document/6876163/)
 
-Young-Woo Seo, Jongho Lee, David Wettergreen, and Wende Zhang, Recognition of highway workzones for reliable autonomous driving, <i>IEEE Transactions on Intelligent Transportation Systems</i>, 16(2): 708-718, 2015. 
+**Young-Woo Seo**, Jongho Lee, David Wettergreen, and Wende Zhang, Recognition of highway workzones for reliable autonomous driving, <i>IEEE Transactions on Intelligent Transportation Systems</i>, 16(2): 708-718, 2015. 

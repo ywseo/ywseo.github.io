@@ -11,4 +11,4 @@ Recent work has made much of using semantic knowledge, derived in particular fro
 
 [Download paper here](https://www.cs.cmu.edu/~softagents/papers/ywseo_sigir_03.pdf)
 
-Anupriya Ankolekar, Young-Woo Seo, and Katia Sycara, Investigating semantic knowledge for text learning, In <i>Proceedings of the ACM SIGIR Workshop on Semantic Web</i>, pp. 9-17, 2003. 
+Anupriya Ankolekar, **Young-Woo Seo**, and Katia Sycara, Investigating semantic knowledge for text learning, In <i>Proceedings of the ACM SIGIR Workshop on Semantic Web</i>, pp. 9-17, 2003. 

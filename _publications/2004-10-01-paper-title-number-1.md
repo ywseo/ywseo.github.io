@@ -11,4 +11,4 @@ We propose a multi-agent system architecture for the adaptive authorization of a
 
 [Download paper here](https://www.cs.cmu.edu/~softagents/papers/seo_young_woo_2004_4.pdf)
 
-Young-Woo Seo, Joseph A. Giampapa, and Katia Sycara, A multi-agent system for enforcing "Need-To-Know" security policies, In <i>Proceedings of the ACM International Conference on Autonomous Agents and Multi-Agents, Workshop on Agent-Oriented Information Systems</i> (AOIS-04), pp. 163-179, 2004. 
+**Young-Woo Seo**, Joseph A. Giampapa, and Katia Sycara, A multi-agent system for enforcing "Need-To-Know" security policies, In <i>Proceedings of the ACM International Conference on Autonomous Agents and Multi-Agents, Workshop on Agent-Oriented Information Systems</i> (AOIS-04), pp. 163-179, 2004. 

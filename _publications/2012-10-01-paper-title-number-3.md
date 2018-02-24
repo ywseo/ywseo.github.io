@@ -11,4 +11,4 @@ In order to be deployed in real-world driving environments, autonomous vehicles 
 
 [Download paper here](http://ieeexplore.ieee.org/document/6378255/)
 
-Young-Woo Seo, David Wettergreen, and Wende Zhang, Recognizing temporary changes on highways for reliable autonomous driving, In <i>Proceedings of the IEEE International Conference on Systems, Man, and Cybernetics</i> (SMC-12), pp. 3021-3026, 2012. (nominated as the finalist of best student paper award.) 
+**Young-Woo Seo**, David Wettergreen, and Wende Zhang, Recognizing temporary changes on highways for reliable autonomous driving, In <i>Proceedings of the IEEE International Conference on Systems, Man, and Cybernetics</i> (SMC-12), pp. 3021-3026, 2012. (nominated as the finalist of best student paper award.) 
