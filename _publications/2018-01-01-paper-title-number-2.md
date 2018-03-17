@@ -5,7 +5,7 @@ permalink: /publication/2018-01-01-paper-title-number-2
 excerpt: ''
 date: 2018-01-01
 venue: 'JFR'
-paperurl: ''
+paperurl: 'http://onlinelibrary.wiley.com/doi/10.1002/rob.21778/abstract'
 ---
 For any visual feature based SLAM solutions, to estimate the relative camera motion between two
 images, it is necessary to find “correct” correspondence between features extracted from those images. Given a set of feature correspondents, one can use a n-point algorithm with robust estimation
@@ -21,5 +21,7 @@ tures, we estimate a full DoF (Degree of Freedom) camera motion with scale ambig
 the experiments with three, real-world datasets, our method demonstrates its effectiveness and robustness by successfully matching features 1) from the images of a night market where presenceof frequent occlusions and varying illuminations, 2) from the images of a night market taken by a
 handheld camera and by the Google street view, and 3) from the images of a same location taken
 daytime and nighttime.
+
+[Download paper here](http://onlinelibrary.wiley.com/doi/10.1002/rob.21778/abstract)
 
 Chih-Chung Chou, **YoungWoo Seo**, and Chieh-Chih Wang, A two-stage sampling for robust feature matching, <i>Journal of Field Robotics</i>, ROB-17-0013, in press, 2018.

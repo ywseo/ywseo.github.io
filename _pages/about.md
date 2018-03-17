@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-I'm YoungWoo Seo and currently a senior director, Hyperloop-One. For the past 15 years, I was fortunate to work with many bright and hardworking people, and have gained expertise on developing cutting-edge, robotic systems (e.g., self-driving cars, drones, etc.) through the combination of hands-on experience and in-depth understanding of robotics. I am also a seasoned manager with experience managing diverse groups.
+I'm YoungWoo Seo and currently a senior director, Hyperloop-One. For the past 17 years, I was fortunate enough to work with many bright and hardworking people, and have gained expertise on developing cutting-edge, robotic systems (e.g., self-driving cars, drones, a new high-speed transportation, etc.) through the combination of hands-on experience and in-depth understanding of robotics. I am also a seasoned manager with experience managing diverse groups.
 

@@ -11,4 +11,4 @@ Computer vision technologies are very attractive for practical applications runn
 
 [Download paper here](https://arxiv.org/pdf/1801.06729.pdf)
 
-Burak Uzkent and **YoungWoo Seo**, EnKCF: Ensemble of kernelized correlation filter for high-speed object tracking, In <i>Proccedings of the IEEE Winter Conference on Applications of Computer Vision</i> (WACV-18), to appear, 2018.
+Burak Uzkent and **YoungWoo Seo**, EnKCF: Ensemble of kernelized correlation filter for high-speed object tracking, In <i>Proccedings of the IEEE Winter Conference on Applications of Computer Vision</i> (WACV-18), pp. 1133-1141, 2018.
