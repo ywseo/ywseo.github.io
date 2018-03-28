@@ -33,7 +33,7 @@ Developed (personalized and collaborative) information filtering systems.
 Honors and Awards
 ======
 * Aug 2017: Delivered the opening keynote, “Envisioning the Future of Mobility” at Autonomous
-Vehicles (AV17), Detroit, MI.
+Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed Travel"])(https://www.trunews.com/article/hyperloop-one-the-future-of-global-high-speed-travel)
 * Nov 2013: Received CIT, Carnegie Institute of Technology, Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
 dedications of the members of the GM-CMU, Autonomous Driving Collaborative Research Lab for
 demonstrating autonomous driving of a robotic car on public roads. These demos were reported at
