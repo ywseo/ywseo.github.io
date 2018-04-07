@@ -41,8 +41,8 @@ many news medias including CBS Evening News, IEEE Spectrum, the Associated Press
 Reuters, NBC, NPR, many others.
 * Oct 2012: Finalist of the ![Best Student Paper Award](files/smc-2012-best-student-paper-finalist-award.pdf) from the IEEE International Conference
 on Systems, Man and Cybernetics (SMC-12).
-* Sep 2006 – Nov 2007: A member of the Tartan Racing team that won the 1st place of the
-2007 DARPA Urban Challenge, Victorville, CA.
+* Sep 2006 – Nov 2007: A member of the [Tartan Racing](http://www.tartanracing.org/) team that won the 1st place of the
+2007 [DARPA Urban Challenge](http://archive.darpa.mil/grandchallenge/), Victorville, CA.
 * Jan 2007 – Apr 2012: Received Graduate Research Assistant Fellowship (full tuition and
 stipend) from the Robotics Institute, School of Computer Science, Carnegie Mellon University
 * May 2006: Awarded ![Best Paper Honorable Mention](files/isi-06-award.pdf) (second prize) from the IEEE International Conference on Intelligence and Security Informatics (ISI-2006)
