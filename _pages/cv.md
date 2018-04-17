@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Work Experience
+Work and Research Experience
 ======
 * Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Present<br/>
 Leading the effort of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
