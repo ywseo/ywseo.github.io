@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "YoungWoo Seo, PhD"
+title                    : "Youngwoo Seo, PhD"
 title_separator          : "-"
-name                     : &name "YoungWoo Seo"
+name                     : &name "Youngwoo Seo"
 description              : &description "Senior Director, Hyperloop-One"
 url                      : https://ywseo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -78,7 +78,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "YoungWoo Seo"
+  name             : "Youngwoo Seo"
   avatar           : "av17-keynote.png"
   bio              : "Field Roboticist, Computer Scientist, Entrepreneur, Explorer"
   location         : "San Francisco Bay Area"
