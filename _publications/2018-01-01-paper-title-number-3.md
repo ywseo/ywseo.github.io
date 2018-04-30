@@ -1,5 +1,5 @@
 ---
-title: "A Structureless approach for visual odometry"
+title: "A structureless approach for visual odometry"
 collection: publications
 permalink: /publication/2018-01-01-paper-title-number-3
 excerpt: ''
