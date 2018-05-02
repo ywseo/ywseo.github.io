@@ -2,9 +2,10 @@
 layout: archive
 title: "Projects"
 permalink: /work/
-author_profile: true
+author_profile: false
 ---
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% include base_path %}
+{% for post in site.pages %}
+  {% include archive-single.html %}
 {% endfor %}
