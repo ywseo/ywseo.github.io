@@ -11,8 +11,7 @@ redirect_from:
 
 Work and Research Experience
 ======
-* Founder CEO, (yet another) Stealth-mode Startup, May 2018 - Present<br/>
-* Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Apr 2018<br/>
+* Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Present<br/>
 Led the effort of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, [Autel Robotics](http://www.autelrobotics.com), Aug 2016 - Jun 2017<br/>
 Led a team of engineers to deliver a target tracking pipeline for quadropter drone.
