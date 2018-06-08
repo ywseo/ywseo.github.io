@@ -14,7 +14,7 @@ Work and Research Experience
 * Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Present<br/>
 Led the effort of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, [Autel Robotics](http://www.autelrobotics.com), Aug 2016 - Jun 2017<br/>
-Led a team of engineers to deliver a target tracking pipeline for quadropter drone.
+Led a team of engineers to deliver a target tracking pipeline for consumer-grade, quadropter drones.
 * Senior Scientist, Special Project Group, [Apple Inc](http://www.apple.com), Nov 2014 - Jul 2016<br/>
 Led a team of engineers and contributed to deliver a part of Apple's next generation products.
 * Consultant, Cruise Automation Inc., Aug 2014 - Oct 2014<br/>
@@ -27,14 +27,14 @@ Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception t
 Developed perception algorithms for understanding and modeling urban driving environments for reliable autonomous driving.
 * Full-Time Research Programmer, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Nov 2000 - Dec 2006<br/>
 Developed novel machine learning algorithms for multi-agent systems.
-* Graduate Research Assitant, [Artificial Intelligence Lab](http://bi.snu.ac.kr), School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
+* Graduate Research Assistant, [Artificial Intelligence Lab](http://bi.snu.ac.kr), School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
 Developed (personalized and collaborative) information filtering systems.
 
 Honors and Awards
 ======
 * Aug 2017: Delivered the opening keynote, “[Envisioning the Future of Mobility](https://www.trunews.com/article/intro-the-autonomous-vehicles-2017-detroit-summit)” at Autonomous
 Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed Travel"](https://www.trunews.com/article/hyperloop-one-the-future-of-global-high-speed-travel))
-* Nov 2013: Received CIT, Carnegie Institute of Technology, Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
+* Nov 2013: Received the CIT, Carnegie Institute of Technology, Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
 dedications of the members of the GM-CMU, Autonomous Driving Collaborative Research Lab for
 demonstrating autonomous driving of a robotic car on public roads. These demos were reported at
 many news medias including CBS Evening News, IEEE Spectrum, the Associated Press, CNBC,
