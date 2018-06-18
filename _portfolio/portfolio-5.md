@@ -1,6 +1,6 @@
 ---
 title: "Self-Driving Car Systems"
-excerpt: "Regarding Self-Driving Car Systems."
+excerpt: "CPU utilizatioin pattern analysis, Tartan Racing, the winning entry of the 2007 Urban Challenge."
 collection: portfolio
 ---
 

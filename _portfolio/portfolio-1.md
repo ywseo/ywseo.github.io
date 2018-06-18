@@ -1,6 +1,6 @@
 ---
-title: "Where Mobile Robots Can Traverse"
-excerpt: "Enabling mobile robots to know the traversable regions."
+title: "Enabling Self-Driving Cars to Know Where They Can Traverse"
+excerpt: "Road boundary tracking, analyzing ortho-images to generate lane-level maps."
 collection: portfolio
 ---
 

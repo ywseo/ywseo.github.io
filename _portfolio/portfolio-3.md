@@ -1,6 +1,6 @@
 ---
-title: "What Objects Are Around Mobile Robots"
-excerpt: "Enabling mobile robots to know what objects are around them."
+title: "Enabling Mobile Robots to Know What Objects Are Around"
+excerpt: "target-tracking for drone, moving object detection and tracking, lanemarking detection, generating instantaneous map around ground vehicles."
 collection: portfolio
 ---
 

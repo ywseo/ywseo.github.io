@@ -1,6 +1,6 @@
 ---
-title: "How Mobile Robots Should Move"
-excerpt: "Enabling mobile robots to understand what rules they should abide by."
+title: "Enabling Self-Driving Cars to Understand What Rules They Should Abide By"
+excerpt: "detection and tracking lateral stoplines, workzone recognition."
 collection: portfolio
 ---
 

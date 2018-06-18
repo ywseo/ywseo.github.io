@@ -1,6 +1,6 @@
 ---
-title: "Where Mobile Robots Are At"
-excerpt: "Enabling mobile robots to know where they are at given time."
+title: "Enabling Mobile Robots to Know Where They are at Given Time"
+excerpt: "Visual odometry, lateral localization."
 collection: portfolio
 ---
 
