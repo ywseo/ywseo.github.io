@@ -1,6 +1,6 @@
 ---
 title: "Enabling Multi-Agents System to be Intelligent"
-excerpt: "Multi-agents system for enforcing "need-to-know" security policy, information fusion for command and control, multi-agents system for assisting financial portfolio."
+excerpt: "Multi-agents system for enforcing need-to-know security policy, information fusion for command and control, multi-agents system for assisting financial portfolio."
 collection: portfolio
 ---
 
