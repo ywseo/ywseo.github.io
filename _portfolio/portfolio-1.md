@@ -1,6 +1,6 @@
 ---
 title: "Detection and tracking of stoplines"
-excerpt: "It is very important to recognize longitudinal stoplines, to enable self-driving cars to stop where it is required to stop.<br/>[link](images/stop-line-detection.png)
+excerpt: "It is very important to recognize longitudinal stoplines, to enable self-driving cars to stop where it is required to stop.<br/>[link](images/stop-line-detection.png)"
 collection: portfolio
 ---
 
