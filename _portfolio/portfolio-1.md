@@ -1,6 +1,6 @@
 ---
 title: "Where Mobile Robots Can Traverse"
-excerpt: "It is important to know where a mobile robot can and cannot traverse.<br/>"
+excerpt: "Enabling mobile robots to know the traversable regions."
 collection: portfolio
 ---
 
