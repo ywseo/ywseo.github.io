@@ -1,6 +1,6 @@
 ---
 title: "Enabling Self-Driving Cars to Understand What Rules They Should Abide By"
-excerpt: "detection and tracking lateral stoplines, workzone detection for understanding changes of traffic rules and road geometry."
+excerpt: "Detection and tracking lateral stoplines, workzone detection for understanding changes of traffic rules and road geometry."
 collection: portfolio
 ---
 
