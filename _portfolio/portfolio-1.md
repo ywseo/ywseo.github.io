@@ -1,6 +1,6 @@
 ---
 title: "Enabling Self-Driving Cars to Know Where They Can Traverse"
-excerpt: "Road boundary tracking, analyzing ortho-images to generate lane-level maps."
+excerpt: "Tracking of traversable region boundary, analyzing ortho-images to generate lane-level maps."
 collection: portfolio
 ---
 

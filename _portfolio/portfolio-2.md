@@ -1,6 +1,6 @@
 ---
 title: "Enabling Mobile Robots to Know Where They are at Given Time"
-excerpt: "Visual odometry using pseudo map points, robust matching for better correspondences among features, lateral localization to keep self-driving cars at the centerline of a roadlane."
+excerpt: "Visual odometry using pseudo map points, robust matching for better correspondences among features, lateral localization for reliable, urban autonomous driving."
 collection: portfolio
 ---
 

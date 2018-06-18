@@ -1,6 +1,6 @@
 ---
 title: "Enabling Mobile Robots to Know What Objects Are Around"
-excerpt: "target-tracking for drone, moving object detection and tracking, lanemarking detection, generating instantaneous map around ground vehicles."
+excerpt: "target-tracking for drone, moving object detection and tracking, lanemarking detection, vanishing point tracking for road geometry understanding, generating instantaneous map around ground vehicles."
 collection: portfolio
 ---
 
