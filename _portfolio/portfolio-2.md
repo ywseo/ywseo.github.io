@@ -1,6 +1,6 @@
 ---
 title: "Understanding Computational Workload of Self-Driving Car"
-excerpt: "Analysis of CPU utilization <br/>[](images/software-architecture.jpg)
+excerpt: "Analysis of CPU utilization <br/>[](images/software-architecture.jpg)"
 collection: portfolio
 ---
 
