@@ -1,6 +1,6 @@
 ---
 title: "Self-Driving Car Systems"
-excerpt: "Analysis of cpu utilizatioin pattern to understand dynamic computational workload of a self-driving car, Tartan Racing: the winning entry of the 2007 Urban Challenge."
+excerpt: "Analyzing cpu utilizatioin patterns to understand dynamic computational workload of a self-driving car, Tartan Racing: the winning entry of the 2007 Urban Challenge."
 collection: portfolio
 ---
 
