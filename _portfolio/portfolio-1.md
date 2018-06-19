@@ -1,5 +1,5 @@
 ---
-title: "Enabling Self-Driving Cars to Know Where They Can Traverse"
+title: "Enabling Self-Driving Cars to Know Where They Can and Cannot Drive"
 excerpt: "Tracking of traversable region boundary, analyzing ortho-images to generate lane-level maps."
 collection: portfolio
 ---
@@ -9,6 +9,8 @@ collection: portfolio
 To be successfully deployed in real world driving environments, mobile robots should know where they can and cannot traverse.
 To this end, we developed an algorithm that, using an unscented Kalman filter, detects and tracks the boundaries of roads. Read the following paper to learn more about this work: 
 * **Young-Woo Seo** and Raj Rajkumar, [Detection and tracking of boundary of unmarked roads](https://ieeexplore.ieee.org/document/6916256/?arnumber=6916256), In *Proceedings of the 17th International Conference on Information Fusion* (Fusion-2014), Salamanca, Spain, 2014.
+
+<img src="/images/uc-starting-chute.png"/>
 
 Maps are important for both human and robot navigation. Given a route, driving assistance systems consult maps to guide human drivers to their destinations. Similarly, topological maps of a road network provide a robotic vehicle with information about where it can drive and what driving behaviors it should use. By providing the necessary information about the driving environment, maps simplify both manual and autonomous driving. The majority of existing cartographic databases are built, using manual surveys and operator interactions, to primarily assist human navigation. Hence, the resolution of existing maps is insufficient for use in robotics applications. Also, the coverage of these maps fails to extend to places where robotics applications require detailed geometric information. To augment the resolution and coverage of existing maps, this work investigates computer vision algorithms to automatically build lane-level detailed maps of highways and parking lots by analyzing publicly available cartographic resources such as orthoimagery. Read the following papers to learn more about this work:
 * **Young-Woo Seo**, David Wettergreen, and Chris Urmson, [Exploiting publicly available cartographic resources for aerial image analysis](https://dl.acm.org/citation.cfm?doid=2424321.2424336), In *Proceedings of the ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems* (GIS-2012), pp. 109-118, Redondo Beach, CA, 2012.
