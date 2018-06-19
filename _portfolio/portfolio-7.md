@@ -1,5 +1,5 @@
 ---
-title: "Enabling Software Agents to Mine Knowledge from Texts"
+title: "Enabling Software Agents to Mine Knowledge from Unstructured Texts"
 excerpt: "Textmining, personalized information filtering."
 collection: portfolio
 ---
