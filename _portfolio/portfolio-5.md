@@ -1,5 +1,5 @@
 ---
-title: "Self-Driving Car Systems"
+title: "Developing Self-Driving Cars: Look Ma, My Other Car Drives Itself"
 excerpt: "Analyzing cpu utilizatioin patterns to understand dynamic computational workload of a self-driving car, Tartan Racing: the winning entry of the 2007 Urban Challenge."
 collection: portfolio
 ---
