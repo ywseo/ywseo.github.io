@@ -6,7 +6,7 @@ collection: portfolio
 
 <img src="/images/boundary-detection.jpg"/>
 
-**Tracking traversable region bounary** This work presents a new method of detecting
+**Tracking Traversable Region Bounary** This work presents a new method of detecting
 and tracking the boundaries of drivable regions in road without
 road-markings. As unmarked roads connect residential places
 to public roads, a capability of autonomously driving on such
