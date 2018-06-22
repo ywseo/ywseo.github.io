@@ -12,7 +12,17 @@ collection: portfolio
 
 <img src="/images/boss-urban-challenge.jpg"/>
 
-**Tartan Racing** In the 2007 DARPA Urban Challenge, fully-autonomous ground vehicles will conduct simulated military supply missions in a mock urban area. Robotic vehicles will attempt to complete a 60-mile course through traffic in less than six hours, operating solely under their own computer-based control. To succeed, vehicles must obey traffic laws while safely merging into moving traffic, navigating traffic circles, negotiating busy intersections, and avoiding obstacles. Read the following paper to learn more about this work: 
+**Tartan Racing** Boss is an autonomous vehicle that uses on-board sensors (global positioning system,
+lasers, radars, and cameras) to track other vehicles, detect static obstacles, and localize
+itself relative to a road model. A three-layer planning system combines mission, behav-
+ioral, and motion planning to drive in urban environments. The mission planning layer
+considers which street to take to achieve a mission goal. The behavioral layer determines
+when to change lanes and precedence at intersections and performs error recovery maneu-
+vers. The motion planning layer selects actions to avoid obstacles while making progress
+toward local goals. The system was developed from the ground up to address the require-
+ments of the DARPA Urban Challenge using a spiral system development process with
+a heavy emphasis on regular, regressive system testing. During the National Qualifica-
+tion Event and the 85-km Urban Challenge Final Event, Boss demonstrated some of its capabilities, qualifying first and winning the challenge. Read the following paper to learn more about this work: 
 * Chris Urmson, Joshua Anhalt, Drew Bagnell, Christopher Baker, Robert Bittner, M. N. Clark, John Dolan, Dave Duggins, Tugrul Galatali, Chris Geyer, Michele Gittleman, Sam Harbaugh, Martial Hebert, Thomas M. Howard, Sascha Kolski, Alonzo Kelly, Maxim Likhachev, Matt McNaughton, Nick Miller, Kevin Peterson, Brian Pilnick, Raj Rajkumar, Paul Rybski, Bryan Salesky, **Young-Woo Seo**, Sanjiv Singh, Jarrod Snider, Anthony Stentz, William Red Whittaker, Ziv Wolkowicki, Jason Ziglar, Hong Bae, Thomas Brown, Daniel Demitrish, Bakhtiar Litkouhi, Jim Nickolaou, Varsha Sadekar, Wende Zhang, Joshua Struble, Michael Taylor, Michael Darms, and Dave Ferguson, [Autonomous driving in urban environments: Boss and the urban challenge](https://www.ri.cmu.edu/publications/autonomous-driving-in-urban-environments-boss-and-the-urban-challenge/), *Journal of Field Robotics: Special Issue on the 2007 DARPA Urban Challenge*, Part I, pp. 425-466, 2008.
 * Chris Urmson, Joshua Anhalt, Drew Bagnell, Christopher Baker, Robert Bittner, John Dolan, Dave Duggins, Dave Ferguson, Tugrul Galatali, Hartmut Geyer, Michele Gittleman, Sam Harbaugh, Martial Hebert, Thomas M. Howard, Alonzo Kelly, David Kohanbash, Maxim Likhachev, Nick Miller, Kevin Peterson, Raj Rajkumar, Paul Rybski, Bryan Salesky, Sebastian Scherer, **Young-Woo Seo**, Reid Simmons, Sanjiv Singh, Jarrod Snider, Anthony Stentz, William Red Whittaker, and Jason Ziglar, [Tartan racing: a multi-modal approach to the DARPA Urban Challenge](https://www.ri.cmu.edu/publications/tartan-racing-a-multi-modal-approach-to-the-darpa-urban-challenge/), Tech Report, the Robotics Institute, Carnegie Mellon University, 2007.
 
