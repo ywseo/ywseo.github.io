@@ -21,4 +21,4 @@ Read the following papers to learn more about this work:
 * **Young-Woo Seo** and Raj Rajkumar, [Tracking and estimation of ego-vehicle's state for lateral localization](https://ieeexplore.ieee.org/document/6957859/), In *Proceedings of the 17th International IEEE Conference on Intelligent Transportation Systems* (ITSC-2014), pp. 1251-1257, Qingdao, China, Oct 8-11, 2014.
 * **Young-Woo Seo** and Raj Rajkumar, [Use of a monocular camera to analyze a ground vehicle's lateral movements for reliable autonomous city driving](http://www.cs.cmu.edu/~youngwoo/doc/ppniv-13-ywseo.pdf), In *Proceedings of the 5th IEEE IROS Workshop on Planning, Perception and Navigation for Intelligent Vehicles* (PPNIV-2013), pp. 197-203, Nov 3-8, Tokyo, Japan, 2013.
 
-<p><a href="https://youtu.be/A09se5Z-s9A"></a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A09se5Z-s9A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
