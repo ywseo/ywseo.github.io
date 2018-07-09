@@ -24,4 +24,4 @@ daytime and nighttime.
 
 [Download paper here](http://onlinelibrary.wiley.com/doi/10.1002/rob.21778/abstract)
 
-Chih-Chung Chou, **YoungWoo Seo**, and Chieh-Chih Wang, A two-stage sampling for robust feature matching, <i>Journal of Field Robotics</i>, ROB-17-0013, in press, 2018.
+Chih-Chung Chou, **YoungWoo Seo**, and Chieh-Chih Wang, A two-stage sampling for robust feature matching, <i>Journal of Field Robotics</i>, 35(5): 779-801, 2018.
