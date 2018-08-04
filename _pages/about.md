@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-I'm Youngwoo Seo. For the past 17 years, I was fortunate enough to work with many bright and hardworking people, (of course, sharks, wolves, weasels, etc., too), and have gained expertise on developing cutting-edge, robotic systems (e.g., self-driving cars, drones, etc.) through the combination of hands-on experience and in-depth understanding of robotics. By training I'm a field roboticist and computer scientist. By vocation I'm a seasoned manager with experience of managing diverse groups. By nature I'm an explorer.  
+I'm Youngwoo Seo. Over the past decades, I was fortunate enough to work with many bright and hardworking people, (of course, sharks, wolves, weasels, etc., too), and have gained expertise on developing cutting-edge, robotic systems (e.g., self-driving cars, drones, etc.) through the combination of hands-on experience and in-depth understanding of robotics. By training I'm a field roboticist and computer scientist. By vocation I'm a seasoned manager with experience of managing diverse groups. By nature I'm an explorer.  
 

@@ -30,4 +30,4 @@ of a full-SLAM approach with lower runtime complexities.
 
 [Download paper here](/files/structureless-approach-vo-iv-18.pdf)
 
-Chih-Chung Chou, Chun-Kai Chang and **YoungWoo Seo**, A structureless approach for visual odometry, In <i>Proceedings of the IEEE Intelligent Vehicles Symposium</i> (IV-2018), to appear, 2018.
+Chih-Chung Chou, Chun-Kai Chang and **YoungWoo Seo**, A structureless approach for visual odometry, In <i>Proceedings of the IEEE Intelligent Vehicles Symposium</i> (IV-2018), pp. 1834-1841, 2018.
