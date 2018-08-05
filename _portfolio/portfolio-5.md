@@ -12,7 +12,7 @@ collection: portfolio
 
 <img src="/images/boss-urban-challenge.jpg"/>
 
-**Tartan Racing** Boss is an autonomous vehicle that uses on-board sensors (global positioning system,
+**[Tartan Racing](http://www.tartanracing.org/)** [Boss](https://www.cmu.edu/homepage/practical/2007/winter/meet-the-boss.shtml) is an autonomous vehicle that uses on-board sensors (global positioning system,
 lasers, radars, and cameras) to track other vehicles, detect static obstacles, and localize
 itself relative to a road model. A three-layer planning system combines mission, behavioral, and motion planning to drive in urban environments. The mission planning layer
 considers which street to take to achieve a mission goal. The behavioral layer determines
