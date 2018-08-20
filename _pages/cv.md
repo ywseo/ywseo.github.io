@@ -15,7 +15,7 @@ Work and Research Experience
 * Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Apr 2018<br/>
 Led the effort of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, [Autel Robotics](http://www.autelrobotics.com), Aug 2016 - Jun 2017<br/>
-Led a team of engineers to deliver a target tracking pipeline for consumer-grade, quadropter drones.
+Led a team of engineers and delivered a target tracking pipeline for consumer-grade, quadropter drones.
 * Senior Scientist, Special Project Group, [Apple Inc](http://www.apple.com), Nov 2014 - Jul 2016<br/>
 Led a team of engineers and contributed to deliver a part of Apple's next generation products.
 * Consultant, Cruise Automation Inc., Aug 2014 - Oct 2014<br/>
@@ -25,7 +25,7 @@ Provided technical guidance to the 2013 Korea Autonomous Vehicle Contest and inv
 * Post-Doctoral Researcher, [Dept of Electrical Computer Engineering](http://www.ece.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jun 2012 - Jun 2014<br/>
 Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception team for autonomous driving demonstration on public roads.
 * Graduate Research Assistant, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jan 2007 - Apr 2012<br/>
-Developed perception algorithms for understanding and modeling urban driving environments for reliable autonomous driving.
+Developed perception algorithms for understanding urban driving situations and modeling driving environments for reliable autonomous driving.
 * Full-Time Research Programmer, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Nov 2000 - Dec 2006<br/>
 Developed novel machine learning algorithms for multi-agent systems.
 * Graduate Research Assistant, [Artificial Intelligence Lab](http://bi.snu.ac.kr), School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
