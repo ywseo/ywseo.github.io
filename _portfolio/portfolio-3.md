@@ -26,9 +26,9 @@ collection: portfolio
 * **Young-Woo Seo** and Raj Rajkumar, [Detection and tracking of the vanishing point on a horizon for automotive applications](http://www.cs.cmu.edu/~youngwoo/doc/ppniv-14-ywseo.pdf), In *Proceedings of the 6th IEEE IROS Workshop on Planning, Perception and Navigation for Intelligent Vehicles* (PPNIV-2014), Chicago, Sep 14-18, 2014.
 * **Young-Woo Seo** and Raj Rajkumar, [Utilizing instantaneous driving direction for enhancing lane-marking detection](https://ieeexplore.ieee.org/document/6856467/), In *Proceedings of the 25th IEEE Intelligent Vehicles Symposium* (IV-2014), pp. 170-175, Dearborn, MI, 2014.
  
-<img src="/images/omni-view.jpg"/> 
+<br> 
  
-<br>
+<img src="/images/omni-view.jpg"/> 
  
  **Generating Instantaneous Map Around Ground Vehicles** To safely drive on urban streets, it is critical for self-driving cars to timely obtain the locations of other road occupants (e.g., cars, pedestrians, bicyclists, etc.). If such information is unreliably estimated, it would put a self-driving car in a great risk. To provide our self-driving car with such a capability, this work develops a perception algorithm that generates, by combining scan points from multiple, automotive grade LIDARs, temporally consistent and spatially seamless snapshots of neighboring (dynamic and static) objects. To do so, the proposed algorithm first represents a square region centered at the current location of ego-vehicle and then traces, for each of the LIDAR scans, a virtual ray between a LIDAR and the edge of reliable sensing range, to update cells on the ray. Through the tests with several urban streets driving data, the proposed algorithm showed promising results in terms of clearly identifying traversable regions in the drivable regions. Read the following paper to learn more about this work:
  * **Young-Woo Seo**, [Generating omni-directional view of neighboring objects for ensuring safe urban driving](https://www.ri.cmu.edu/publications/generating-omni-directional-view-of-neighboring-objects-for-ensuring-safe-urban-driving/), *Tech. Report CMU-RI-TR-14-11*, the Robotics Institute, Carnegie Mellon University, June, 2014.
