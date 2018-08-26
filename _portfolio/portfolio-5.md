@@ -10,6 +10,8 @@ collection: portfolio
 * **Young-Woo Seo**, Junsung Kim and Ragnunathan (Raj) Rajkumar, [Predicting dynamic computational workload of a self-driving car](https://ieeexplore.ieee.org/document/6974391/), In *Proceedings of the IEEE International Conference on Systems, Man and Cybernetics* (SMC-14), pp. 3030-3035, 2014.
 * Junsung Kim, **Young-Woo Seo**, Hyoseung Kim, and Raj Rajkumar, [Can cyber-physical systems to be predictable? inferring cyber-workloads from physical attributes](https://ieeexplore.ieee.org/document/6843732/), In *Proceedings of the ACM/IEEE International Conference on Cyber-Physical Systems* (ICCPS-2014), 2014.
 
+<br>
+
 <img src="/images/boss-urban-challenge.jpg"/>
 
 **[Tartan Racing](http://www.tartanracing.org/)** [Boss](https://en.wikipedia.org/wiki/Charles_F._Kettering) is an autonomous vehicle that uses on-board sensors (global positioning system,
