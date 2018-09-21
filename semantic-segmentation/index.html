@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Vehicle Control</title>
+    <title>Semantic Segmentation</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,41 +15,59 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Vehicle Control</h1>
-        <p>This page is about autonomous control of a vehicle</p>
+        <h1>Semantic Segmentation</h1>
+        <p>Semantic segmentation is a field of computer vision and a process of assigning each pixel of a given image to one of the predefined class label, e.g., road, pedestrian, vehicle, etc. </p>
         <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
       </header>
       
       <section>
-        <h1>Model Predictive Control</h1>
+        <h1>Training a Fully Convolutional Network (FCN) for Semantic Segmentation</h1>
 
-        <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
+	<h2>Overview</h2>
+        <p>A bounding box around an object of interest has been
+        dominated as the format of a computer vision algorithm. </p>
 
-        <p>Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:</p>
+        <h2>Training a Fully Convolutional Network (FCN) for a pixelwise, binary classification: Road or Not-Road</h2>
 
-        <p>Roses are red<br>
-        Violets are blue</p>
-
-        <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
-
-        <p>Roses are red<br><br>
-        Violets are blue</p>
-
-        <p>Oh, and one thing I cannot stand is the mangling of words with multiple underscores in them like perform_complicated_task or do_this_and_do_that_and_another_thing.</p>
-
-        <h2>A bit of the GitHub spice</h2>
-
-        <p>In addition to the changes in the previous section, certain references are auto-linked:</p>
-
+	<p>This section discusses about how to train a fully convolutional network for a pixelwise, binary classification.</p>
+	
         <ul>
-          <li>SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
-          <li>User@SHA ref: <a href="https://github.com/mojombo/product/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo@<tt>be6a8cc</tt></a></li>
-          <li>User/Project@SHA: <a href="https://github.com/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo/god@<tt>be6a8cc</tt></a></li>
-          <li>#Num: <a href="https://github.com/github/product/issues/1" class="issue-link" title="Baseline: What is up in the air right now?">#1</a></li>
-          <li>User/#Num: mojombo#1</li>
-          <li>User/Project#Num: <a href="https://github.com/mojombo/god/issues/1" class="issue-link" title="The server is not available (or you do not have permissions to access it)">mojombo/god#1</a></li>
+          <li>How to setup an Amazon Machine Interface (AMI)</li>
+	  <li>Walk through a tensorflow code
         </ul>
 
+	<pre><code>
+	    def load_vgg(sess, vgg_path):
+    """
+    Load a pre-trained network, VGG for this case, into TensorFlow as an encoder.
+
+    :param sess: TensorFlow Session
+    :param vgg_path: Path to vgg folder, containing "variables/" and "saved_model.pb"
+
+    :return: Tensors from VGG model (image_input, keep_prob, layer3_out, layer4_out, layer7_out)
+    """
+
+    vgg_tag = 'vgg16'
+    vgg_input_tensor_name = 'image_input:0'
+    vgg_keep_prob_tensor_name = 'keep_prob:0'
+    vgg_layer3_out_tensor_name = 'layer3_out:0'
+    vgg_layer4_out_tensor_name = 'layer4_out:0'
+    vgg_layer7_out_tensor_name = 'layer7_out:0'
+
+    # Use tf.saved_model.loader.load to load the model and weights
+    # tf.saved_model.loader.load() returns a protobuf
+    tf.saved_model.loader.load(sess, [vgg_tag], vgg_path)
+
+    # Get tensors to return
+    image_input = sess.graph.get_tensor_by_name(vgg_input_tensor_name)
+    keep_prob = sess.graph.get_tensor_by_name(vgg_keep_prob_tensor_name)
+    layer3_out = sess.graph.get_tensor_by_name(vgg_layer3_out_tensor_name)
+    layer4_out = sess.graph.get_tensor_by_name(vgg_layer4_out_tensor_name)
+    layer7_out = sess.graph.get_tensor_by_name(vgg_layer7_out_tensor_name)
+
+    return image_input, keep_prob, layer3_out, layer4_out, layer7_out
+	</code></pre>
+	
         <p>These are dangerous goodies though, and we need to make sure email addresses don't get mangled:</p>
 
         <p>My email addy is <a href="mailto:tom@github.com">tom@github.com</a>.</p>
@@ -194,7 +212,7 @@ end
         <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
+        <p>This project is maintained by <a href="http://ywseo.github.io/">Youngwoo Seo</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
