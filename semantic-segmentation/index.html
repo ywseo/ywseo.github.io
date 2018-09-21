@@ -36,8 +36,8 @@
 	  <li>Walk through a tensorflow code
         </ul>
 
-	<pre><code>
-	    def load_vgg(sess, vgg_path):
+	<pre class="brush: python">
+def load_vgg(sess, vgg_path):
     """
     Load a pre-trained network, VGG for this case, into TensorFlow as an encoder.
 
@@ -66,7 +66,7 @@
     layer7_out = sess.graph.get_tensor_by_name(vgg_layer7_out_tensor_name)
 
     return image_input, keep_prob, layer3_out, layer4_out, layer7_out
-	</code></pre>
+	</pre>
 	
         <p>These are dangerous goodies though, and we need to make sure email addresses don't get mangled:</p>
 
