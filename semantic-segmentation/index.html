@@ -33,7 +33,7 @@
       <section>
         <h1>Training a Fully Convolutional Network (FCN) for Semantic Segmentation</h1>
 
-	<h2>1. Overview</h2>
+	<h2>1. Introduction</h2>
         <p>Semantic segmentation is a computer vision task of
         assigning each pixel of a given image to one of the predefined
         class labels, e.g., road, pedestrian, vehicle, etc. By doing
@@ -41,7 +41,7 @@
         the input image.</p>
 
         <h2>2. Fully Convolutional Network (FCN) for Semantic Segmentation</h2>
-
+	<h3>2.1 Overview</h3>
 	<p>This section describes how to train a fully convolutional
 	network for a pixelwise, binary classification: road or
 	  not-road.</p>
@@ -57,7 +57,6 @@
 
 	<img src="/semantic-segmentation/fig/yolo-output.png"/> <a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
 	
-	<img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>	
 	<p>A typical output of a classification is a bounding box
 	around an object of interest. See the above images. These
 	bounding boxes will tell us/robots where objects in the scene
@@ -69,6 +68,8 @@
 	HoG</a>, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>,
 	etc.</p>
 
+<img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>
+	
 	<p>But what if we want to know the pixel positions of a road's
 	boundary, instead of the bounding boxes of cars on that road?
 	Can our awesome CNN (Convolutional Neural Network) do such a
@@ -138,7 +139,7 @@
 	  details:
 	</p>
 
-	<h3>2.1 1x1 Convolution Layer</h3>
+	<h3>2.2 1x1 Convolution Layer</h3>
 
 	<p>What do we mean by using 1x1 convolutional layers? It is to
 	replace a fully connected layer with 1x1 convolutional
@@ -164,7 +165,7 @@
 	  </ul>
 	</p>
 	  
-	<h3>2.2 Up-sampling </h3>
+	<h3>2.3 Up-sampling </h3>
 
 	<p>An up-sampling is done through a transposed convolution. A
 	transposed convolution is essentially a reverse convolution
@@ -198,7 +199,7 @@
   tf.layers.conv2d_transpose(x, 3, (2, 2), (2,2))
 </pre>
 
-	<h3>2.3 Skip Connections</h3>
+	<h3>2.4 Skip Connections</h3>
 	<p>The third special technique that a FCN uses is the skip
 	connection. One effect of convolutions or encoding in general
 	is you narrow down the scope by looking closely at some
@@ -209,7 +210,7 @@
 	connection work is by connecting the output of one layer to a
 	non-adjacent layer. </p>
 
-	<h3>2.4 Implementation of a FCN</h3>
+	<h3>2.5 Implementation of a FCN</h3>
 	<p>This section describes how to train a fully convolutional
 	network for a pixelwise, binary classification: road or
 	  not-road.</p>
