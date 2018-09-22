@@ -55,8 +55,9 @@
 	improved the classification accuracy drastically by dropping
 	the error from 26% to 15%!</p>
 
-	<img src="/semantic-segmentation/fig/yolo-output.png"/><a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
-	<img src="/semantic-segmentation/fig/ssd-output.png"/><a href="https://arxiv.org/abs/1512.02325">Source</a>	
+	<img src="/semantic-segmentation/fig/yolo-output.png"/> <a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
+	
+	<img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>	
 	<p>A typical output of a classification is a bounding box
 	around an object of interest. See the above images. These
 	bounding boxes will tell us/robots where objects in the scene
@@ -212,11 +213,81 @@
 	<p>This section describes how to train a fully convolutional
 	network for a pixelwise, binary classification: road or
 	  not-road.</p>
-	  
-	<p>The FCN we are primarily based on is
-	the <a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf">FCN-8</a>
 
-	<pre class="brush: python">
+	<img src="/semantic-segmentation/fig/cityscape-example-zurich.png" />
+
+	<p>The above image is an example of
+	the <a href="https://www.cityscapes-dataset.com/">CityScapes</a>
+	dataset where each pixl in the image is painted with different
+	color based on what the target class it's belonging to. The
+	conceivable target classes include road, car, pedestrian,
+	sign, monorail, etc. Thus by doing semantic segmentation one
+	will get valuable information about the scene appearing on the
+	image, instead of slicing sections into bounding
+	boxes. Semantic segmentation is also known as scene
+	understanding, particularly for the field of autonomous
+	  driving. Read the followings to learn more about this topic.
+	  <ul>
+	    <li><a href="https://arxiv.org/abs/1708.02550">Fast scene understanding for autonomous driving</a></li>
+	    <li><a href="http://cvrsuad.droppages.com/">ECCV-18 Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving</a></li>
+	    <li><a href="https://link.springer.com/article/10.1007/s11633-018-1126-y">A survey of scene understanding by event reasoning in autonomous driving</a></li>
+	  </ul>
+	</p>
+
+	<p>The FCN we are primarily based on is
+	  the <a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf">FCN-8</a>
+	  The encoder for FCN-8 is the VGG16 model pretrained on
+	  ImageNet for classification. The fully-connected layers are
+	  replaced by 1-by-1 convolutions. Here’s an example of going
+	  from a fully-connected layer to a 1x1 convolution in
+	  TensorFlow:
+	  
+<pre class="brush: python">
+  num_classes = 2
+  output = tf.layers.dense(input, num_classes)
+</pre>
+To
+<pre class="brush: python">
+  num_classes = 2
+  output = tf.layers.conv2d(input, num_classes, 1, strides=(1,1))
+</pre>
+	</p>
+
+	<p>To build the decoder portion of FCN-8, next we’ll have to
+	upsample the input to the original image size. The shape of
+	the tensor after the final convolutional transpose layer will
+	be 4-dimensional: (batch_size, original_height,
+	original_width, num_classes). Let’s implement those transposed
+	  convolutions we discussed earlier as follows:
+<pre class="brush: python">
+  output = tf.layers.conv2d_transpose(input, num_classes, 4, strides=(2,2))
+</pre>
+The transpose convolutional layers increase the height and width
+dimensions of the 4D input Tensor.</p>
+
+	<p>The final step is adding skip connections to the model. In
+	order to do this we’ll have to combine the output of two
+	layers. The first output is the output of the current
+	layer. The second output is the output of a layer further back
+	in the network, typically a pooling layer. In the following
+	example we combine the result of the previous layer with the
+	result of the 4th pooling layer through elementwise addition
+	  (`tf.add`).
+<pre class="brush: python">
+input = tf.add(input, pool_4)
+</pre>
+	  We can then follow this with another transposed convolution layer.
+<pre class="brush: python">
+input = tf.layers.conv2d_transpose(input, num_classes, 4, strides=(2, 2))
+</pre>
+
+	  We’ll repeat this once more with the third pooling layer output.
+<pre class="brush: python">
+input = tf.add(input, pool_3)
+Input = tf.layers.conv2d_transpose(input, num_classes, 16, strides=(8, 8))
+</pre>
+	  
+<pre class="brush: python">
 def load_vgg(sess, vgg_path):
     """
     Load a pre-trained network, VGG for this case, into TensorFlow as an encoder.
