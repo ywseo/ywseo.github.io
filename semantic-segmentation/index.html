@@ -88,7 +88,8 @@
 	<ul>
 	  <li><a href="http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review">A
 	  2017 guide to semantic segmentation with deep
-	  learning</a></li>
+	      learning</a></li>
+	  <li><a href="http://deeplearning.net/tutorial/fcn_2D_segm.html">Fully convolution networks for 2d segmentation</a></li>
 	</ul>
 
 	<p>Well, then how does a FCN achieve such a task? It can do
@@ -101,14 +102,36 @@
 	  </ul></p>
 
 	<p>In general, a FCN is typically comprised of two parts:
-	encoder and decoder. Read the followings to learn more about
-	  encoder and decoder architecture.
+	  encoder and decoder. A encoder extracts features that will
+	  later be used by the decoder. Since this is conceptually
+	  same as a transfer learning, we can use techniques from
+	  transfer learning to accelerate the training of our
+	  FCNs. It's common to use the encoder pre-trained on
+	  ImageNet. As examples, VGG and ResNet are popular
+	  choices. By applying the first special technique of 1x1
+	  convolutional layer conversion, we can complete the encoder
+	  portion of the FCN. The encoder is followed by the decoder,
+	  which uses a second special technique of transposed
+	  convolutional layers to upsample the image. Then the skip
+	  connection via the third special technique is added. While
+	  utilizing the skip connections, one'll have to be careful
+	  not to add too many skip connections. Otherwise it can lead
+	  to the explosion in the size of your model. For example,
+	  when using VGG-16 as the encoder, only the third and the
+	  fourth pooling layers are typically used for skip
+	  connections. Once we're done with incorporating all these
+	  three techniques, we can train the model end to end as we do
+	  for a CNN. Read the followings to learn more about encoder
+	  and decoder architecture.
 	  <ul>
 	    <li><a href="https://arxiv.org/pdf/1511.00561.pdf">SegNet:
 	A deep convolutional encoder-decoder architecture for image
 		segmentation</a></li>
 	    <li><a href="https://courses.cs.washington.edu/courses/cse576/17sp/notes/Sachin_Talk.pdf">Encoder-decoder networks for semantic segmentation</a></li>
 	  </ul>
+
+	  Now let's take a look at each of the three techniques in
+	  details:
 	</p>
 
 	<h3>2.1 1x1 Convolution Layer</h3>
@@ -126,9 +149,9 @@
 	  matrix multiplication with spatial information.</p>
 
 	<p>In TensorFlow, one can implement 1x1 convolutional layer as: </p>
-	<pre class="brush: python">
-	  tf.layers.conv2d(x, num_outputs, kernel_size=1, stride=1, weights_initializer=custom_init)
-	</pre>
+<pre class="brush: python">
+  tf.layers.conv2d(x, num_outputs, kernel_size=1, stride=1, weights_initializer=custom_init)
+</pre>
 	<p>where,
 	  <ul>
 	    <li>num_outputs: the number of output channels or kernels</li>
@@ -167,9 +190,9 @@
 	</ul>
 
 	<p>In TensorFlow, </p>
-	<pre class="brush: python">
-	  tf.layers.conv2d_transpose(x, 3, (2, 2), (2,2))
-	</pre>
+<pre class="brush: python">
+  tf.layers.conv2d_transpose(x, 3, (2, 2), (2,2))
+</pre>
 
 	<h3>2.3 Skip Connections</h3>
 	<p>The third special technique that a FCN uses is the skip
