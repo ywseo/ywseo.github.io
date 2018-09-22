@@ -16,20 +16,96 @@
     <div class="wrapper">
       <header>
         <h1>Semantic Segmentation</h1>
-        <p>Semantic segmentation is a field of computer vision and a process of assigning each pixel of a given image to one of the predefined class label, e.g., road, pedestrian, vehicle, etc. </p>
-        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
+	
+        <p>Semantic segmentation is a field of computer vision, where
+        its goal is to assign each pixel of a given image to one of
+        the predefined class labels, e.g., road, pedestrian, vehicle,
+        etc. By estimating the class of each pixel, one could
+        understand the scene depicted on a given image. This page
+        describes an application of a fully convolutional network
+        (FCN) for semantic segmentation.</p>
+	
+        <p class="view"><a href="http://github.com/orderedlist/minimal">View
+        the Project on  GitHub</a></p>
+	
       </header>
       
       <section>
         <h1>Training a Fully Convolutional Network (FCN) for Semantic Segmentation</h1>
 
-	<h2>Overview</h2>
-        <p>A bounding box around an object of interest has been
+	<h2>1. Overview</h2>
+        <p>Semantic segmentation is a computer vision task of
+        assigning each pixel of a given image to one of the predefined
+        class labels, e.g., road, pedestrian, vehicle, etc. By doing
+        so, one can delineate contours of all the objects appearing on
+        the input image. Read the followings to learn more about
+          semantic segmentation.</p>
+
+	<ul>
+	  <li><a href="http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review">A
+	  2017 guide to semantic segmentation with deep
+	  learning</a></li>
+	</ul>
+
+	
+
+	<p>A bounding box around an object of interest has been
         dominated as the format of a computer vision algorithm. </p>
 
-        <h2>Training a Fully Convolutional Network (FCN) for a pixelwise, binary classification: Road or Not-Road</h2>
+        <h2>2. Fully Convolutional Network (FCN) for Semantic Segmentation</h2>
 
-	<p>This section discusses about how to train a fully convolutional network for a pixelwise, binary classification.</p>
+	<p>This section describes how to train a fully convolutional
+	network for a pixelwise, binary classification: road or
+	  not-road.</p>
+
+	<p>A convolutional neural network is typically comprised of a
+	series of convolution layers, followed by fully connected
+	layers and ultimately a soft max activation function. Such
+	architectures work really well for classification -- remember
+	how do all these frenzies about deep neural network begin?
+	Yes, <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a>
+	improved the classification accuracy drastically by dropping
+	the error from 26% to 15%!</p>
+
+	<p>A typical output of a classification is a bounding box
+	around an object of interest. These bounding boxes will tell
+	us/robots where objects in the scene are so that our robots
+	could navigate the scene without bumping into them. There have
+	been so many great classification
+	algorithms: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
+	with
+	HoG</a>, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>,
+	etc.</p>
+
+	<p>But what if we want to know the pixel positions of a road's
+	boundary, instead of the bounding boxes of cars on that road?
+	Can our awesome CNN (Convolutional Neural Network) do such a
+	task for us? No, they cannot because the fully connected
+	layers at the end of any CNNs do not preserve spatial
+	information. The fully convolutional network (FCN) can do it
+	for us. This is because, while doing the convolution, they
+	preserve the spatial information throughout the entire
+	network. In addition, since convolutional operations
+	fundamentally don't care about the size of the input, a fully
+	convolutional network will work on images of any size. In a
+	classic convolutional network with fully connected final
+	layers, the size of the input is constrained by the size of
+	the fully connected layers. Passing different size images
+	through the same sequence of convolutional layers and
+	flattening the final output. These outputs would be of
+	different sizes, which doesn't bode very well for matrix
+	  multiplication. </p>
+
+	<p>Well, then how does a FCN achieve such a task? It can do
+	such a task for us based, primarily, on three special
+	techniques: 1x1 convolutioinal layers, up-sampling, and skip
+	  connections.</p>
+
+	<p>In general, a FCN is typically comprised of two parts:
+	encoder and decoder.</p>
+	
+	<p>The FCN we are primarily based on is
+	the <a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf">FCN-8</a>
 	
         <ul>
           <li>How to setup an Amazon Machine Interface (AMI)</li>
@@ -65,26 +141,38 @@ def load_vgg(sess, vgg_path):
     layer4_out = sess.graph.get_tensor_by_name(vgg_layer4_out_tensor_name)
     layer7_out = sess.graph.get_tensor_by_name(vgg_layer7_out_tensor_name)
 
-    return image_input, keep_prob, layer3_out, layer4_out, layer7_out
+    return image_input, keep_prob, layer3_out, layer4_out, layer7_out's
 	</pre>
 
-	<h2>Results</h2>
+	<h2>3. Results</h2>
 
+	<h3>3.1 Setup</h3>
+	In order to make the above described code run, you'll need GPU. The packages you need
+	<ul>
+	  <li><a href="https://www.python.org">Python 3</a></li>
+	  <li><a href="https://www.tensorflow.org">TensorFlow</a></li>
+	  <li><a href="https://www.numpy.org">Numpy</a></li>
+	  <li><a href="https://www.scipy.org">SciPy</a></li>
+	</ul>
+
+	<h3>3.2 Dataset</h3>
+	There is a couple of dataset for semantic segmentation.
+	<ul>
+	  <li><a href="http://www.cvlibs.net/datasets/kitti/eval_road.php">KITTI
+	      Road Dataset</a></li>
+	  <li><a href="https://www.cityscapes-dataset.com/examples/">CityScapes Dataset</a></li>
+	  <li><a href="http://bdd-data.berkeley.edu/">Berkeley DeepDrive Dataset</a></li>
+	</ul>
+	    
+
+	<h3>3.3 Results</h3>
 	<p>The animated image at the below shows some of the
-	segmentation results. These are parts of
-	the <a href="http://www.cvlibs.net/datasets/kitti/eval_road.php">KITTI
-	Road Dataset</a>.</p>
-	
+	  segmentation results.</p>
+
 	<img src="/semantic-segmentation/fig/semantic-segmentation-output.gif"/>
 	
-
-        <p>How about we throw some angle braces and ampersands in there?</p>
-
-        <pre><code>&lt;div class="footer"&gt;
-    &amp;copy; 2004 Foo Corporation
-&lt;/div&gt;
-</code></pre>
-
+	<h2>. Summary</h2>
+	
         <h2>Set in stone</h2>
 
         <p>Preformatted blocks are useful for ASCII art:</p>
@@ -147,7 +235,7 @@ def load_vgg(sess, vgg_path):
         </table>
       </section>
       <footer>
-        <p>This project is maintained by <a href="http://ywseo.github.io/">Youngwoo Seo</a></p>
+        <p>This page is scribbled by <a href="http://ywseo.github.io/">Youngwoo Seo</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
