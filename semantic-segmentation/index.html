@@ -55,11 +55,14 @@
 	improved the classification accuracy drastically by dropping
 	the error from 26% to 15%!</p>
 
+	<img src="/semantic-segmentation/fig/yolo-output.png"/><a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
+	<img src="/semantic-segmentation/fig/ssd-output.png"/><a href="https://arxiv.org/abs/1512.02325">Source</a>	
 	<p>A typical output of a classification is a bounding box
-	around an object of interest. These bounding boxes will tell
-	us/robots where objects in the scene are so that our robots
-	could navigate the scene without bumping into them. There have
-	been so many great classification
+	around an object of interest. See the above images. These
+	bounding boxes will tell us/robots where objects in the scene
+	are so that our robots could navigate the scene without
+	bumping into them. There have been so many great
+	classification
 	algorithms: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
 	with
 	HoG</a>, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>,
@@ -205,13 +208,13 @@
 	connection work is by connecting the output of one layer to a
 	non-adjacent layer. </p>
 
+	<h3>2.4 Implementation of a FCN</h3>
+	<p>This section describes how to train a fully convolutional
+	network for a pixelwise, binary classification: road or
+	  not-road.</p>
+	  
 	<p>The FCN we are primarily based on is
 	the <a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf">FCN-8</a>
-	
-        <ul>
-          <li>How to setup an Amazon Machine Interface (AMI)</li>
-	  <li>Walk through a tensorflow code
-        </ul>
 
 	<pre class="brush: python">
 def load_vgg(sess, vgg_path):
