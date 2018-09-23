@@ -37,11 +37,15 @@
         <p>Semantic segmentation is a computer vision task of
         assigning each pixel of a given image to one of the predefined
         class labels, e.g., road, pedestrian, vehicle, etc. By doing
-        so, one can delineate contours of all the objects appearing on
-        the input image. Such an approach has a significant benefit
-        over the conventional bounding box based classification: An
-        exhaustive labeling of all the pixels on a given image, other
-        than just putting rectangular boxes on a couple of objects.</p>
+        so, one can delineate, if it is successfully done, contours of
+        all the objects appearing on the input image. For object
+        detection/recognition, such an approach has a significant
+        benefit over the conventional bounding box based
+        classification: An exhaustive labeling of all the pixels on a
+        given image, other than just putting rectangular boxes on a
+        couple of objects. This page will describe the fully
+        convolutional network and a way of implementing it using the
+        TensorFlow.</p>
 
         <h2>2. Fully Convolutional Network (FCN) for Semantic Segmentation</h2>
 	<h3>2.1 Overview</h3>
@@ -51,47 +55,66 @@
 
 	<p>A convolutional neural network is typically comprised of a
 	series of convolution layers, followed by fully connected
-	layers and ultimately a soft max activation function. Such
-	architectures work really well for classification -- remember
-	how do all these frenzies about deep neural network begin?
-	Yes, <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a>
+	layers and a soft max activation function. Such architectures
+	work really well for classification -- remember how do all
+	these frenzies about deep neural network begin?  Yes,
+	at <a href="http://webcache.googleusercontent.com/search?q=cache:http://image-net.org/challenges/LSVRC/2012/ilsvrc2012.pdf">the
+	Large Scale Visual Recognition Challenge 2012</a> -- ImageNet
+	classification,
+	the <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a>
 	improved the classification accuracy drastically by dropping
 	the error from 26% to 15%!</p>
 
 	<img src="/semantic-segmentation/fig/yolo-output.png"/> <a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
 	
-	<p>A typical output of a classification is a bounding box
-	around an object of interest. See the above images. These
-	bounding boxes will tell us/robots where objects in the scene
-	are so that our robots could navigate the scene without
-	bumping into them. There have been so many great
-	classification
+	<p>A typical output of a classification including that of the
+	AlexNet is a bounding box around an object of interest. See
+	the bounding boxes around objects like cars, bicyclist,
+	traffic light from the above image. These bounding boxes tells
+	us/robots where objects in the scene are so that our robots
+	could navigate the scene without bumping into them. Of course,
+	since a 2d image does not provide information about distances
+	to the detected objects, the 3d information with respect to
+	the detected objects is assumed to be, somehow, resolved. One
+	could use a stereo camera or fuse images with lidar
+	measurements to estimate distances to the objects. There have
+	been so many great classification
 	algorithms: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
-	with
-	HoG</a>, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>,
+	with HoG</a> as a canonical example of non-DNN
+	based, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>
+	as DNN/CNN based classification/object detection algorithms,
 	etc.</p>
 
+	<p>Read the following to learn more about these DNN-based,
+	  object detection algorithms:
+	  <ul>
+	    <li><a href="https://mc.ai/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo/">Object detection: speed and accuracy comparison (Faster RCNN, R-FCN, SSD and Yolo)</a></li>
+	  </ul>
+	</p>
+	
 <img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>
 	
-	<p>But what if we want to know the pixel positions of a road's
+	<p>But what if we want to know the pixel positions of road's
 	boundary, instead of the bounding boxes of cars on that road?
 	Can our awesome CNN (Convolutional Neural Network) do such a
-	task for us? No, they cannot because the fully connected
-	layers at the end of any CNNs do not preserve spatial
-	information. The fully convolutional network (FCN) can do it
-	for us. This is because, while doing the convolution, they
-	preserve the spatial information throughout the entire
-	network. In addition, since convolutional operations
-	fundamentally don't care about the size of the input, a fully
-	convolutional network will work on images of any size. In a
+	task for us? Unfortunately, no, they cannot, because the fully
+	connected layers at the end of any CNNs do not preserve any
+	spatial information. Fortunately, the fully convolutional
+	network (FCN) can do it for us. This is because, while doing
+	the convolution, they preserve the spatial information
+	throughout the entire network. In addition, since
+	convolutional operations fundamentally don't care about the
+	size of the input, a FCN will work on images of any size. In a
 	classic convolutional network with fully connected final
 	layers, the size of the input is constrained by the size of
 	the fully connected layers. Passing different size images
 	through the same sequence of convolutional layers and
 	flattening the final output. These outputs would be of
-	different sizes, which doesn't bode very well for matrix
-	multiplication. Read the followings to learn more about
-	DNN-based semantic segmentation.</p>
+	different sizes, which doesn't work very well for matrix
+	  multiplication.</p>
+
+	<p>Read the followings to learn more about
+	FCN-based semantic segmentation.
 
 	<ul>
 	  <li><a href="http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review">A
@@ -99,38 +122,38 @@
 	      learning</a></li>
 	  <li><a href="http://deeplearning.net/tutorial/fcn_2D_segm.html">Fully convolution networks for 2d segmentation</a></li>
 	</ul>
-
-	<p>Well, then how does a FCN achieve such a task? It can do
-	such a task for us based, primarily, on three special
-	  techniques:
+	</p>
+	
+	<p>How does a FCN then accomplish such a task? It can do such
+	a task for us based, primarily, on three special techniques at
+	the top of a CNN:
 	  <ul>
 	    <li>1x1 convolutioinal layers,</li>
 	    <li>up-sampling, and</li>
 	    <li>skip connections.</li>
 	  </ul></p>
 
-	<p>In general, a FCN is typically comprised of two parts:
-	  encoder and decoder. A encoder extracts features that will
-	  later be used by the decoder. Since this is conceptually
-	  same as a transfer learning, we can use techniques from
-	  transfer learning to accelerate the training of our
-	  FCNs. It's common to use the encoder pre-trained on
-	  ImageNet. As examples, VGG and ResNet are popular
-	  choices. By applying the first special technique of 1x1
-	  convolutional layer conversion, we can complete the encoder
-	  portion of the FCN. The encoder is followed by the decoder,
-	  which uses a second special technique of transposed
-	  convolutional layers to upsample the image. Then the skip
-	  connection via the third special technique is added. While
-	  utilizing the skip connections, one'll have to be careful
-	  not to add too many skip connections. Otherwise it can lead
-	  to the explosion in the size of your model. For example,
-	  when using VGG-16 as the encoder, only the third and the
-	  fourth pooling layers are typically used for skip
-	  connections. Once we're done with incorporating all these
-	  three techniques, we can train the model end to end as we do
-	  for a CNN. Read the followings to learn more about encoder
-	  and decoder architecture.
+	<p>A FCN is typically comprised of two parts: encoder and
+	  decoder. A encoder extracts features that will later be used
+	  by the decoder. It's common to use the encoder pre-trained
+	  on ImageNet. As examples, VGG and ResNet are popular
+	  choices. Since this is conceptually the same as a transfer
+	  learning, we can use techniques from transfer learning to
+	  accelerate the training of our FCNs. To convert a CNN into a
+	  FCN, the first thing we need to do is to convert the fully
+	  connected layer into the 1x1 convolutional layer. The
+	  encoder is followed by the decoder, which uses another
+	  technique of transposed convolutional layers to upsample the
+	  image. Lastly the skip connection is added. While utilizing
+	  the skip connections, one'll have to be careful not to add
+	  too many skip connections. Otherwise it can lead to the
+	  explosion in the size of your model. For example, when using
+	  VGG-16 as the encoder, only the third and the fourth pooling
+	  layers are typically used for skip connections. Once we're
+	  done with incorporating all these three techniques, we can
+	  train the model end to end as we do for a CNN. Read the
+	  followings to learn more about encoder and decoder
+	  architecture.
 	  <ul>
 	    <li><a href="https://arxiv.org/pdf/1511.00561.pdf">SegNet:
 	A deep convolutional encoder-decoder architecture for image
@@ -145,16 +168,17 @@
 	<h3>2.2 1x1 Convolution Layer</h3>
 
 	<p>What do we mean by using 1x1 convolutional layers? It is to
-	replace a fully connected layer with 1x1 convolutional
-	layers. By doing so, the output of the convolution operation
-	is the result of sweeping the kernel over the input with the
-	sliding window and performing element wise multiplication and
-	summation. One way to think about this is the number of
-	kernels is equivalent to the number of outputs in a fully
-	connected layer. Similarly, the number of weights in each
-	kernel is equivalent to the number of inputs in the fully
-	connected layer. Effectively, this turns convolutions into a
-	  matrix multiplication with spatial information.</p>
+	replace a fully connected layer of a CNN with 1x1
+	convolutional layers. By doing so, the output of the
+	convolution operation is the result of sweeping the kernel
+	over the input with the sliding window and performing element
+	wise multiplication and summation. One way to think about this
+	is the number of kernels is equivalent to the number of
+	outputs in a fully connected layer. Similarly, the number of
+	weights in each kernel is equivalent to the number of inputs
+	in the fully connected layer. Effectively, this turns
+	convolutions into a matrix multiplication with spatial
+	information.</p>
 
 	<p>In TensorFlow, one can implement 1x1 convolutional layer as: </p>
 <pre class="brush: python">
