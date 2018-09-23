@@ -52,7 +52,18 @@
 	<h3>2.2 Representation of Vehicle Models</h3>
 
 	<p>It is common to represent the state of a vehicle by a
-	multi-dimensional vector. </p>
+	  multi-dimensional vector. Specifically, the state of a
+	  vehicle can be represented by its position <i>x</i>
+	  and <i>y</i>, orientation, velocity. The figure at the below
+	  illustrates a kinematic model, aka bicycle model and its
+	  differential equation.</p>
+
+	<img src="/vehicle-control/fig/kinematic-bicycle-model.png"/>
+
+	<p>The differential equation tells us how the state is changed
+	over time. For an actual implementation, we need to represent
+	such a differential equation in a continuous time into a
+	discrete one.</p>
 
 	<h2>3. Proportional, Integral, Derivative (PID) Control </h2>
 	<h2>4. Model Predictive Control (MPC)</h2>
