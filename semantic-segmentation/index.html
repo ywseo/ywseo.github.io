@@ -38,7 +38,10 @@
         assigning each pixel of a given image to one of the predefined
         class labels, e.g., road, pedestrian, vehicle, etc. By doing
         so, one can delineate contours of all the objects appearing on
-        the input image.</p>
+        the input image. Such an approach has a significant benefit
+        over the conventional bounding box based classification: An
+        exhaustive labeling of all the pixels on a given image, other
+        than just putting rectangular boxes on a couple of objects.</p>
 
         <h2>2. Fully Convolutional Network (FCN) for Semantic Segmentation</h2>
 	<h3>2.1 Overview</h3>
@@ -525,95 +528,47 @@ def run():
         helper.save_inference_samples(runs_dir, data_dir, sess, image_shape, logits, keep_prob, image_input)
 </pre>
   
-	<h2>3. Results</h2>
+        <h2>3. Results</h2>
 
+	<p>This section describes how to run the above explained
+	code. The first order business is to make your machine
+	ready by installing all the necessary packages.</p>
+	
 	<h3>3.1 Setup</h3>
-	In order to make the above described code run, you'll need GPU. The packages you need
+
+	<p>In order to make the above described code run, you'll need
+	GPU. The packages you need
 	<ul>
 	  <li><a href="https://www.python.org">Python 3</a></li>
 	  <li><a href="https://www.tensorflow.org">TensorFlow</a></li>
 	  <li><a href="https://www.numpy.org">Numpy</a></li>
 	  <li><a href="https://www.scipy.org">SciPy</a></li>
 	</ul>
-
+	</p>
+	
 	<h3>3.2 Dataset</h3>
-	There is a couple of dataset for semantic segmentation.
+	<p>There is a couple of dataset for semantic segmentation.
 	<ul>
 	  <li><a href="http://www.cvlibs.net/datasets/kitti/eval_road.php">KITTI
 	      Road Dataset</a></li>
 	  <li><a href="https://www.cityscapes-dataset.com/examples/">CityScapes Dataset</a></li>
 	  <li><a href="http://bdd-data.berkeley.edu/">Berkeley DeepDrive Dataset</a></li>
 	</ul>
-	    
+	For this, we used the KITTI road dataset.
+	</p>
 
 	<h3>3.3 Results</h3>
 	<p>The animated image at the below shows some of the
-	  segmentation results.</p>
+	  segmentation results. For this project, we did not do a
+	  full-scale, semantic segmentation. Instead we did a binary
+	  classification.</p>
 
 	<img src="/semantic-segmentation/fig/semantic-segmentation-output.gif"/>
 	
 	<h2>4. Summary</h2>
+	<p>This pages describes what a fully convolutional network
+	(FCN) and how it is used for semantic segmentation.</p>
 	
-        <h2>Set in stone</h2>
-
-        <p>Preformatted blocks are useful for ASCII art:</p>
-
-        <pre>             ,-.
-    ,     ,-.   ,-.
-   / \   (   )-(   )
-   \ |  ,.&gt;-(   )-&lt;
-    \|,' (   )-(   )
-     Y ___`-'   `-'
-     |/__/   `-'
-     |
-     |
-     |    -hrr-
-  ___|_____________
-</pre>
-
-        <h2>Playing the blame game</h2>
-
-        <p>If you need to blame someone, the best way to do so is by quoting them:</p>
-
-        <blockquote>
-        <p>I, at any rate, am convinced that He does not throw dice.</p>
-        </blockquote>
-
-        <p>Or perhaps someone a little less eloquent:</p>
-
-        <blockquote>
-        <p>I wish you'd have given me this written question ahead of time so I<br>
-        could plan for it... I'm sure something will pop into my head here in<br>
-        the midst of this press conference, with all the pressure of trying to<br>
-        come up with answer, but it hadn't yet...</p>
-
-        <p>I don't want to sound like<br>
-        I have made no mistakes. I'm confident I have. I just haven't - you<br>
-        just put me under the spot here, and maybe I'm not as quick on my feet<br>
-        as I should be in coming up with one.</p>
-        </blockquote>
-
-        <h2>Table for two</h2>
-
-        <table>
-          <tbody>
-        <tr>
-            <th>ID</th>
-        <th>Name</th>
-        <th>Rank</th>
-          </tr>
-          <tr>
-            <td>1</td>
-        <td>Tom Preston-Werner</td>
-        <td>Awesome</td>
-          </tr>
-          <tr>
-            <td>2</td>
-        <td>Albert Einstein</td>
-        <td>Nearly as awesome</td>
-          </tr>
-        </tbody>
-        </table>
       </section>
       <footer>
         <p>This page is scribbled by <a href="http://ywseo.github.io/">Youngwoo Seo</a></p>
