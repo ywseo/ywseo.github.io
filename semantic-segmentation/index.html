@@ -20,10 +20,12 @@
         <p>Semantic segmentation is a field of computer vision, where
         its goal is to assign each pixel of a given image to one of
         the predefined class labels, e.g., road, pedestrian, vehicle,
-        etc. By estimating the class of each pixel, one could
-        understand the scene depicted on a given image. This page
-        describes an application of a fully convolutional network
-        (FCN) for semantic segmentation.</p>
+        etc. By knowing the class of each pixel, one could understand
+        the scene depicted on a given image and knowledge of scene
+        understanding would enable robots to go, without bumping into
+        other objects, where it needs to go. This page describes an
+        application of a fully convolutional network (FCN) for
+        semantic segmentation.</p>
 	
         <p class="view"><a href="http://github.com/orderedlist/minimal">View
         the Project on  GitHub</a></p>
@@ -37,48 +39,55 @@
         <p>Semantic segmentation is a computer vision task of
         assigning each pixel of a given image to one of the predefined
         class labels, e.g., road, pedestrian, vehicle, etc. By doing
-        so, one can delineate, if it is successfully done, contours of
+        so, one can delineate, if it is correctly done, contours of
         all the objects appearing on the input image. For object
         detection/recognition, such an approach has a significant
         benefit over the conventional bounding box based
         classification: An exhaustive labeling of all the pixels on a
         given image, other than just putting rectangular boxes on a
-        couple of objects. This page will describe the fully
-        convolutional network and a way of implementing it using the
-        TensorFlow.</p>
+        couple of objects. This would tell us/robots, not just where
+        we can and cannot go, but also what objects are around and
+        make us ready about how to interact with those recognized
+        objects.</p>
+
+	<p>This page will describe what the fully convolutional
+        network is and a way of implementing it using the TensorFlow
+        for a pixelwise, binary classification: road or not-road.</p>
 
         <h2>2. Fully Convolutional Network (FCN) for Semantic Segmentation</h2>
 	<h3>2.1 Overview</h3>
-	<p>This section describes how to train a fully convolutional
-	network for a pixelwise, binary classification: road or
-	  not-road.</p>
 
-	<p>A convolutional neural network is typically comprised of a
-	series of convolution layers, followed by fully connected
+	<p>A convolutional neural network (CNN) is typically comprised
+	of a series of convolution layers, followed by fully connected
 	layers and a soft max activation function. Such architectures
-	work really well for classification -- remember how do all
-	these frenzies about deep neural network begin?  Yes,
+	work really well for classification, object detection --
+	remember how do all these frenzies about deep neural network
+	begin?  Yes,
 	at <a href="http://webcache.googleusercontent.com/search?q=cache:http://image-net.org/challenges/LSVRC/2012/ilsvrc2012.pdf">the
 	Large Scale Visual Recognition Challenge 2012</a> -- ImageNet
 	classification,
 	the <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a>
-	improved the classification accuracy drastically by dropping
+	improved drastically the classification accuracy by dropping
 	the error from 26% to 15%!</p>
 
 	<img src="/semantic-segmentation/fig/yolo-output.png"/> <a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
 	
 	<p>A typical output of a classification including that of the
 	AlexNet is a bounding box around an object of interest. See
-	the bounding boxes around objects like cars, bicyclist,
-	traffic light from the above image. These bounding boxes tells
-	us/robots where objects in the scene are so that our robots
-	could navigate the scene without bumping into them. Of course,
-	since a 2d image does not provide information about distances
-	to the detected objects, the 3d information with respect to
-	the detected objects is assumed to be, somehow, resolved. One
-	could use a stereo camera or fuse images with lidar
-	measurements to estimate distances to the objects. There have
-	been so many great classification
+	the bounding boxes from the above,
+	by <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, and
+	from the below,
+	by <a href="https://arxiv.org/abs/1512.02325">SSD</a> around
+	objects like cars, bicyclist, traffic light, truck,
+	pedestrian. These bounding boxes tells us/robots where objects
+	in the scene are so that our robots could navigate the scene
+	without bumping into them. Of course, since a 2d image does
+	not contain information about distances to the detected
+	objects, the 3d information with respect to the detected
+	objects is assumed to be, somehow, resolved. One could use a
+	stereo camera or fuse images with lidar measurements to
+	estimate distances to the objects. There have been so many
+	great classification and object detection
 	algorithms: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
 	with HoG</a> as a canonical example of non-DNN
 	based, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>
@@ -96,12 +105,14 @@
 	
 	<p>But what if we want to know the pixel positions of road's
 	boundary, instead of the bounding boxes of cars on that road?
-	Can our awesome CNN (Convolutional Neural Network) do such a
-	task for us? Unfortunately, no, they cannot, because the fully
-	connected layers at the end of any CNNs do not preserve any
-	spatial information. Fortunately, the fully convolutional
-	network (FCN) can do it for us. This is because, while doing
-	the convolution, they preserve the spatial information
+	Can our awesome CNN do such a task for us? Unfortunately, no,
+	they cannot, because the fully connected layers at the end of
+	any CNNs do not preserve any spatial information. Well, then,
+	do we have any DNN algorithm does such a task for us?
+	Fortunately, yes, the fully convolutional network (FCN) can do
+	it for us. We'll go into details to learn how a FCN can do
+	such a task for us. But briefly, this is because, while doing
+	the convolution, a FCN preserve the spatial information
 	throughout the entire network. In addition, since
 	convolutional operations fundamentally don't care about the
 	size of the input, a FCN will work on images of any size. In a
@@ -111,10 +122,10 @@
 	through the same sequence of convolutional layers and
 	flattening the final output. These outputs would be of
 	different sizes, which doesn't work very well for matrix
-	  multiplication.</p>
+	multiplication.</p>
 
-	<p>Read the followings to learn more about
-	FCN-based semantic segmentation.
+	<p>Read the followings to learn more about FCN-based semantic
+	segmentation.
 
 	<ul>
 	  <li><a href="http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review">A
@@ -144,16 +155,19 @@
 	  connected layer into the 1x1 convolutional layer. The
 	  encoder is followed by the decoder, which uses another
 	  technique of transposed convolutional layers to upsample the
-	  image. Lastly the skip connection is added. While utilizing
-	  the skip connections, one'll have to be careful not to add
-	  too many skip connections. Otherwise it can lead to the
-	  explosion in the size of your model. For example, when using
-	  VGG-16 as the encoder, only the third and the fourth pooling
-	  layers are typically used for skip connections. Once we're
-	  done with incorporating all these three techniques, we can
-	  train the model end to end as we do for a CNN. Read the
-	  followings to learn more about encoder and decoder
-	  architecture.
+	  image. Lastly the skip connection is added. What the skip
+	  connection does is to connect the output of one layer to a
+	  non-adjacent layer. The skip connection allows the network
+	  to use information from multiple resolutions. While
+	  utilizing the skip connections, one'll have to be careful
+	  not to add too many skip connections. Otherwise it can lead
+	  to the explosion in the size of your model. For example,
+	  when using VGG-16 as the encoder, only the third and the
+	  fourth pooling layers are typically used for skip
+	  connections. Once we're done with incorporating all these
+	  three techniques, we can train the model end to end as we do
+	  for a CNN. Read the followings to learn more about encoder
+	  and decoder architecture.
 	  <ul>
 	    <li><a href="https://arxiv.org/pdf/1511.00561.pdf">SegNet:
 	A deep convolutional encoder-decoder architecture for image
@@ -180,7 +194,7 @@
 	convolutions into a matrix multiplication with spatial
 	information.</p>
 
-	<p>In TensorFlow, one can implement 1x1 convolutional layer as: </p>
+	<p>In TensorFlow, one can implement 1x1 convolutional layer by: </p>
 <pre class="brush: python">
   tf.layers.conv2d(x, num_outputs, kernel_size=1, stride=1, weights_initializer=custom_init)
 </pre>
@@ -238,9 +252,12 @@
 	non-adjacent layer. </p>
 
 	<h3>2.5 Implementation of a FCN</h3>
+	
 	<p>This section describes how to train a fully convolutional
 	network for a pixelwise, binary classification: road or
-	  not-road.</p>
+	not-road. Instead of doing a full-scale, semantic
+	segmentation, what we do here is to implement a binary
+	segmentation for road.</p>
 
 	<img src="/semantic-segmentation/fig/cityscape-example-zurich.png" />
 
@@ -434,7 +451,8 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     return deconv_3
 </pre>
 
-	<p>Let's define a setup for training a neural network.</p>
+	<p>Once we complete to define the structure of the FCN, we
+	need to define a setup for training a neural network.</p>
 <pre class="brush: python">
 def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     """
@@ -575,8 +593,7 @@ def run():
 	  </ul>
 	</p>
 
-	<p>
-	  The packages you need
+	<p> The packages you need:
 	<ul>
 	  <li><a href="https://www.python.org">Python 3</a></li>
 	  <li><a href="https://www.tensorflow.org">TensorFlow</a></li>
@@ -606,7 +623,16 @@ def run():
 	
 	<h2>4. Summary</h2>
 	<p>This pages describes what a fully convolutional network
-	(FCN) and how it is used for semantic segmentation.</p>
+	(FCN) and how it is used for semantic segmentation. In particular, we
+	  describe
+	  <ul>
+	    <li>How a FCN is built from a CNN by utilizing 1x1
+	    convolutional layer, transposed convolution for
+	      up-sampling, skip connections,</li>
+	    <li>How one can implement a FCN using TensorFlow, and</li>
+	    <li>Application of FCN to semantic segmentation.</li>
+	  </ul>
+	</p>
 	
       </section>
       <footer>
