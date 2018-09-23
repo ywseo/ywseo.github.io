@@ -56,14 +56,29 @@
 	  vehicle can be represented by its position <i>x</i>
 	  and <i>y</i>, orientation, velocity. The figure at the below
 	  illustrates a kinematic model, aka bicycle model and its
-	  differential equation.</p>
+	  differential equation. The differential equation tells us
+	  how the state is changed over time.</p>
 
 	<img src="/vehicle-control/fig/kinematic-bicycle-model.png" width="400" height="500" />
 
-	<p>The differential equation tells us how the state is changed
-	over time. For an actual implementation, we need to represent
+	<p>where <b>u</b> is a control input for an actuation command
+	that consists of <i>a</i> for acceleration both positive and
+	negative and <i>delta</i> for steering angle. Any ground
+	vehicles typically have three actuators: steering wheel,
+	throttle and break pedals. For the simplicity, one variable is
+	used to represent two of those actuators, throttle and break
+	pedals, together and change the values of throttle and break
+	pedals together as in + for throttle and - for break
+	pedals. </p>
+
+	<p> For an actual implementation, we need to represent
 	such a differential equation in a continuous time into a
-	discrete one.</p>
+	  discrete one.</p>
+
+	<img src="/vehicle-control/fig/bicycle-discrete-form.png"/>
+
+	<p>where omega is the heading rate of change or angular rate
+	and defined as v/L tan(phi(t)).</p>
 
 	<h2>3. Proportional, Integral, Derivative (PID) Control </h2>
 	<h2>4. Model Predictive Control (MPC)</h2>
