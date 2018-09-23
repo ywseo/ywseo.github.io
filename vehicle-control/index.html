@@ -29,6 +29,31 @@
 
 	<h2>2. Vehicle Actuation Control for Autonomous Driving</h2>
 
+	<h3>2.1 Vehicle Models</h3>
+	<p>Developing a good controller is to start from modeling
+	  vehicle's dynamics and constraints. Having a good model of
+	  vehicle enables us to analyze and tune the controller more
+	  efficiently. The vehicle model what we're referring to is a
+	  mathematical model that describes how the vehicle moves. To
+	  describe how a vehicle moves, we can first talk about the
+	  kinematic model. The kinematic model is a simplification of
+	  vehicle dynamics that typically ignores many important
+	  physic elements like gravity, mass, tire forces, etc., but
+	  it's relatively simple and performs well in
+	  practice. Whereas a dynamic model captures a vehicle's
+	  motion in the real-world that incorporates tire foreces,
+	  longitudinal and lateral forces, inertia, grativity, air
+	  resistance, drag, mass, the geometry of the vehicle, chassis
+	  suspension, etc. Note that more realistic models are more
+	  complex and more challenging. Thus, in practice, there is
+	  always a trade-off to make, depending on the
+	  application.</p>
+
+	<h3>2.2 Representation of Vehicle Models</h3>
+
+	<p>It is common to represent the state of a vehicle by a
+	multi-dimensional vector. </p>
+
 	<h2>3. Proportional, Integral, Derivative (PID) Control </h2>
 	<h2>4. Model Predictive Control (MPC)</h2>
 	<h2>5. Summary </h2>
