@@ -21,11 +21,11 @@
         its goal is to assign each pixel of a given image to one of
         the predefined class labels, e.g., road, pedestrian, vehicle,
         etc. By knowing the class of each pixel, one could understand
-        the scene depicted on a given image. And the knowledge of
-        scene understanding would enable robots to go, without bumping
-        into other objects, where it needs to go. This page describes
-        an application of a fully convolutional network (FCN) for
-        semantic segmentation.</p>
+        the scene depicted on a given image, and the knowledge of
+        scene understanding would help robots navigate, without
+        bumping into other objects, where it needs to go. This page
+        describes an application of a fully convolutional network
+        (FCN) for semantic segmentation.</p>
 	
         <p class="view"><a href="http://github.com/orderedlist/minimal">View
         the Project on  GitHub</a></p>
@@ -520,7 +520,10 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
 </pre>
 
 	<p>Let's put everything together.</p>
-<pre class="brush: python">	
+<pre class="brush: python">
+#!/usr/bin/env python3
+import tensorflow as tf
+	  
 def run():
     num_classes = 2
     image_shape = (160, 576)
