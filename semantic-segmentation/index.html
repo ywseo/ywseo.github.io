@@ -607,14 +607,47 @@ if __name__ == '__main__':
 	For this, we used the KITTI road dataset.
 	</p>
 
-	<h3>3.3 Results</h3>
+	<h3>3.3 Results of Road-Region Classification</h3>
+	<p>Let's take a look at some examples that segmentation is
+	done correctly. Note that at the moment we was able to compute
+	any quantitative analysis on the results due to unavailability
+	of the ground-truth.</p>
+	<br>
+	<img src="/semantic-segmentation/fig/good/um_000003.png" /><br>
+	<img src="/semantic-segmentation/fig/good/um_000019.png" /><br>
+	<img src="/semantic-segmentation/fig/good/um_000044.png" /><br>
+	<img src="/semantic-segmentation/fig/good/um_000062.png" /><br>
+	<img src="/semantic-segmentation/fig/good/umm_000078.png" /><br>
+	<img src="/semantic-segmentation/fig/good/umm_000086.png" /><br>
+	<img src="/semantic-segmentation/fig/good/umm_000090.png" /><br>
+	<img src="/semantic-segmentation/fig/good/uu_000011.png" /><br>
+	<img src="/semantic-segmentation/fig/good/uu_000028.png" /><br>
+	<img src="/semantic-segmentation/fig/good/um_000059.png" /><br>
+	<br>
+	<p>Now let's look at some examples that the segmentation
+	didn't work very well.</p>
+	<br>
+	<img src="/semantic-segmentation/fig/nogood/um_000073.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/um_000086.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/umm_000003.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/umm_000059.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/umm_000067.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/umm_000075.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/uu_000009.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/uu_000060.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/uu_000072.png" /><br>
+	<img src="/semantic-segmentation/fig/nogood/um_000091.png" /><br>
+	<br>
+
 	<p>These animated images at the below show some of the
 	  segmentation results -- results of a pixel-wise, binary
 	  classification. </p>
+
 	<br>
 	<img src="/semantic-segmentation/fig/output_um.gif" /><br><br>
 	<img src="/semantic-segmentation/fig/output_umm.gif" /><br><br>
 	<img src="/semantic-segmentation/fig/output_uu.gif" /><br><br>
+	
 	<br>
 	<h2>4. Summary</h2>
 	<p>This pages describes what a fully convolutional network
