@@ -610,7 +610,18 @@ if __name__ == '__main__':
 	For this, we used the KITTI road dataset.
 	</p>
 
-	<h3>3.3 Results of Road-Region Classification</h3>
+	<h3>3.3 Training </h3>
+	<p>I used an AMI, a gpu instance of g2.8xlarge (vCPUs: 32,
+	  Memory: 60GiB, $0.8424) about one and half hour to run the
+	  above-described FCN. Some of the hyperparameters are 20
+	  epochs, 1e-4 for the learning rate, 0.8 for the keeping
+	  probability, 1 for the batch size. The following figure
+	  shows the training loss is getting decreased as the epoch
+	  goes. 
+
+	  <br><img src="/semantic-segmentation/fig/training-loss-fcn.png" /><br>
+	</p>
+	<h3>3.4 Results of Road-Region Classification</h3>
 	<p>Let's take a look at some examples where the segmentation
 	worked reasonably well. Note that at the moment we was able to
 	compute any quantitative analysis on the results due to
