@@ -519,7 +519,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
         print("Epoch %d of %d: Training loss: %.4f" %(epoch+1, epochs, loss))
 </pre>
 
-	<p>Let's finally put everything together.</p>
+	<p>Let's put everything together.</p>
 <pre class="brush: python">	
 def run():
     num_classes = 2
@@ -579,11 +579,10 @@ if __name__ == '__main__':
 	  cloud service like AWS or other equivalents. See the
 	  following to learn how to set up AWS EC (Elastic Compute).
 	  <ul>
-	    <li><a href="https://aws.amazon.com/ec2/getting-started/">Getting started with Amazon EC2</a></li>
 	    <li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html">Setting up with Amazon EC2</a></li>
 	    <li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html">Getting started with Amazon EC2 linux instances</a></li>
-	    <li><a href="https://medium.com/@dichen_5479/launch-an-aws-ec2-instance-with-gpu-for-deep-learning-in-10minutes-685e5c025ec6">Launch an AWS EC2 instance with GPU for Deep Learning</a></li>
 	    <li><a href="https://www.datacamp.com/community/tutorials/aws-ec2-beginner-tutorial">AWS EC2 tutorial for beginners</a></li>
+	    <li><a href="https://docs.aws.amazon.com/dlami/latest/devguide/what-is-dlami.html">Deep Learning AMI</a></li>
 	  </ul>
 	</p>
 
@@ -609,12 +608,13 @@ if __name__ == '__main__':
 	</p>
 
 	<h3>3.3 Results</h3>
-	<p>The animated image at the below shows some of the
-	  segmentation results. For this project, we did not do a
-	  full-scale, semantic segmentation. Instead we did a binary
-	  classification.</p>
-
-	<img src="/semantic-segmentation/fig/semantic-segmentation-output.gif"/>
+	<p>These animated images at the below show some of the
+	  segmentation results -- results of a pixel-wise, binary
+	  classification. </p>
+	<br>
+	<img src="/semantic-segmentation/fig/output_um.gif" /><br><br>
+	<img src="/semantic-segmentation/fig/output_umm.gif" /><br><br>
+	<img src="/semantic-segmentation/fig/output_uu.gif" /><br><br>
 	<br>
 	<h2>4. Summary</h2>
 	<p>This pages describes what a fully convolutional network
