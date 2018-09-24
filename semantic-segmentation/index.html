@@ -39,13 +39,13 @@
         so, one can delineate, if it is correctly done, contours of
         all the objects appearing on the input image. For object
         detection/recognition, such an approach has a significant
-        benefit over the conventional bounding box based
-        classification: An exhaustive labeling of all the pixels on a
-        given image, other than just putting rectangular boxes on a
-        couple of objects. This would tell us/robots, not just where
-        we can and cannot go, but also what objects are around and
-        make us ready about how to interact with those recognized
-        objects.</p>
+        benefit over the conventional classification algorithms
+        generating bounding boxes: An exhaustive labeling of all the
+        pixels on a given image, instead of just putting rectangular
+        boxes on a couple of objects. This would tell our robots
+        including self-driving cars, not only where we can and cannot
+        go, but also what objects are around and make them ready about
+        how to interact with those recognized objects.</p>
 
 	<p>This page will describe what the fully convolutional
         network is and a way of implementing it using the TensorFlow
@@ -56,16 +56,16 @@
 
 	<p>A convolutional neural network (CNN) is typically comprised
 	of a series of convolution layers, followed by fully connected
-	layers and a soft max activation function. Such architectures
-	work really well for classification, object detection --
-	remember how do all these frenzies about deep neural network
-	begin?  Yes,
+	layers and by a soft max activation function. Such
+	architectures work really well for classification, object
+	detection -- remember how do all these frenzies about deep
+	neural network begin?  Yes,
 	at <a href="http://webcache.googleusercontent.com/search?q=cache:http://image-net.org/challenges/LSVRC/2012/ilsvrc2012.pdf">the
 	Large Scale Visual Recognition Challenge 2012</a> -- ImageNet
 	classification,
 	the <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a>
 	improved drastically the classification accuracy by dropping
-	the error from 26% to 15%!</p>
+	the error rate from 26% to 15%!</p>
 
 	<img src="/semantic-segmentation/fig/yolo-output.png"/> <a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
 	
@@ -76,8 +76,8 @@
 	from the below,
 	by <a href="https://arxiv.org/abs/1512.02325">SSD</a> around
 	objects like cars, bicyclist, traffic light, truck,
-	pedestrian. These bounding boxes tells us/robots where objects
-	in the scene are so that our robots could navigate the scene
+	pedestrian. These bounding boxes tells our robots where
+	objects in the scene are so that they could navigate the scene
 	without bumping into them. Of course, since a 2d image does
 	not contain information about distances to the detected
 	objects, the 3d information with respect to the detected
@@ -85,7 +85,7 @@
 	stereo camera or fuse images with lidar measurements to
 	estimate distances to the objects. There have been so many
 	great classification and object detection
-	algorithms: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
+	algorithms developed: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
 	with HoG</a> as a canonical example of non-DNN
 	based, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>
 	as DNN/CNN based classification/object detection algorithms,
@@ -98,32 +98,35 @@
 	  </ul>
 	</p>
 	
-<img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>
-	
-	<p>But what if we want to know the pixel positions of road's
-	boundary, instead of the bounding boxes of cars on that road?
-	Can our awesome CNN do such a task for us? Unfortunately, no,
-	they cannot, because the fully connected layers at the end of
-	any CNNs do not preserve any spatial information. Well, then,
-	do we have any DNN algorithm does such a task for us?
-	Fortunately, yes, the fully convolutional network (FCN) can do
-	it for us -- a FCN can help us assign one of the target
-	classes to each pixel of a given image like the following image:</p>
+	<img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>
+	<br>
+	<p>But what if we want to know the positions of all the pixels
+	delineating road's boundary, instead of the bounding boxes of
+	cars on that road?  Can our awesome CNN do such a task for us?
+	Unfortunately, no, they cannot, because the fully connected
+	layers at the end of most of the CNNs do not preserve any
+	spatial information. Well, then, do we have any DNN algorithm
+	does such a task for us?  Fortunately, yes, the fully
+	convolutional network (FCN) can do it for us -- a FCN can help
+	us assign one of the target classes to each pixel of a given
+	image like the following:</p>
 
 	<img src="/semantic-segmentation/fig/cityscape-example-ulm.png" />
-	  
+
+	<br>
 	<p>Note that the above image is not actual output of a FCN,
 	rather it's manually labeled image used for training/testing a
 	FCN. We'll go into details to learn how a FCN can do such a
-	task for us. But briefly, this is because, while doing the
-	convolution, a FCN preserve the spatial information throughout
-	the entire network. In addition, since convolutional
-	operations fundamentally don't care about the size of the
-	input, a FCN will work on images of any size. In a classic
-	convolutional network with fully connected final layers, the
-	size of the input is constrained by the size of the fully
-	connected layers. Passing different size images through the
-	same sequence of convolutional layers and flattening the final
+	task for us. But briefly, it can do such a semantic
+	segmentation because, while doing the convolution, a FCN
+	preserve the spatial information throughout the entire
+	network. In addition, since convolutional operations
+	fundamentally don't care about the size of the input, a FCN
+	will work on images of any size. In a classic convolutional
+	network with fully connected final layers, the size of the
+	input is constrained by the size of the fully connected
+	layers. Passing different size images through the same
+	sequence of convolutional layers and flattening the final
 	output. These outputs would be of different sizes, which
 	doesn't work very well for matrix multiplication.</p>
 
@@ -140,7 +143,7 @@
 	</p>
 	
 	<p>How does a FCN then accomplish such a task? It can do such
-	a task for us based, primarily, on three special techniques at
+	a task for us primarily based on three special techniques on
 	the top of a CNN:
 	  <ul>
 	    <li>1x1 convolutioinal layers,</li>
@@ -151,27 +154,29 @@
 	<p>A FCN is typically comprised of two parts: encoder and
 	  decoder. A encoder extracts features that will later be used
 	  by the decoder. It's common to use the encoder pre-trained
-	  on ImageNet. As examples, VGG and ResNet are popular
-	  choices. Since this is conceptually the same as a transfer
-	  learning, we can use techniques from transfer learning to
-	  accelerate the training of our FCNs. To convert a CNN into a
-	  FCN, the first thing we need to do is to convert the fully
-	  connected layer into the 1x1 convolutional layer. The
-	  encoder is followed by the decoder, which uses another
-	  technique of transposed convolutional layers to upsample the
-	  image. Lastly the skip connection is added. What the skip
-	  connection does is to connect the output of one layer to a
-	  non-adjacent layer. The skip connection allows the network
-	  to use information from multiple resolutions. While
-	  utilizing the skip connections, one'll have to be careful
-	  not to add too many skip connections. Otherwise it can lead
-	  to the explosion in the size of your model. For example,
-	  when using VGG-16 as the encoder, only the third and the
-	  fourth pooling layers are typically used for skip
-	  connections. Once we're done with incorporating all these
-	  three techniques, we can train the model end to end as we do
-	  for a CNN. Read the followings to learn more about encoder
-	  and decoder architecture.
+	  on ImageNet. As
+	  examples, <a href="http://www.robots.ox.ac.uk/~vgg/research/very_deep/">VGG</a>
+	  and <a href="https://arxiv.org/abs/1512.03385">ResNet</a>
+	  are popular choices. Since this is conceptually the same as
+	  a transfer learning, we can use techniques from transfer
+	  learning to accelerate the training of our FCNs. To convert
+	  a CNN into a FCN, the first thing one needs to do is to
+	  convert the fully connected layer into an 1x1 convolutional
+	  layer. And then the encoder is followed by the decoder,
+	  which uses another technique of transposed convolutional
+	  layers to upsample the image. Lastly the skip connection is
+	  added. What the skip connection does is to connect the
+	  output of one layer to a non-adjacent layer. By doing so,
+	  the skip connection allows the network to use information
+	  from multiple resolutions. While utilizing the skip
+	  connections, one'll have to be careful not to add too many
+	  skip connections. Otherwise it can lead to the explosion in
+	  the size of your model. For example, when using VGG-16 as
+	  the encoder, only the third and the fourth pooling layers
+	  are typically used for skip connections. Once we're done
+	  with incorporating all these three techniques, we can train
+	  the model end to end as we do for a CNN. Read the followings
+	  to learn more about encoder and decoder architecture.
 	  <ul>
 	    <li><a href="https://arxiv.org/pdf/1511.00561.pdf">SegNet:
 	A deep convolutional encoder-decoder architecture for image
@@ -285,7 +290,7 @@
 	</p>
 
 	<p>The FCN we are primarily based on is
-	  the <a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf">FCN-8</a>
+	  the <a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf">FCN-8</a>.
 	  The encoder for FCN-8 is the VGG16 model pretrained on
 	  ImageNet for classification. The fully-connected layers are
 	  replaced by 1-by-1 convolutions. Here’s an example of going
@@ -358,10 +363,11 @@ entropy loss:
   cross_entropy_loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits, labels))
 </pre>
 
-That’s it, we cover everything we need to do semantic
-segmentation. </p>
+That's all the details we need to implement a FCN using the
+TensorFlow. </p>
 
-	<p>We need to load a pretrained vgg </p>
+	<p>Now let's go into details about how the actual codes look
+	like. Firstly we need codes that can load a pretrained vgg model.</p>
 	
 <pre class="brush: python">
 def load_vgg(sess, vgg_path):
@@ -395,9 +401,10 @@ def load_vgg(sess, vgg_path):
     return image_input, keep_prob, layer3_out, layer4_out, layer7_out's
 </pre>
 
-	<p>We're going to create a FCN by 1) converting a fully
-	connected layer into 1x1 convolutional layer, 2) doing
-	  up-sampling and 3) skipping connections.
+	<p>After we load a pre-trained vgg, what we do next is, in
+	order to create a FCN, to 1) convert a fully connected layer
+	into 1x1 convolutional layer, 2) do up-sampling and 3)
+	skip connections.
 	  
 <pre class="brush: python">	  
 def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
@@ -487,7 +494,8 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     return logits, train_op, cross_entropy_loss
 </pre>
 
-	<p>Let's define the procedure of training a neural network.</p>
+	<p>Now we need to define the procedure of training a neural
+	network.</p>
 
 <pre class="brush: python">	  	
 def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
@@ -522,7 +530,8 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
         print("Epoch %d of %d: Training loss: %.4f" %(epoch+1, epochs, loss))
 </pre>
 
-	<p>Let's put everything together.</p>
+	<p>Now we have everything: architecture, how to train and a
+	training procedure. Let's put everything together.</p>
 <pre class="brush: python">
 #!/usr/bin/env python3
 import tensorflow as tf
@@ -573,13 +582,13 @@ if __name__ == '__main__':
         <h2>3. Results</h2>
 
 	<p>This section explains how to run the above explained
-	code. The first order business is to make your machine
-	ready by installing all the necessary packages.</p>
+	code. The first order business is to make your machine ready
+	for the job by installing all the necessary packages.</p>
 	
 	<h3>3.1 Setup</h3>
 
 	<p>In order to make the above described code run, you'll need
-	  GPU. If the machine you're using doesn't have any fancy
+	  GPU. If your machine doesn't have any fancy
 	  Nvidia's <a href="https://www.nvidia.com/en-in/geforce/">GPU
 	  boards</a>, you might want to consider to use GPU-enabled
 	  cloud service like AWS or other equivalents. See the
@@ -610,28 +619,36 @@ if __name__ == '__main__':
 	  <li><a href="https://www.cityscapes-dataset.com/examples/">CityScapes Dataset</a></li>
 	  <li><a href="http://bdd-data.berkeley.edu/">Berkeley DeepDrive Dataset</a></li>
 	</ul>
-	For this, we used the KITTI road dataset.
+	For this project, we used the KITTI road dataset.
 	</p>
 
 	<h3>3.3 Training </h3>
-	<p>I used an AMI, a gpu instance of g2.8xlarge (vCPUs: 32,
-	  Memory: 60GiB, $0.8424) about one and half hour to run the
-	  above-described FCN. Some of the hyperparameters are 20
-	  epochs, 1e-4 for the learning rate, 0.8 for the keeping
-	  probability, 1 for the batch size. The following figure
-	  shows the training loss is getting decreased as the epoch
-	  goes. 
+	<p>For the training, I used an AMI, a gpu instance of
+	  g2.8xlarge (vCPUs: 32, Memory: 60GiB, $0.8424) about one and
+	  half hour to run the above-described FCN. Some of the
+	  hyperparameters include
+	  <ul>
+	    <li>epochs: 20,</li>
+	    <li>learning rate: 1e-4,</li>
+	    <li>keeping probability: 0.8, </li>
+	    <li>batch size: 1 (for the AMI I used, the code didn't run
+	  unless the batch size is 1. Otherwise it stopped by spitting
+	      "Resource Exhausted" error's),</li>
+	  </ul>
+	  The following figure shows the training loss is getting
+	  decreased as the epoch goes.
 
 	  <br><img src="/semantic-segmentation/fig/training-loss-fcn.png" /><br>
 	</p>
+	
 	<h3>3.4 Results of Road-Region Classification</h3>
 	<p>Let's take a look at some examples where the segmentation
 	worked reasonably well. Note that at the moment we was able to
-	compute any quantitative analysis on the results due to
-	unavailability of the ground-truth. So, we're qualitatively
-	evaluating the performance. Take a close look at those testing
-	images where parts of road, image subregions are covered by
-	shade.</p>
+	compute any quantitative analysis (like IoU) on the results
+	due to unavailability of the ground-truth. So, we're
+	qualitatively evaluating the performance. Take a close look at
+	those testing images where parts of road, image subregions are
+	covered by shade.</p>
 
 	<img src="/semantic-segmentation/fig/good/um_000003.png" /><br>
 	<img src="/semantic-segmentation/fig/good/um_000019.png" /><br>
