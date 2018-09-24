@@ -107,19 +107,25 @@
 	any CNNs do not preserve any spatial information. Well, then,
 	do we have any DNN algorithm does such a task for us?
 	Fortunately, yes, the fully convolutional network (FCN) can do
-	it for us. We'll go into details to learn how a FCN can do
-	such a task for us. But briefly, this is because, while doing
-	the convolution, a FCN preserve the spatial information
-	throughout the entire network. In addition, since
-	convolutional operations fundamentally don't care about the
-	size of the input, a FCN will work on images of any size. In a
-	classic convolutional network with fully connected final
-	layers, the size of the input is constrained by the size of
-	the fully connected layers. Passing different size images
-	through the same sequence of convolutional layers and
-	flattening the final output. These outputs would be of
-	different sizes, which doesn't work very well for matrix
-	multiplication.</p>
+	it for us -- a FCN can help us assign one of the target
+	classes to each pixel of a given image like the following image:</p>
+
+	<img src="/semantic-segmentation/fig/cityscape-example-ulm.png" />
+	  
+	<p>Note that the above image is not actual output of a FCN,
+	rather it's manually labeled image used for training/testing a
+	FCN. We'll go into details to learn how a FCN can do such a
+	task for us. But briefly, this is because, while doing the
+	convolution, a FCN preserve the spatial information throughout
+	the entire network. In addition, since convolutional
+	operations fundamentally don't care about the size of the
+	input, a FCN will work on images of any size. In a classic
+	convolutional network with fully connected final layers, the
+	size of the input is constrained by the size of the fully
+	connected layers. Passing different size images through the
+	same sequence of convolutional layers and flattening the final
+	output. These outputs would be of different sizes, which
+	doesn't work very well for matrix multiplication.</p>
 
 	<p>Read the followings to learn more about FCN-based semantic
 	segmentation.
