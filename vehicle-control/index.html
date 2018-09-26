@@ -235,7 +235,70 @@ double PID::TotalError() {
 	the loop is to become unstable. Thus, the proportional term,
 	if it is used alone, would eventually make the controller
 	overshoot, leading to oscillation.</p>
-  	
+
+	<h3>3.2 Derivative Term</h3>
+	<p>To correct such a potential overshooting by a P-controller
+	while ensuring the controller to minimize the error, one could
+	introduce two more error terms: the derivative, "D" and/or the
+	integral term, "I." The derivative term models the error
+	rate. It is more like an estimate of the upcoming error based
+	on its current rate of the error change. For the case where
+	one want to control the car to drive on the centerline of the
+	road, assuming the reference trajectory is set along the
+	centerline of the road, the cross track error rate captures
+	how fast the car is driving in the perpendicular/lateral
+	direction. If the car perfectly follows the reference
+	trajectory, this rate would be zero. By adding this derivative
+	term, the controller's output becomes, steering angle = Kp x
+	e_{P} + Kd x e_{D}, where "e_{D}" is the derivative error and
+	"Kd" is the derivative gain. In a discretization form, the
+	cross track error rate can be approximated by "e_{D}(t) =
+	(cte(t) - cte(t-1)) / dt" where "t" is the current
+	discretization time, "t-1" is the previous time, and "dt" is
+	how much time elapses between two consecutive measurements.</p>
+
+	<p>Now we have two gain factors to find their optimal values,
+	in order to eliminate the difference between the reference
+	value and the control's output. If we increase "P" to make the
+	car close to the reference trajectory, the controller will
+	eventually overshoot. To prevent this from happening, we could
+	increase the derivative gain to increase the resistance of
+	speeding to close to the reference trajectory. Note that in
+	general the low "D" gain makes the controller "underdamped" to
+	make a car be oscillated whereas the high "D" gain makes the
+	controller "overdamped" resulting in a slow convergence. A
+	  good "D" gain will make the controller "critically damped."</p>
+
+	<h3>3.3 Integral Term</h3>
+	<p>Often, these two error terms are not good enough to
+	generate a desirable control output because there are other
+	sources of errors: environmental factors, mechanical defects,
+	etc. These factors will change the nominal behavior of a
+	vehicle, thus the performance of the controller. Suppose that
+	the a PD controller manages the cross track error close to
+	zero. While driving on the reference trajectory, the car
+	drives over the piles of rocks. This event would make the car
+	off from driving on the reference trajectory. The zero
+	steering angle commands would be no longer keep the car on the
+	reference trajectory.</p>
+
+	<p>So the "integral" term, I, is introduced to accumulate the
+	cross track error over time in order to check how much time
+	the car spends which side of the track. Like other gains, the
+	gain of the integral term has a side effect: with a low I gain
+	it will take a long time for the controller to generate a
+	desirable value. Whereas a high I gain will make the
+	controller fluctuate. steering angle = Kp x e_{P} + Kd x e_{D}
+	  + Ki x e_{I}.
+
+	<img src="/vehicle-control/fig/PID-controller-steering-wheel.png" /> <a href="https://www.youtube.com/watch?v=4Y7zG48uHRo">Source</a>
+	</p>
+
+	<p>In summary, the proportional term corrects instances of
+	error, the integral term corrects the accumulation of error,
+	and the derivative term corrects the error based on the change
+	error rate.</p>
+	
 	<h2>4. Model Predictive Control (MPC)</h2>
 	<h2>5. Summary </h2>
 
