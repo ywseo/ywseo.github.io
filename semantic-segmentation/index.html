@@ -35,9 +35,9 @@
 	<h2>1. Introduction</h2>
         <p>Semantic segmentation is a computer vision task of
         assigning each pixel of a given image to one of the predefined
-        class labels, e.g., road, pedestrian, vehicle, etc. By doing
-        so, one can delineate, if it is correctly done, contours of
-        all the objects appearing on the input image. For object
+        class labels, e.g., road, pedestrian, vehicle, etc. If done
+        correctly, one can delineate the contours of all the objects
+        appearing on the input image. For object
         detection/recognition, such an approach has a significant
         benefit over the conventional classification algorithms
         generating bounding boxes: An exhaustive labeling of all the
@@ -48,8 +48,9 @@
         how to interact with those recognized objects.</p>
 
 	<p>This page will describe what the fully convolutional
-        network is and a way of implementing it using the TensorFlow
-        for a pixelwise, binary classification: road or not-road.</p>
+        network is, a way of implementing it using the TensorFlow, and
+        an application of a FCN for a pixelwise, binary
+        classification: road or not-road.</p>
 
         <h2>2. Fully Convolutional Network (FCN) for Semantic Segmentation</h2>
 	<h3>2.1 Overview</h3>
@@ -64,35 +65,35 @@
 	Large Scale Visual Recognition Challenge 2012</a> -- ImageNet
 	classification,
 	the <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a>
-	improved drastically the classification accuracy by dropping
+	drastically improved the classification accuracy by dropping
 	the error rate from 26% to 15%!</p>
 
 	<img src="/semantic-segmentation/fig/yolo-output.png"/> <a href="https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088">Source</a>
 	
 	<p>A typical output of a classification including that of the
 	AlexNet is a bounding box around an object of interest. See
-	the bounding boxes from the above,
+	examples of the bounding boxes from the above,
 	by <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, and
 	from the below,
 	by <a href="https://arxiv.org/abs/1512.02325">SSD</a> around
 	objects like cars, bicyclist, traffic light, truck,
-	pedestrian. These bounding boxes tells our robots where
-	objects in the scene are so that they could navigate the scene
-	without bumping into them. Of course, since a 2d image does
-	not contain information about distances to the detected
-	objects, the 3d information with respect to the detected
-	objects is assumed to be, somehow, resolved. One could use a
-	stereo camera or fuse images with lidar measurements to
+	pedestrian. These bounding boxes tells our robots what and
+	where objects in the scene are so that they could navigate the
+	scene without bumping into them. Of course, since a 2d image
+	does not contain any information about distances to the
+	detected objects, the 3d information with respect to the
+	detected objects is assumed to be, somehow, resolved. One
+	could use a stereo camera or fuse images with lidar points to
 	estimate distances to the objects. There have been so many
-	great classification and object detection
-	algorithms developed: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
+	great classification and object detection algorithms
+	developed: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">SVMs
 	with HoG</a> as a canonical example of non-DNN
 	based, <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>, <a href="https://medium.com/@jonathan_hui/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06">SSD</a>
 	as DNN/CNN based classification/object detection algorithms,
 	etc.</p>
 
-	<p>Read the following to learn more about these DNN-based,
-	  object detection algorithms:
+	<p>Read the following to learn more about some of the
+	  DNN-based, object detection algorithms:
 	  <ul>
 	    <li><a href="https://mc.ai/object-detection-speed-and-accuracy-comparison-faster-r-cnn-r-fcn-ssd-and-yolo/">Object detection: speed and accuracy comparison (Faster RCNN, R-FCN, SSD and Yolo)</a></li>
 	  </ul>
@@ -101,15 +102,16 @@
 	<img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>
 	<br>
 	<p>But what if we want to know the positions of all the pixels
-	delineating road's boundary, instead of the bounding boxes of
-	cars on that road?  Can our awesome CNN do such a task for us?
-	Unfortunately, no, they cannot, because the fully connected
-	layers at the end of most of the CNNs do not preserve any
-	spatial information. Well, then, do we have any DNN algorithm
-	does such a task for us?  Fortunately, yes, the fully
-	convolutional network (FCN) can do it for us -- a FCN can help
-	us assign one of the target classes to each pixel of a given
-	image like the following:</p>
+	delineating road's boundary, instead of the bounding boxes
+	around image subregion about road? Does it even make sense to
+	put a rectangle around image subregion about road? Can our
+	awesome CNN do such a task for us?  Unfortunately, no, they
+	cannot, because the fully connected layers at the end of most
+	of the CNNs do not preserve any spatial information. Well,
+	then, do we have any DNN algorithm does such a task for us?
+	Fortunately, yes, the fully convolutional network (FCN) can do
+	it for us -- a FCN can help us assign one of the target
+	classes to each pixel of a given image like the following:</p>
 
 	<img src="/semantic-segmentation/fig/cityscape-example-ulm.png" />
 
