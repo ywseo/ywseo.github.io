@@ -123,6 +123,48 @@
 	  longitudinal direction is the same as the x-axis -- the body
 	  frame of which the z axis is up.</p>
 
+	<p>The CTE for this example is then error/difference between
+	the center of the road and the vehicle's position. The CTE of
+	the successor state after time t is the state at t+1, and is
+	defined as: cte_{t+1} = cte_{t} + vt∗sin(eψ_{t})∗dt, where
+	cte_{t} can be expressed as the difference between the line
+	and the current vehicle position y. Assuming the reference
+	line is a 1st order polynomial f, f(x_{t}) is our reference
+	line and our CTE at the current state is defined as:
+	cte_{t}=y_{t}−f(x_{t}).</p>
+
+	<p>If we substitute cte_{t} in the original equation with the
+	above definition, cte_{t+1} = y_{t} −
+	f(x_{t})+(v_{t}∗sin(eψ_{t})∗dt). This helps us to brake the
+	  cte_{t+1} into two parts:
+	  <ul>
+	    <li>y_{t} − f(x_{t}) being current cross track error.</li>
+	    <li>v_{t}∗sin(eψ_{t})∗dt being the change in error caused
+	      by the vehicle's movement.</li>
+	  </ul>
+	</p>
+	<p>Now let’s take a look at the orientation error:
+	eψ_{t+1}=eψ_{t}+(vt/Lf)∗δt∗dt. The update rule is essentially
+	the same as ψ. eψ_{t} is the desired orientation subtracted
+	from the current orientation eψ_{t}=ψ_{t}−ψ_{des_{t}}. We
+	already know ψ_{t}, because it’s part of our state, but we
+	don’t yet know ψ_{des_{t}} (desired psi) - all we have so far
+	is a polynomial to follow. ψ_{des_{t}} can be calculated as
+	the <a href="https://en.wikipedia.org/wiki/Tangential_angle">tangential
+	angle</a> of the polynomial f evaluated at x_{t},
+	arctan(f'(x_t)). f′ is the derivative of the
+	polynomial. eψ_{t+1}= ψ_{t} −
+	ψ_{dest}+(vt/Lf∗δt∗dt). Similarly to the cross track error the
+	orientation error, eψ_{t+1} can be broken down in to two
+	  parts:
+	  <ul>
+	    <li>ψ_{t} − ψ_{des_{t}} being current orientation error.</li>
+	    <li>vt/Lf∗δt∗dt being the change in error caused by the
+	      vehicle's movement.</li>
+	  </ul>
+	  </p>
+
+
 	<h2>3. Proportional, Integral, Derivative (PID) Control </h2>
 	<h2>4. Model Predictive Control (MPC)</h2>
 	<h2>5. Summary </h2>
