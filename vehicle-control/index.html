@@ -51,25 +51,23 @@
 
 	<h3>2.2 Representation of Vehicle Models</h3>
 
-	<p>It is common to represent the state of a vehicle by a
-	  multi-dimensional vector. Specifically, the state of a
-	  vehicle can be represented by its position <i>x</i>
-	  and <i>y</i>, orientation, velocity. The figure at the below
-	  illustrates a kinematic model, aka bicycle model and its
-	  differential equation. The differential equation tells us
-	  how the state is changed over time.</p>
+	<p>The state of a vehicle typically represents its
+	  position <i>x</i> and <i>y</i>, orientation <i>theta</i>,
+	  velocity <i>v</i>. The following figure illustrates a
+	  kinematic model (aka bicycle model) and its differential
+	  equation. The differential equation tells us how the state
+	  is changed over time.</p>
 
 	<img src="/vehicle-control/fig/kinematic-bicycle-model.png" width="400" height="500" />
 
 	<p>where <b>u</b> is a control input for an actuation command
 	that consists of <i>a</i> for acceleration both positive and
-	negative and <i>delta</i> for steering angle. Any ground
-	vehicles typically have three actuators: steering wheel,
-	throttle and break pedals. For the simplicity, one variable is
-	used to represent two of those actuators, throttle and break
-	pedals, together and change the values of throttle and break
-	pedals together as in + for throttle and - for break
-	pedals. </p>
+	negative and <i>phi</i> for steering angle. A ground vehicle
+	typically has three actuators: steering wheel, throttle and
+	break pedals. For the simplicity, one variable is used to
+	represent two of those actuators, throttle and break pedals,
+	together and change the values of throttle and break pedals
+	together as in + for throttle and - for break pedals. </p>
 
 	<p> For an actual implementation, we need to represent
 	such a differential equation in a continuous time into a
@@ -78,7 +76,52 @@
 	<img src="/vehicle-control/fig/bicycle-discrete-form.png"/>
 
 	<p>where omega is the heading rate of change or angular rate
-	and defined as v/L tan(phi(t)) and v is updated by v = v + a*dt.</p>
+	  and defined as v/L tan(phi(t)) and v is updated by v = v + a*dt.</p>
+
+	<h3>2.3 Control as Error Minimizing</h3>
+	<p>In a
+	typical <a href="http://www.fieldrobotics.org/users/alonzo/pubs/papers/JFR_08_Boss.pdf">architecture</a>
+	of self-driving car, a behavior planner sets the goal of a
+	vehicle (e.g., drive through a lane and stop at the stop line
+	of an intersection). Given a motion goal, map, vehicle
+	location, information about other neighboring objects, a
+	motion planner generates a trajectory. Given this reference
+	trajectory, a controller regulates the outputs of actuators to
+	  follow the trajectory.</p>
+
+	<p>How does a controller actually do this -- regulating the
+	outputs of the actuators to follow the reference trajectory?
+	It does that by minimizing the area between the reference
+	trajectory and the vehicle's actual driving
+	path. Specifically, one can minimize this error by predicting
+	the vehicle's path and then adjusting the control inputs to
+	minimize the difference between the prediction and the
+	reference trajectory. This is where one can use a kinematic
+	model to predict the vehicle's future state. Once you've
+	predicted the error you can actuate with the vehicle to
+	  minimize the error over time.</p>
+
+	<p>Thus the goal of developing a vehicle controller is to
+	develop a controller that minimizes the distance between the
+	predicted position of a vehicle and the corresponding position
+	at the reference trajectory. This error between a predicted
+	location and the corresponding location at the reference
+	trajectory is called the <b>cross track error</b> (CTE). We
+	also want to minimize the difference between the predicted
+	heading/yaw and the actual one at the reference trajectory. We
+	call this the <b>heading/yaw error</b>. Note that the speed is
+	not something we want to minimize. If we do, we would end up
+	minimizing the speed below zero and driving in reverse,
+	possibly.</p>
+
+	<h3>2.4 Errors to Minimize</h3>
+
+	<p>Let's look at how the errors we are interested in change
+	  over time by deriving our kinematic model around these
+	  errors as our new state vector, [x,y,ψ,v,cte,eψ]. Let’s
+	  assume the vehicle is traveling down a straight road and the
+	  longitudinal direction is the same as the x-axis -- the body
+	  frame of which the z axis is up.</p>
 
 	<h2>3. Proportional, Integral, Derivative (PID) Control </h2>
 	<h2>4. Model Predictive Control (MPC)</h2>
