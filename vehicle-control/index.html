@@ -16,18 +16,36 @@
     <div class="wrapper">
       <header>
         <h1>Vehicle Actuation Control for Autonomous Driving</h1>
-        <p>This page is about how to control a ground vehicle for autonomous driving. </p>
+        <p>This page is about how to control a ground vehicle for
+          autonomous driving. </p>
+	<p>Warning: This is under construction!!!</p>
+	
       </header>
       <section>
-        <h1>Vehicle Actuation Control for Autonomous Driving</h1>
+        <h1>Regulating Actuation Commands of Vehicle for Autonomous Driving</h1>
 
 	<h2>1. Introduction</h2>
 	
-        <p>What is control? What do you mean by controlling vehicle
-        actuation for autonomous driving? In a laymen's term, it is to
-        regulate the values of the vehicle actuation to minimize the
-        difference between the reference value and the actual
-        output.</p>
+        <p>The very first question we should ask ourselves is what do
+        you mean by regulating actuation commands of vehicle for
+        autonomous driving? Before throwing an answer to this, let's
+        think about, for a moment, how we, as human, does driving a
+        car, particularly, parts related to actuation like steering
+        wheel, acceleration, and braking. When we begin to drive, for
+          most of the cases, we <i>gently</i>
+	  <ul>
+	    <li>press accelerator to make car begin to drive,</li>
+	    <li>press accelerator and brake in turn while cruising
+	      through traffics until reaching a destination,</li>
+	    <li>press brake to make car stop driving at the destination.</li>
+	  </ul>
+	  Unless something appears abruptly on our way of driving,
+	  most of us operates our cars gently to get us to where we
+	  need to be.</p>
+
+	<p>In a laymen's term, it is to regulate the values of the
+	  vehicle actuation commands to minimize the difference
+	  between the reference value and the actual output.</p>
 
 	<h2>2. Vehicle Actuation Control for Autonomous Driving</h2>
 
@@ -80,7 +98,7 @@
 	<p>where omega is the heading rate of change or angular rate
 	  and defined as v/L tan(phi(t)) and v is updated by v = v + a*dt.</p>
 
-	<h3>2.3 Controller as An Error Minimizing Algorithm</h3>
+	<h3>2.3 Controllers as Error Minimizing Algorithms</h3>
 	<p>In a
 	typical <a href="http://www.fieldrobotics.org/users/alonzo/pubs/papers/JFR_08_Boss.pdf">architecture</a>
 	of self-driving car, a behavior planner sets the goal of a
@@ -185,27 +203,32 @@
 	produce its outputs close to the reference value. The goal of
 	the controller is to eliminate the error or difference between
 	its output and the reference value. Thus, a design of a PID
-	  controller typically involves in
+	  controller typically involves in 
 	  <ol>
 	    <li> defining each of three error terms and</li>
 	    <li> finding the optimal values for the P,I,D gains that
 	      influences the controller's outputs.</li>
 	  </ol>
 	</p>
-	
+
+	If we implement this in C++, it looks like:
 	<pre class="brush: c++">
+double kp = 0.1;
+double ki = 0.0001;
+double kd = 1.0;
+	  
 void PID::UpdateError(double cte) {
   // integrate the error
   sum_cte += cte;
 
   // proportional term
-  p_error_ = - Kp_ * cte;
+  p_error_ = - kp * cte;
 
   // integral term
-  i_error_ = - Ki_ * sum_cte;
+  i_error_ = - ki * sum_cte;
 
   // derivative term
-  d_error_ = - Kd_ * (cte - prev_cte);
+  d_error_ = - kd * (cte - prev_cte);
 
   prev_cte = cte;
 }
@@ -217,7 +240,13 @@ double PID::TotalError() {
 	"proportional", "integral", and "derivative" in a discrete
 	way, and the "TotalError()" generates a weighted sum of three
 	error terms, which, for example, can be the control's output
-	  for the steering wheel value.</p>
+	for the steering wheel value. In other words, given a
+	reference value, a controller generates an output by executing
+	"TotalError()". The system computes the difference between a
+	  controller's output and the reference value, cte.</p>
+
+	<p>Now let's take a look at each of the gain terms of a PID
+	controller in details.</p>
 
 	<h3>3.1 Proportional Term</h3>
 	<p>The proportional term is a multiplicative scale factor to
