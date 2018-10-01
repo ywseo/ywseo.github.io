@@ -211,7 +211,7 @@
 	  </ol>
 	</p>
 
-	If we implement this in C++, it looks like:
+	An implementation of the PID in C++ looks like:
 	<pre class="brush: c++">
 double kp = 0.1;
 double ki = 0.0001;
@@ -233,17 +233,17 @@ void PID::UpdateError(double cte) {
   prev_cte = cte;
 }
 
-double PID::TotalError() {
+double PID::GetPIDOutput() {
   return (p_error_ + i_error_ + d_error_);
 }</pre>
 	<p>where the UpdateError() function defines three errors,
 	"proportional", "integral", and "derivative" in a discrete
-	way, and the "TotalError()" generates a weighted sum of three
-	error terms, which, for example, can be the control's output
-	for the steering wheel value. In other words, given a
+	way, and the "GetPIDOutput()" generates a weighted sum of
+	three error terms, which, for example, can be the control's
+	output for the steering wheel value. In other words, given a
 	reference value, a controller generates an output by executing
 	"TotalError()". The system computes the difference between a
-	  controller's output and the reference value, cte.</p>
+	controller's output and the reference value, cte.</p>
 
 	<p>Now let's take a look at each of the gain terms of a PID
 	controller in details.</p>
