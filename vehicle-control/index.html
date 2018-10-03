@@ -65,18 +65,23 @@
 	<p>In a laymen's term, it is to control/regulate the values of
 	 the vehicle actuation commands to minimize the difference
 	 between the reference trajectory and the actual
-	 trajectory. You might want to ask where does this reference
-	 trajectory come from? It is typically provided by a vehicle
-	 behavior planner or a motion planner. For example, given
-	 traffic conditions reported and the current position by
-	 perception stack and the map of area, a behavior planner
-	 might switch back and forth different driving modes and a
+	 trajectory. At this point, you might want to ask where does
+	 this reference trajectory come from and how does this have to
+	 anything with autonomous driving? In a typical architecture
+	 or the architecture that I have in mind for a self-driving
+	 car, the reference trajectory is typically provided by a
+	 vehicle behavior planner or a motion planner. For example,
+	 given traffic conditions reported and the current position by
+	 a perception stack and the map of area, a behavior planner
+	 might switch back and forth different driving modes and based
+	 on a driving mode, ``driving down road," for example, a
 	 motion planner generates an optimal trajectory for the
 	 vehicle to drive to a stopline of the next
 	 intersection. Given this trajectory or the reference
 	 trajectory, the goal of a controller is to generate a series
 	 of the actuation commands that minimize the difference
-	 between the reference trajectory and the actual trajectory.</p>
+	 between the reference trajectory and the actual
+	 trajectory.</p>
 
 	<h2>2. Vehicle Actuation Control for Autonomous Driving</h2>
 
