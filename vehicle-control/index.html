@@ -26,13 +26,15 @@
 
 	<h2>1. Introduction</h2>
 	
-        <p>The very first question we should ask ourselves is what do
-        you mean by regulating actuation commands of vehicle for
-        autonomous driving? Before throwing an answer to this, let's
-        think about, for a moment, how we, as human, does driving a
-        car, particularly, parts related to actuation like steering
-        wheel, acceleration, and braking. When we begin to drive, for
-          most of the cases, we <i>gently</i>
+        <p>Before delving into learning about the topic of vehicle
+        control, the very first question we should ask ourselves is
+        <i>what does that mean by regulating actuation commands of
+        a vehicle and even for autonomous driving?</i> Before throwing an
+        answer to this, let's think about, for a moment, how we, as
+        human, does driving a car, particularly parts related to
+        actuations like steering wheel, acceleration, and
+        braking. When we begin to drive, for most of the cases,
+        we <i>gently</i>
 	  <ul>
 	    <li>press accelerator to make car begin to drive,</li>
 	    <li>press accelerator and brake in turn while cruising
@@ -42,10 +44,39 @@
 	  Unless something appears abruptly on our way of driving,
 	  most of us operates our cars gently to get us to where we
 	  need to be.</p>
+	
+	<p>What I just described is an aspect of our daily, manual
+	driving that we control/regulate our actuation as we follow a
+	virtual path to the destination. The virtual path is a result
+	of route planning we do before driving the car and can also be
+	an imaginary line we drive our car to follow while driving on
+	roads. Let's call, for now, this virtual path as a reference
+	trajectory. We drive our cars to overlap our actual trajectory
+	close to the reference trajectory as possible as we could. In
+	other words, we control the actuators (i.e., steering wheel,
+	accelerator, and brake) of our vehicle to follow the reference
+	trajectory.</p>
 
-	<p>In a laymen's term, it is to regulate the values of the
-	  vehicle actuation commands to minimize the difference
-	  between the reference value and the actual output.</p>
+	<p>Having said this, we now have something to answer the
+	  question we asked to ourselves earlier.</p>
+	<blockquote>
+	<p>What is it to regulate the actuation commands of a vehicle
+	  for autonomous driving?</p></blockquote>
+	<p>In a laymen's term, it is to control/regulate the values of
+	 the vehicle actuation commands to minimize the difference
+	 between the reference trajectory and the actual
+	 trajectory. You might want to ask where does this reference
+	 trajectory come from? It is typically provided by a vehicle
+	 behavior planner or a motion planner. For example, given
+	 traffic conditions reported and the current position by
+	 perception stack and the map of area, a behavior planner
+	 might switch back and forth different driving modes and a
+	 motion planner generates an optimal trajectory for the
+	 vehicle to drive to a stopline of the next
+	 intersection. Given this trajectory or the reference
+	 trajectory, the goal of a controller is to generate a series
+	 of the actuation commands that minimize the difference
+	 between the reference trajectory and the actual trajectory.</p>
 
 	<h2>2. Vehicle Actuation Control for Autonomous Driving</h2>
 
