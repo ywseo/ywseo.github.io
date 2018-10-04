@@ -18,7 +18,8 @@
         <h1>Vehicle Actuation Control for Autonomous Driving</h1>
         <p>This page is about how to control a ground vehicle for
           autonomous driving. </p>
-	<p>Warning: This page is under a heavy construction!!!</p>
+	<p>Warning: This page is under a heavy construction!!! Come
+	back later or use any parts of this page at your own risk.</p>
 	
       </header>
       <section>
@@ -101,9 +102,9 @@
 	  longitudinal and lateral forces, inertia, grativity, air
 	  resistance, drag, mass, the geometry of the vehicle, chassis
 	  suspension, etc. Note that more realistic models are more
-	  complex and more challenging. Thus, in practice, there is
-	  always a trade-off to make, depending on the
-	  application.</p>
+	  complex and more challenging, but not necessarily guarantee
+	  a better performance. Thus, in practice, there is always a
+	  trade-off to make, depending on the application.</p>
 
 	<h3>2.2 Representation of Vehicle Models</h3>
 
@@ -369,7 +370,14 @@ double PID::GetPIDOutput() {
 	<h2>4. Model Predictive Control (MPC)</h2>
 	<h2>5. Summary </h2>
 
+	<h2>Reference</h2>
+	Some of the good papers to read are
+	<ul>
+	  <li>[Kong et al., 2015] J. Kong, M. Pfeiffer, G. Schildbach and F. Borrelli, <a href="http://borrelli.me.berkeley.edu/pdfpub/IV_KinematicMPC_jason.pdf">Kinematic and dynamic vehicle models for autonomous driving control design</a>, In <i><a href="https://ieeexplore.ieee.org/document/7225830">Proceedings of the IEEE Intelligent Vehicles Symposium</a></i> (IV-15), 2015.</li>
+	  <li>[Paden et al., 2016] B. Paden, M. Cap, S.Z. Yong, D. Yershov, and E. Frazzoli, <a href="https://arxiv.org/pdf/1604.07446.pdf">A survey of motioni planning and control techniques for self-driving urban vehicles</a>, <i>IEEE Transactions on Intelligent Vehicles</i>, 1(1): 33-55, 2016.</li>
+	</ul>
       </section>
+      
       <footer>
         <p>This page is scribbled by <a href="http://ywseo.github.io">Youngwoo Seo</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
