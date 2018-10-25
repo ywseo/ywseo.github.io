@@ -5,7 +5,7 @@ permalink: /publication/2018-01-01-paper-title-number-3
 excerpt: ''
 date: 2018-04-01
 venue: 'IV-18'
-paperurl: '/files/structureless-approach-vo-iv-18.pdf'
+paperurl: 'https://ieeexplore.ieee.org/document/8500617'
 ---
 A local, bundle-adjustment is an important procedure to improve the accuracy of a visual odometry solution.
 However, it is computationally very expensive as it jointly
@@ -28,6 +28,6 @@ simulated experiments and experiments with KITTI data,
 demonstrated that our results are more accurate that those
 of a full-SLAM approach with lower runtime complexities.
 
-[Download paper here](/files/structureless-approach-vo-iv-18.pdf)
+[Download paper here](https://ieeexplore.ieee.org/document/8500617)
 
 Chih-Chung Chou, Chun-Kai Chang and **YoungWoo Seo**, A structureless approach for visual odometry, In <i>Proceedings of the IEEE Intelligent Vehicles Symposium</i> (IV-2018), pp. 1834-1841, 2018.
