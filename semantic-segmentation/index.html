@@ -42,7 +42,7 @@
         benefit over the conventional classification algorithms
         generating bounding boxes: An exhaustive labeling of all the
         pixels on a given image, instead of just putting rectangular
-        boxes on a couple of objects. This would tell our robots
+        boxes around a couple of objects. This would tell our robots
         including self-driving cars, not only where we can and cannot
         go, but also what objects are around and make them ready about
         how to interact with those recognized objects.</p>
@@ -50,7 +50,8 @@
 	<p>This page will describe what the fully convolutional
         network is, a way of implementing it using the TensorFlow, and
         an application of a FCN for a pixelwise, binary
-        classification: road or not-road.</p>
+        classification: road or not-road -- a scale-down version of
+        semantic segmentation.</p>
 
         <h2>2. Fully Convolutional Network (FCN) for Semantic Segmentation</h2>
 	<h3>2.1 Overview</h3>
@@ -59,7 +60,7 @@
 	of a series of convolution layers, followed by fully connected
 	layers and by a soft max activation function. Such
 	architectures work really well for classification, object
-	detection -- remember how do all these frenzies about deep
+	detection -- remember how do all these frenzies about convolutional
 	neural network begin?  Yes,
 	at <a href="http://webcache.googleusercontent.com/search?q=cache:http://image-net.org/challenges/LSVRC/2012/ilsvrc2012.pdf">the
 	Large Scale Visual Recognition Challenge 2012</a> -- ImageNet
@@ -100,7 +101,7 @@
 	</p>
 	
 	<img src="/semantic-segmentation/fig/ssd-output.png"/> <a href="https://arxiv.org/abs/1512.02325">Source</a>
-	<br>
+	<br><br>
 	<p>But what if we want to know the positions of all the pixels
 	delineating road's boundary, instead of the bounding boxes
 	around image subregion about road? Does it even make sense to
@@ -117,8 +118,8 @@
 
 	<br>
 	<p>Note that the above image is not actual output of a FCN,
-	rather it's manually labeled image used for training/testing a
-	FCN. We'll go into details to learn how a FCN can do such a
+	rather it's a manually labeled image used for training/testing
+	a FCN. We'll go into details to learn how a FCN can do such a
 	task for us. But briefly, it can do such a semantic
 	segmentation because, while doing the convolution, a FCN
 	preserve the spatial information throughout the entire
@@ -583,9 +584,10 @@ if __name__ == '__main__':
   
         <h2>3. Results</h2>
 
-	<p>This section explains how to run the above explained
-	code. The first order business is to make your machine ready
-	for the job by installing all the necessary packages.</p>
+	<p>This section explains how to run the above explained code
+	and discusses some results. The first order business is to
+	make your machine ready for the task by installing all the
+	necessary packages.</p>
 	
 	<h3>3.1 Setup</h3>
 
@@ -621,14 +623,14 @@ if __name__ == '__main__':
 	  <li><a href="https://www.cityscapes-dataset.com/examples/">CityScapes Dataset</a></li>
 	  <li><a href="http://bdd-data.berkeley.edu/">Berkeley DeepDrive Dataset</a></li>
 	</ul>
-	For this project, we used the KITTI road dataset.
+	For this experiment, we used the KITTI road dataset.
 	</p>
 
 	<h3>3.3 Training </h3>
 	<p>For the training, I used an AMI, a gpu instance of
-	  g2.8xlarge (vCPUs: 32, Memory: 60GiB, $0.8424) about one and
-	  half hour to run the above-described FCN. Some of the
-	  hyperparameters include
+	  g2.8xlarge (vCPUs: 32, Memory: 60GiB, $0.8424) from AWS
+	  about one and half hour to run the above-described FCN. Some
+	  of the hyperparameters include
 	  <ul>
 	    <li>epochs: 20,</li>
 	    <li>learning rate: 1e-4,</li>
@@ -644,13 +646,13 @@ if __name__ == '__main__':
 	</p>
 	
 	<h3>3.4 Results of Road-Region Classification</h3>
-	<p>Let's take a look at some examples where the segmentation
-	worked reasonably well. Note that at the moment we was able to
-	compute any quantitative analysis (like IoU) on the results
-	due to unavailability of the ground-truth. So, we're
-	qualitatively evaluating the performance. Take a close look at
-	those testing images where parts of road, image subregions are
-	covered by shade.</p>
+	<p>Let's take a look at some results where the segmentation
+	worked reasonably well. Note that at the moment I wasn't able
+	to compute any quantitative analysis (like IoU) on the results
+	due to unavailability of the ground-truth or my laziness. So,
+	we're qualitatively evaluating the performance. Take a close
+	look at those testing images where parts of road, image
+	subregions are covered by shade.</p>
 
 	<img src="/semantic-segmentation/fig/good/um_000003.png" /><br>
 	<img src="/semantic-segmentation/fig/good/um_000019.png" /><br>
@@ -679,20 +681,24 @@ if __name__ == '__main__':
 	<img src="/semantic-segmentation/fig/nogood/uu_000091.png" /><br>
 	<br>
 
-	<p>These animated images at the below show some of the
-	  segmentation results -- results of a pixel-wise, binary
-	  classification. </p>
-	<img src="/semantic-segmentation/fig/output_um.gif" /><br><br>
-	<img src="/semantic-segmentation/fig/output_umm.gif" /><br><br>
-	<img src="/semantic-segmentation/fig/output_uu.gif" /><br><br>
+	<p>The following animated images at the below show all of the
+	  segmentation results altogether -- results of a pixel-wise,
+	  binary classification. </p>
+	  <img src="/semantic-segmentation/fig/output_um.gif"
+	  /><br><br>
+	  <img src="/semantic-segmentation/fig/output_umm.gif"
+	  /><br><br>
+	  <img src="/semantic-segmentation/fig/output_uu.gif"
+	  /><br><br>
 	
 	<br>
 	<h2>4. Summary</h2>
-	<p>This pages describes what semantic segmentation is, what a
+	<p>This page describes what semantic segmentation is, what a
 	fully convolutional network (FCN) is and how it is used for
-	semantic segmentation. In particular, we describe
+	semantic segmentation -- a binary classification of roads. In
+	particular, I describe
 	  <ul>
-	    <li>Define semantic segmentation,
+	    <li>What is semantic segmentation,
 	    <li>How a FCN is built from a CNN by utilizing 1x1
 	    convolutional layer, transposed convolution for
 	      up-sampling, skip connections,</li>
