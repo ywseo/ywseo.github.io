@@ -1,6 +1,6 @@
 ---
 title: "Enabling Self-Driving Cars to Know Where They Can and Cannot Drive"
-excerpt: "Tracking of traversable region boundary, analyzing ortho-images to generate lane-level maps."
+excerpt: "Tracking of traversable region boundary, lanemarking detection, vanishing point tracking for road geometry understanding, analyzing ortho-images to generate lane-level maps."
 collection: portfolio
 ---
 
