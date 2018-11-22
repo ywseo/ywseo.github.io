@@ -19,14 +19,6 @@ collection: portfolio
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XN4p6pqaDEU?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <br>
-
-<img src="/images/instantaneous-driving-direction.png"/> 
-
-**Lanemarking Detection** In advanced driver assistance systems and self-driving cars, many computer vision applications rely on knowing the location of the vanishing point on a horizon. The horizontal vanishing point's location provides important information about driving environments, such as the instantaneous driving direction of roadway, sampling regions of the drivable regions' image features, and the search direction of moving objects. To detect the vanishing point, many existing methods work frame-by-frame. Their outputs may look optimal in that frame. Over a series of frames, however, the detected locations are inconsistent, yielding unreliable information about roadway structure. This work studys a novel algorithm that, using lines, detects vanishing points in urban scenes and, using Extended Kalman Filter (EKF), tracks them over frames to smooth out the trajectory of the horizontal vanishing point. The study demonstrates both the practicality of the detection method and the effectiveness of our tracking method, through experiments carried out using thousands of urban scene images. Read the following papers to learn more about this work:
-* **Young-Woo Seo** and Raj Rajkumar, [Detection and tracking of the vanishing point on a horizon for automotive applications](http://www.cs.cmu.edu/~youngwoo/doc/ppniv-14-ywseo.pdf), In *Proceedings of the 6th IEEE IROS Workshop on Planning, Perception and Navigation for Intelligent Vehicles* (PPNIV-2014), Chicago, Sep 14-18, 2014.
-* **Young-Woo Seo** and Raj Rajkumar, [Utilizing instantaneous driving direction for enhancing lane-marking detection](https://ieeexplore.ieee.org/document/6856467/), In *Proceedings of the 25th IEEE Intelligent Vehicles Symposium* (IV-2014), pp. 170-175, Dearborn, MI, 2014.
- 
-<br> 
  
 <img src="/images/omni-view.jpg"/> 
  
