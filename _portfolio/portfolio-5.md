@@ -14,6 +14,8 @@ collection: portfolio
 
 <img src="/images/boss-urban-challenge.jpg"/>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wdjOk1pdMw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **[Tartan Racing](http://www.tartanracing.org/)** [Boss](https://en.wikipedia.org/wiki/Charles_F._Kettering) is an autonomous vehicle that uses on-board sensors (global positioning system,
 lasers, radars, and cameras) to track other vehicles, detect static obstacles, and localize
 itself relative to a road model. A three-layer planning system combines mission, behavioral, and motion planning to drive in urban environments. The mission planning layer
@@ -25,5 +27,7 @@ a heavy emphasis on regular, regressive system testing. During the National Qual
 * Chris Urmson, Joshua Anhalt, Drew Bagnell, Christopher Baker, Robert Bittner, M. N. Clark, John Dolan, Dave Duggins, Tugrul Galatali, Chris Geyer, Michele Gittleman, Sam Harbaugh, Martial Hebert, Thomas M. Howard, Sascha Kolski, Alonzo Kelly, Maxim Likhachev, Matt McNaughton, Nick Miller, Kevin Peterson, Brian Pilnick, Raj Rajkumar, Paul Rybski, Bryan Salesky, **Young-Woo Seo**, Sanjiv Singh, Jarrod Snider, Anthony Stentz, William Red Whittaker, Ziv Wolkowicki, Jason Ziglar, Hong Bae, Thomas Brown, Daniel Demitrish, Bakhtiar Litkouhi, Jim Nickolaou, Varsha Sadekar, Wende Zhang, Joshua Struble, Michael Taylor, Michael Darms, and Dave Ferguson, [Autonomous driving in urban environments: Boss and the urban challenge](https://www.ri.cmu.edu/publications/autonomous-driving-in-urban-environments-boss-and-the-urban-challenge/), *Journal of Field Robotics: Special Issue on the 2007 DARPA Urban Challenge*, Part I, pp. 425-466, 2008.
  * **Young-Woo Seo** and Chris Urmson, [A perception mechanism for supporting autonomous intersection handling in urban driving](https://ieeexplore.ieee.org/document/4651162/), In *Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems* (IROS-2008), pp. 1830-1835, Nice, France, September, 2008.
 * Chris Urmson, Joshua Anhalt, Drew Bagnell, Christopher Baker, Robert Bittner, John Dolan, Dave Duggins, Dave Ferguson, Tugrul Galatali, Hartmut Geyer, Michele Gittleman, Sam Harbaugh, Martial Hebert, Thomas M. Howard, Alonzo Kelly, David Kohanbash, Maxim Likhachev, Nick Miller, Kevin Peterson, Raj Rajkumar, Paul Rybski, Bryan Salesky, Sebastian Scherer, **Young-Woo Seo**, Reid Simmons, Sanjiv Singh, Jarrod Snider, Anthony Stentz, William Red Whittaker, and Jason Ziglar, [Tartan racing: a multi-modal approach to the DARPA Urban Challenge](https://www.ri.cmu.edu/publications/tartan-racing-a-multi-modal-approach-to-the-darpa-urban-challenge/), Tech Report, the Robotics Institute, Carnegie Mellon University, 2007.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EGb2jw9l7ak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <img src="/images/tartanracing.jpg"/>
