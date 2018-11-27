@@ -32,6 +32,6 @@ a heavy emphasis on regular, regressive system testing. During the National Qual
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EGb2jw9l7ak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>
+<br><br>
 
 <img src="/images/tartanracing.jpg"/>
