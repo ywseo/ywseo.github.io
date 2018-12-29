@@ -181,21 +181,21 @@
 
 	<h3>2.4 Errors to Minimize</h3>
 
-	<p>Let's look at how the errors we are interested in change
-	  over time by deriving our kinematic model around these
-	  errors as our new state vector, [x,y,ψ,v,cte,eψ]. Let’s
-	  assume the vehicle is traveling down a straight road and the
-	  longitudinal direction is the same as the x-axis -- the body
-	  frame of which the z axis is up.</p>
+	<p>Let's look at how the errors are changed over time by
+	  deriving our kinematic model around these errors as our new
+	  state vector, [x,y,ψ,v,cte,eψ]. Let’s assume the vehicle is
+	  traveling down a straight road and the longitudinal
+	  direction is the same as the x-axis -- the body frame of
+	  which the z axis is up.</p>
 
-	<p>The CTE for this example is then error/difference between
-	the center of the road and the vehicle's position. The CTE of
-	the successor state after time t is the state at t+1, and is
-	defined as: cte_{t+1} = cte_{t} + vt∗sin(eψ_{t})∗dt, where
-	cte_{t} can be expressed as the difference between the line
-	and the current vehicle position y. Assuming the reference
-	line is a 1st order polynomial f, f(x_{t}) is our reference
-	line and our CTE at the current state is defined as:
+	<p>For this example, the CTE is then error or difference
+	between the center of the road and the vehicle's position. The
+	CTE of the successor state after time t is the state at t+1
+	that is defined as: cte_{t+1} = cte_{t} + vt∗sin(eψ_{t})∗dt,
+	where cte_{t} can be expressed as the difference between the
+	line and the current vehicle position y. Assuming the
+	reference line is a 1st order polynomial f, f(x_{t}) is our
+	reference line and our CTE at the current state is defined as:
 	cte_{t}=y_{t}−f(x_{t}).</p>
 
 	<p>If we substitute cte_{t} in the original equation with the
@@ -221,7 +221,7 @@
 	polynomial. eψ_{t+1}= ψ_{t} −
 	ψ_{dest}+(vt/Lf∗δt∗dt). Similarly to the cross track error the
 	orientation error, eψ_{t+1} can be broken down in to two
-	  parts:
+	parts:
 	  <ul>
 	    <li>ψ_{t} − ψ_{des_{t}} being current orientation error.</li>
 	    <li>vt/Lf∗δt∗dt being the change in error caused by the
