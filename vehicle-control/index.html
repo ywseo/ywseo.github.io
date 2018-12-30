@@ -250,8 +250,8 @@
 	its output and the reference value. Thus, a design of a PID
 	  controller typically involves in 
 	  <ol>
-	    <li> defining each of three error terms and</li>
-	    <li> finding the optimal values for the P,I,D gains that
+	    <li> Defining each of three error terms and</li>
+	    <li> Finding the optimal values for the P,I,D gains that
 	      influences the controller's outputs.</li>
 	  </ol>
 	</p>
@@ -281,14 +281,16 @@ void PID::UpdateError(double cte) {
 double PID::GetPIDOutput() {
   return (p_error_ + i_error_ + d_error_);
 }</pre>
-	<p>where the UpdateError() function defines three errors,
-	"proportional", "integral", and "derivative" in a discrete
-	way, and the "GetPIDOutput()" generates a weighted sum of
-	three error terms, which, for example, can be the control's
-	output for the steering wheel value. In other words, given a
-	reference value, a controller generates an output by executing
-	"TotalError()". The system computes the difference between a
-	controller's output and the reference value, cte.</p>
+	<p>where <i>kp, ki, kd</i> are the P,I,and D gains, the
+	UpdateError() function defines how three errors,
+	"proportional", "integral", and "derivative" are used in a
+	discrete way, and the "GetPIDOutput()" generates a weighted
+	sum of three error terms, which, for example, can be the
+	control's output for the steering wheel value. For this
+	example, more specifically, given the previouse <i>cte</i>,
+	the function, ``UpdateError()'' computes the errors for each
+	of three gains and ``TotalError()'' returns a new PID output
+	minimizing the difference to the reference value. </p>
 
 	<p>Now let's take a look at each of the gain terms of a PID
 	controller in details.</p>
