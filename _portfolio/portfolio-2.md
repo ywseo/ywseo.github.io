@@ -4,7 +4,7 @@ excerpt: "Tracking of traversable region boundary, lanemarking detection, vanish
 collection: portfolio
 ---
 
-<img src="/images/boundary-detection.jpg"/>
+<img src="/images/measurement-model-clothoid-1.jpg"/>
 
 **Tracking Traversable Region Bounary** This work presents a new method of detecting
 and tracking the boundaries of drivable regions in road without
