@@ -1,6 +1,6 @@
 ---
 title: "Enabling Mobile Robots to Know Where They are at Given Time"
-excerpt: "Visual odometry using pseudo map points, robust matching for more accurate feature correspondences in visual SLAM, lateral localization for reliable, urban autonomous driving."
+excerpt: "Tight coupling of vision-lidar measurements for effective odometry, visual odometry using pseudo map points, robust matching for more accurate feature correspondences in visual SLAM, lateral localization for reliable, urban autonomous driving."
 collection: portfolio
 ---
 
