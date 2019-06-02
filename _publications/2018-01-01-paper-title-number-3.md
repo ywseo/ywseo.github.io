@@ -29,4 +29,4 @@ demonstrated that our results are more accurate that those in the full-SLAM appr
 
 [Download paper here](https://ieeexplore.ieee.org/document/8500617)
 
-Chih-Chung Chou, Chun-Kai Chang and **YoungWoo Seo**, A structureless approach for visual odometry, In <i>Proceedings of the IEEE Intelligent Vehicles Symposium</i> (IV-2018), pp. 1834-1841, 2018.
+Chih-Chung Chou, Chun-Kai Chang and **YoungWoo Seo**, A structureless approach for visual odometry, In <i>Proceedings of the 29th IEEE Intelligent Vehicles Symposium</i> (IV-2018), pp. 1834-1841, 2018.
