@@ -1,5 +1,5 @@
 ---
-title: "Enabling Mobile Robots to Know Where They are at Given Time"
+title: "Enabling Mobile Robots to Know Where They are at Any Given Time"
 excerpt: "Tight coupling of vision-lidar measurements for effective odometry, visual odometry using pseudo map points, lateral localization for reliable, urban autonomous driving."
 collection: portfolio
 ---
