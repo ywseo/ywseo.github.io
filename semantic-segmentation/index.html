@@ -22,7 +22,7 @@
         the predefined class labels, e.g., road, pedestrian, vehicle,
         etc. By knowing the class of each pixel, one could understand
         the scene depicted on a given image, and the knowledge of
-        scene understanding would help robots navigate, without
+        scene understanding would help robots better navigate, without
         bumping into other objects, where it needs to go. This page
         describes an application of a fully convolutional network
         (FCN) for semantic segmentation.</p>
@@ -42,10 +42,11 @@
         benefit over the conventional classification algorithms
         generating bounding boxes: An exhaustive labeling of all the
         pixels on a given image, instead of just putting rectangular
-        boxes around a couple of objects. This would tell our robots
-        including self-driving cars, not only where we can and cannot
-        go, but also what objects are around and make them ready about
-        how to interact with those recognized objects.</p>
+        boxes around a couple of objects. This would help our robots
+        including self-driving cars, better understand not only where
+        they can and cannot go, but also what objects are around and
+        make them ready about how to interact with those recognized
+        objects.</p>
 
 	<p>This page will describe what the fully convolutional
         network is, a way of implementing it using the TensorFlow, and
@@ -83,7 +84,7 @@
 	scene without bumping into them. Of course, since a 2d image
 	does not contain any information about distances to the
 	detected objects, the 3d information with respect to the
-	detected objects is assumed to be, somehow, resolved. One
+	detected objects is assumed to be, somehow, resolved: One
 	could use a stereo camera or fuse images with lidar points to
 	estimate distances to the objects. There have been so many
 	great classification and object detection algorithms
@@ -118,14 +119,16 @@
 
 	<br>
 	<p>Note that the above image is not actual output of a FCN,
-	rather it's a manually labeled image used for training/testing
-	a FCN. We'll go into details to learn how a FCN can do such a
-	task for us. But briefly, it can do such a semantic
+	but it's a manually labeled image used for training/testing a
+	FCN -- it is a part of
+	the <a href="https://www.cityscapes-dataset.com/">Cityscapes</a>
+	dataset). We'll go into details to learn how a FCN can do such
+	a task for us. But briefly, it can perform such a semantic
 	segmentation because, while doing the convolution, a FCN
 	preserve the spatial information throughout the entire
 	network. In addition, since convolutional operations
 	fundamentally don't care about the size of the input, a FCN
-	will work on images of any size. In a classic convolutional
+	will work on images in any size. In a classic convolutional
 	network with fully connected final layers, the size of the
 	input is constrained by the size of the fully connected
 	layers. Passing different size images through the same
@@ -155,9 +158,9 @@
 	  </ul></p>
 
 	<p>A FCN is typically comprised of two parts: encoder and
-	  decoder. A encoder extracts features that will later be used
-	  by the decoder. It's common to use the encoder pre-trained
-	  on ImageNet. As
+	  decoder. An encoder extracts features that will later be
+	  used by the decoder. It's common to use the encoder
+	  pre-trained on ImageNet. As
 	  examples, <a href="http://www.robots.ox.ac.uk/~vgg/research/very_deep/">VGG</a>
 	  and <a href="https://arxiv.org/abs/1512.03385">ResNet</a>
 	  are popular choices. Since this is conceptually the same as
@@ -167,19 +170,20 @@
 	  convert the fully connected layer into an 1x1 convolutional
 	  layer. And then the encoder is followed by the decoder,
 	  which uses another technique of transposed convolutional
-	  layers to upsample the image. Lastly the skip connection is
-	  added. What the skip connection does is to connect the
-	  output of one layer to a non-adjacent layer. By doing so,
-	  the skip connection allows the network to use information
-	  from multiple resolutions. While utilizing the skip
-	  connections, one'll have to be careful not to add too many
-	  skip connections. Otherwise it can lead to the explosion in
-	  the size of your model. For example, when using VGG-16 as
-	  the encoder, only the third and the fourth pooling layers
-	  are typically used for skip connections. Once we're done
-	  with incorporating all these three techniques, we can train
-	  the model end to end as we do for a CNN. Read the followings
-	  to learn more about encoder and decoder architecture.
+	  layers to <b>upsample</b> the image. Lastly the skip
+	  connection is added. What the skip connection does is to
+	  connect the output of one layer to a non-adjacent layer. By
+	  doing so, the skip connection allows the network to use
+	  information from multiple resolutions. While utilizing the
+	  skip connections, one'll have to be careful not to add too
+	  many skip connections. Otherwise it can lead to the
+	  explosion in the size of your model. For example, when using
+	  VGG-16 as the encoder, only the third and the fourth pooling
+	  layers are typically used for skip connections. Once we're
+	  done with incorporating all these three techniques, we can
+	  train the model end to end as we do for a CNN. Read the
+	  followings to learn more about some encoder and decoder
+	  architectures.
 	  <ul>
 	    <li><a href="https://arxiv.org/pdf/1511.00561.pdf">SegNet:
 	A deep convolutional encoder-decoder architecture for image
@@ -188,7 +192,8 @@
 	  </ul>
 
 	  Now let's take a look at each of the three techniques in
-	  details:
+	  details, with examples of how to implement them using the
+	  TensorFlow.
 	</p>
 
 	<h3>2.2 1x1 Convolution Layer</h3>
@@ -218,7 +223,7 @@
 	  </ul>
 	</p>
 	  
-	<h3>2.3 Up-sampling </h3>
+	<h3>2.3 Up-Sampling </h3>
 
 	<p>An up-sampling is done through a transposed convolution. A
 	transposed convolution is essentially a reverse convolution
@@ -265,7 +270,7 @@
 
 	<h3>2.5 Implementation of a FCN</h3>
 	
-	<p>This section describes how to implement, using TensorFlow,
+	<p>This section details how to implement, using TensorFlow,
 	a fully convolutional network for a pixelwise, binary
 	classification: road or not-road. Instead of doing a
 	full-scale, semantic segmentation, what we do here is to
@@ -585,14 +590,15 @@ if __name__ == '__main__':
         <h2>3. Results</h2>
 
 	<p>This section explains how to run the above explained code
-	and discusses some results. The first order business is to
+	and reviews some results. The first order business is to
 	make your machine ready for the task by installing all the
 	necessary packages.</p>
 	
 	<h3>3.1 Setup</h3>
 
 	<p>In order to make the above described code run, you'll need
-	  GPU. If your machine doesn't have any fancy
+	  a GPU or some of them. If your machine doesn't have any
+	  fancy
 	  Nvidia's <a href="https://www.nvidia.com/en-in/geforce/">GPU
 	  boards</a>, you might want to consider to use GPU-enabled
 	  cloud service like AWS or other equivalents. See the
@@ -605,7 +611,8 @@ if __name__ == '__main__':
 	  </ul>
 	</p>
 
-	<p> The packages you need:
+	<p>For either your local machine or the host machine on a
+	cloud service, the list of the packages you'll need to install:
 	<ul>
 	  <li><a href="https://www.python.org">Python 3</a></li>
 	  <li><a href="https://www.tensorflow.org">TensorFlow</a></li>
@@ -615,8 +622,8 @@ if __name__ == '__main__':
 	</p>
 	
 	<h3>3.2 Dataset</h3>
-	<p>There is a couple of semantic segmendataion datasets,
-	particularly, for autonomous driving.
+	<p>There is a couple of semantic segmendataion datasets
+	available, particularly, for autonomous driving.
 	<ul>
 	  <li><a href="http://www.cvlibs.net/datasets/kitti/eval_road.php">KITTI
 	      Road Dataset</a></li>
