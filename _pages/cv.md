@@ -33,7 +33,7 @@ Developed (personalized and collaborative) information filtering systems.
 
 Honors and Awards
 ======
-* Nov 2018: Invited to give a talk "[AI for Transporation: Where We Are and What Are Challenges](https://www.msit.go.kr/cms/www/m_con/news/report/__icsFiles/afieldfile/2018/11/20/181121%20%EC%A1%B0%EA%B0%84%20(%EB%B3%B4%EB%8F%84)%20%EA%B3%BC%EA%B8%B0%EC%A0%95%ED%86%B5%EB%B6%80%202018%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EA%B5%AD%EC%A0%9C%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4%20%EA%B0%9C%EC%B5%9C.pdf)" at International Conference on Artificial Intelligence (AIIC) 2018, Seoul, Korea.
+* Nov 2018: Invited to give a talk "[AI for Transporation: Where We Are and What Are Challenges](files/aiic-sneakview.pdf)" at International Conference on Artificial Intelligence (AIIC) by [MIST](https://www.msit.go.kr/cms/www/m_con/news/report/__icsFiles/afieldfile/2018/11/20/181121%20%EC%A1%B0%EA%B0%84%20(%EB%B3%B4%EB%8F%84)%20%EA%B3%BC%EA%B8%B0%EC%A0%95%ED%86%B5%EB%B6%80%202018%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EA%B5%AD%EC%A0%9C%EC%BB%A8%ED%8D%BC%EB%9F%B0%EC%8A%A4%20%EA%B0%9C%EC%B5%9C.pdf) 2018, Seoul, Korea.
 * Aug 2017: Delivered the opening keynote, “[Envisioning the Future of Mobility](https://www.trunews.com/article/intro-the-autonomous-vehicles-2017-detroit-summit)” at Autonomous
 Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed Travel"](https://www.trunews.com/article/hyperloop-one-the-future-of-global-high-speed-travel))
 * Nov 2013: Received the CIT, Carnegie Institute of Technology, Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
