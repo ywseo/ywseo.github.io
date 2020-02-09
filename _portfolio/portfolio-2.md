@@ -1,5 +1,5 @@
 ---
-title: "Enabling Self-Driving Cars to Know Where They Can and Cannot Drive"
+title: "Enabling Mobile Robots to Know Where They Can and Cannot Drive"
 excerpt: "Robust matching for more accurate feature correspondences in visual SLAM, tracking of traversable region boundary, lanemarking detection, vanishing point tracking for road geometry understanding, analyzing ortho-images to generate lane-level maps."
 collection: portfolio
 ---
