@@ -11,9 +11,10 @@ redirect_from:
 
 Work and Research Experience
 ======
-* Founder CEO, (Yet Another Stealth Mode) Startup, May 2018 - Present<br/>
+* Founder CEO, Atlas Robotics, Inc., May 2018 - Present<br/>
+Pushing the envelope to deliver a SW stack for autonomous mobility based on shared autonomy.
 * Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Apr 2018<br/>
-Led the effort of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
+Led the efforts of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, [Autel Robotics](http://www.autelrobotics.com), Aug 2016 - Jun 2017<br/>
 Led a team of engineers and delivered a target tracking pipeline for consumer-grade, quadropter drones.
 * Senior Scientist, Special Project Group, [Apple Inc](http://www.apple.com), Nov 2014 - Jul 2016<br/>
@@ -26,10 +27,14 @@ Provided technical guidance to the 2013 Korea Autonomous Vehicle Contest and inv
 Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception team for autonomous driving demonstration on public roads.
 * Graduate Research Assistant, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jan 2007 - Apr 2012<br/>
 Developed perception algorithms for understanding urban driving situations and modeling driving environments for reliable autonomous driving.
+* Consultant, Jun - Jul 2011<br />
+Reviewed, evaluated, and reformed Technophilia's curriculum, materials and robotics kits for robotics courses.
+* Research Software Development Engineer Intern, Bing Imagery Technology R&D, Microsoft Corp, Jun - Aug, 2010<br />
+Developed a system that analyzes GPS tracks and learns to classify the type of intersections (e.g., stop, yield).
 * Full-Time Research Programmer, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Nov 2000 - Dec 2006<br/>
 Developed novel machine learning algorithms for multi-agent systems.
 * Graduate Research Assistant, [Artificial Intelligence Lab](http://bi.snu.ac.kr), School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
-Developed (personalized and collaborative) information filtering systems.
+Developed software agent systems for personalized and collaborative information filtering.
 
 Honors and Awards
 ======
