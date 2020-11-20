@@ -27,22 +27,67 @@
       <section>
         <h1>Pushing the Envelope to Deliver a SW Stack for Autonomous Mobility by Shared Autonomy</h1>
 
-	<h2>In Retrospect</h2>
+	<h2>Atlas Robotics, Inc.</h2>
 	
-	<p>...</p>
+	<p>For the past two years from May 2018 to July 2020, I headed
+	a startup, Atlas Robotics, Inc., and pushed the envelope to
+	deliver a software stack for autonomous mobility by shared
+	autonomy. What we meant by ``Autonomous Mobility by Shared
+	Autonomy" is a software stack that based on driving context,
+	switches its autonomy back and forth between two modes:
+	autonomous and remote. The product we call it ``AtLast," will
+	enable a self-driving vehicle to autonomously navigate where
+	less complex navigation scenarios like driving on a
+	predetermined route while occasionally interacting with road
+	occupants (e.g., vehicles, pedestrians, etc.), and it will let
+	a human operator fully or partially take over control of the
+	vehicle once its navigation limit is surpassed by the
+	complexity of the environment. We were building such a hybrid
+	driving system because we strongly believe that the benefits of
+	autonomous driving are too substantial and urgent to be
+	ignored or delayed and inherent challenges to complete fully
+	autonomous driving are too complex to overcome in a couple of
+	decades. This is not just our own assessment of the
+	development of autonomous driving technology but also the
+	  consensus of the community leaders.
+
+	<ul>
+	<li>["The technology won't be ubiquitous for decades and that driverless vehicles will always have constraints."](https://www.bloomberg.com/news/articles/2018-11-13/waymo-ceo-says-self-driving-cars-won-t-be-ubiqitious-for-decades) John Krafcik, CEO, Waymo, Bloomberg, Nov 13, 2018.
+	<li>["This is a change that's going to scale over decades, not over weeks"](https://www.pcmag.com/opinions/aurora-is-not-building-autonomous-cars-its-building-safe-drivers) Chris Urmson, CEO, Aurora, Mar 25, 2019.
+	<li>["Nobody is even close" to making a truly self-driving car](https://www.whichcar.com.au/car-news/truly-autonomous-cars-a-pipe-dream-says-toyota) James Kuffner, CEO, Advanced Development Division of TRI, Oct 30, 2019.
+	  </ul>
+
+        Our hybrid driving system with human-in-the-loop will be a
+	stepping stone before the community appreciates the benefits
+	of fully autonomous driving everywhere. The utmost utility of
+	our hybrid navigation system becomes apparent in when a remote
+	operator can drive more than one robotic vehicle at a
+	time. This desideratum requires our system, one that enables
+	entities (e.g., autonomous driving SW and human remote
+	operator) to seamlessly switch the autonomy of the vehicle
+	when necessary. In turn, to support seamless transition, the
+	shared autonomy module should reliably execute the following
+	tasks: 1) inform when to switch from autonomous navigation to
+	remote, 2) dictate, when to transit, what procedures in what
+	orders a remote operator follows to gain situational
+	awareness, and 3) execute a series of automatic behaviors for
+	emergency. 
+	</p>
 
 	<h2>Technology Stack</h2>
-	<p>
-	  <ul>
-	    <li><a href="https://www.youtube.com/watch?v=YlsXwqswhI0&ab_channel=YoungwooSeo">Autonomous navigation stack</a>
-	    <li><a href="https://www.youtube.com/watch?v=5AVFvna8a_A&ab_channel=YoungwooSeo">Remote driving</a>
-	    <li><a href="https://www.youtube.com/watch?v=2xKOTvFNkec">Remote driving</a>
-	    <li><a href="https://www.youtube.com/watch?v=7Psd1eJS880&ab_channel=YoungwooSeo">Lidar SLAM: My commute from the office to home</a>
-	    <li><a href="https://www.youtube.com/watch?v=-bpXPCMWezg">Lidar SLAM: Building a map of Bunker City, GoMentum Station</a>
-	    <li><a href="https://www.youtube.com/watch?v=X5XtNIno3Zk&ab_channel=YoungwooSeo">Lidar SLAM: Building a map around the office</a>
-	    <li><a href="https://www.youtube.com/watch?v=f2-TN9C4a6Y&ab_channel=YoungwooSeo">Visual SLAM: Build a map of SNU BI</a>
-	    <li><a href="https://www.youtube.com/watch?v=3EPHtefY44M&ab_channel=YoungwooSeo">Visual SLAM on KITTI Sequence 08</a>
-	    <li>US 10,717,448 B1, ``Automated Transfer of Vehicle Control for Autonomous Driving."
+	<p>The followings are what we developed by the time we decided
+	to pull the plug:
+	 
+	 <ul>
+	 <li><a href="https://www.youtube.com/watch?v=YlsXwqswhI0&ab_channel=YoungwooSeo">Autonomous navigation stack</a>
+	 <li><a href="https://www.youtube.com/watch?v=5AVFvna8a_A&ab_channel=YoungwooSeo">Remote driving</a>
+	 <li><a href="https://www.youtube.com/watch?v=2xKOTvFNkec">Remote driving</a>
+	 <li><a href="https://www.youtube.com/watch?v=7Psd1eJS880&ab_channel=YoungwooSeo">Lidar SLAM: My commute from the office to home</a>
+	 <li><a href="https://www.youtube.com/watch?v=-bpXPCMWezg">Lidar SLAM: Building a map of Bunker City, GoMentum Station</a>
+	 <li><a href="https://www.youtube.com/watch?v=X5XtNIno3Zk&ab_channel=YoungwooSeo">Lidar SLAM: Building a map around the office</a>
+	 <li><a href="https://www.youtube.com/watch?v=f2-TN9C4a6Y&ab_channel=YoungwooSeo">Visual SLAM: Build a map of SNU BI</a>
+	 <li><a href="https://www.youtube.com/watch?v=3EPHtefY44M&ab_channel=YoungwooSeo">Visual SLAM on KITTI Sequence 08</a>
+	  <li>US 10,717,448 B1, ``Automated Transfer of Vehicle Control for Autonomous Driving."
 	  </ul>
 	</p>
 
