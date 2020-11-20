@@ -32,31 +32,29 @@
 	<p>For the past two years from May 2018 to July 2020, I headed
 	a startup, Atlas Robotics, Inc., and pushed the envelope to
 	deliver a software stack for autonomous mobility by shared
-	autonomy. What we meant by ``Autonomous Mobility by Shared
+	autonomy. What I meant by "Autonomous Mobility by Shared
 	Autonomy" is a software stack that based on driving context,
-	switches its autonomy back and forth between two modes:
-	autonomous and remote. The product we call it ``AtLast," will
-	enable a self-driving vehicle to autonomously navigate where
-	less complex navigation scenarios like driving on a
-	predetermined route while occasionally interacting with road
-	occupants (e.g., vehicles, pedestrians, etc.), and it will let
-	a human operator fully or partially take over control of the
-	vehicle once its navigation limit is surpassed by the
-	complexity of the environment. We were building such a hybrid
-	driving system because we strongly believe that the benefits of
-	autonomous driving are too substantial and urgent to be
-	ignored or delayed and inherent challenges to complete fully
-	autonomous driving are too complex to overcome in a couple of
-	decades. This is not just our own assessment of the
-	development of autonomous driving technology but also the
-	  consensus of the community leaders.
-
+	automatically and seamlessly switches its autonomy back and
+	forth between two modes: autonomous and remote. The product we
+	call it "AtLast" will enable a self-driving capable vehicle to
+	autonomously navigate where less complex navigation scenarios
+	like driving on a predetermined route while occasionally
+	interacting with road occupants (e.g., vehicles, pedestrians,
+	etc.), and it will let a human operator fully or partially
+	take over control of the vehicle once its navigation limit is
+	surpassed by the complexity of the environment. We were
+	building such a hybrid driving system because we strongly
+	believe that the benefits of autonomous driving are too
+	substantial and urgent to be ignored or delayed and inherent
+	challenges to complete fully autonomous driving are too
+	complex to overcome in a couple of decades. This is not just
+	our own assessment of the development of autonomous driving
+	technology but also the consensus of the community leaders.
 	<ul>
 	<li><a href="https://www.bloomberg.com/news/articles/2018-11-13/waymo-ceo-says-self-driving-cars-won-t-be-ubiqitious-for-decades">"The technology won't be ubiquitous for decades and that driverless vehicles will always have constraints"</a>, John Krafcik, CEO, Waymo, Bloomberg, Nov 13, 2018.
 	<li><a href="https://www.pcmag.com/opinions/aurora-is-not-building-autonomous-cars-its-building-safe-drivers">"This is a change that's going to scale over decades, not over weeks"</a>, Chris Urmson, CEO, Aurora, Mar 25, 2019.
 	<li><a href="https://www.whichcar.com.au/car-news/truly-autonomous-cars-a-pipe-dream-says-toyota">"Nobody is even close" to making a truly self-driving car</a>, James Kuffner, CEO, Advanced Development Division of TRI, Oct 30, 2019.
 	  </ul>
-
         Our hybrid driving system with human-in-the-loop will be a
 	stepping stone before the community appreciates the benefits
 	of fully autonomous driving everywhere. The utmost utility of
@@ -67,17 +65,75 @@
 	operator) to seamlessly switch the autonomy of the vehicle
 	when necessary. In turn, to support seamless transition, the
 	shared autonomy module should reliably execute the following
-	tasks: 1) inform when to switch from autonomous navigation to
-	remote, 2) dictate, when to transit, what procedures in what
+	tasks:
+	<ol>
+	<li>inform when to switch from autonomous navigation to
+	  remote,
+	<li>dictate, when to transit, what procedures in what
 	orders a remote operator follows to gain situational
-	awareness, and 3) execute a series of automatic behaviors for
-	emergency. 
+	  awareness, and
+	<li>execute a series of automatic behaviors for
+	  emergency.
+	</ol>
+
+        The idea of a sliding or shared autonomy within a team of
+robots and humans is not new and has been narrowly explored in some
+academic institutions in controlled environments
+(e.g., <a href="https://www.ri.cmu.edu/robot/trestle/">space
+assembly</a>, medical robotics) under strong assumptions (e.g.,
+communication latency is ignored and a system is assumed to be stopped
+in the middle of its operations). However, to the best of our
+knowledge, predicting when to transit autonomous operation of a
+robotic vehicle to manual operation has not been extensively
+investigated. We believe that, if our project is successful, the
+community will acquire away of knowing when to intervene with
+autonomous operation. We believe the impact of this technology will be
+significant. In fact, this capability will be a game-changer as it
+will pave the way for deploying more robotic systems to the real world
+where robotic systems do routine, mundane, repetitive, dangerous
+tasks, and when help is needed ask human team mates, who are
+undoubtedly better in decision making and perception for most of the
+cases. There are hard questions to answer, but this project is a
+perfect fit to a startup with the right skillset to move swiftly and
+efficiently toward validating a demanding but rewarding R\&D
+proposition.	
 	</p>
 
+	<h2>Market Opportunity</h2>
+	<p> The target customers are those businesses who need workers
+	with specific skillsets. Examples include those providing
+	shuttle services, large-scale farming agriculture, premise
+	patrol, close-boundary transport, and construction
+	services. These customers are all suffering a lack of manpower
+	and the highest liability insurance premiums. To remedy these
+	pains, they all need something that can do what a skillful
+	worker can do, without exposing workers to any hazardous
+	situations. AtLast can relieve these pains by filling the gap
+	of manpower shortages and/or eliminating worker exposure to
+	any hazardous work situations. For example, the developing
+	system will enable law- and security-enforcing of officers to
+	more safely and effectively patrol regions without exposing
+	themselves to dangerous situations; a shuttle driver, an
+	operator of construction or agricultural equipment does not
+	have to be behind the wheel but at a remote station, where
+	they could potentially drive more than one vehicle at the same
+	time. When something requiring human attention happens, the
+	developing algorithm notifies the operators to take over and
+	lets what a human does better. In particular, the developing
+	algorithm will switch an excavator driven autonomously to a
+	construction site to remote when the remotely stationed
+	operator needs to carry out precision earth digging.</p>
+
 	<h2>Technology Stack</h2>
-	<p>The followings are what we developed by the time we decided
-	to pull the plug:
-	 
+	<p> Atlas Robotics, Inc. was established in May 2018
+envisioning the development of robots to empower humans. With a seed
+fund of $1 millions, we successfully developed two navigation systems
+for autonomous driving and for remote driving. See the followings as
+what we completed to develop by the time we decided to pull the
+plug. For customer traction, we were in conversations with many
+potential customers like a food delivery portal and a mobility
+portal. We were a team of five full-time engineers working at two of
+offices, Livermore, CA, and Seoul, Korea. 	 
 	 <ul>
 	 <li><a href="https://www.youtube.com/watch?v=YlsXwqswhI0&ab_channel=YoungwooSeo">Autonomous navigation stack</a>: Our vehicle is autonomously driving on a predetermined route -- the route generated based on the map we built.
 	 <li><a href="https://www.youtube.com/watch?v=7Psd1eJS880&ab_channel=YoungwooSeo">Lidar SLAM: My commute from the office to home</a>: Building a map of the route about my commute from the office to home.
@@ -91,14 +147,17 @@
 	  </ul>
 	</p>
 
-        <h2>Thank You</h2>
-	<p>None of the above would exist without their dedication and
-	hard work. To me, it was a great lesson learned and exciting
-	experience, but we couldn't pull it off, I don't want to name
-	names. I would like to take this opportunity to sincerely
-	thank those who contributed to Atlas Robotics, Inc. by the
-	time we decided to shut it down. <i>Thank You, each and every
-	one! you did a great job!</i>
+        <h2>Acknowledgement</h2>
+	<p>I would like to take this opportunity to sincerely thank
+	those who contributed to Atlas Robotics, Inc. by the time we
+	decided to shut it down. To me, it was a great lesson learned
+	and exciting experience, but as we couldn't pull it off, I
+	don't want to name names. And I want to say it clear and loud:
+	None of the above mentioned would exist without their
+	dedication and hard work.
+	<quote>
+	  <i>Thank You, each and every one of you! You did a great job!</i>
+	</quote>
 	</p>
       </section>
       <footer>
