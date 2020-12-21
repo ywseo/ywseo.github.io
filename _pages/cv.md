@@ -12,7 +12,7 @@ redirect_from:
 Work and Research Experience
 ======
 * Founder CEO, Atlas Robotics, Inc., May 2018 - Jul 2020<br/>
-Worked on developing a SW stack for [autonomous mobility based on shared autonomy](https://ywseo.github.io/amasa/).
+Worked on developing a SW stack for [autonomous mobility based on shared autonomy](https://ywseo.github.io/amsa/).
 * Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Apr 2018<br/>
 Led the efforts of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, [Autel Robotics](http://www.autelrobotics.com), Aug 2016 - Jun 2017<br/>
