@@ -36,14 +36,6 @@ Developed novel machine learning algorithms for multi-agent systems.
 * Graduate Research Assistant, [Artificial Intelligence Lab](http://bi.snu.ac.kr), School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
 Developed software agent systems for personalized and collaborative information filtering.
 
-Patents
-======
-* Youngwoo Seo, Automated transfer of vehicle control for autonomous driving, [US 10717448](http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10717448.PN.&OS=PN/10717448&RS=PN/10717448), filed: Apr 30, 2019 and issued: July 21, 2020.
-  
-* Matisse J. Milovich, Youngwoo Seo, and Matthew E. Last, Database management for potential pull-off areas, [US 10262538](https://assignment.uspto.gov/patent/index.html#/patent/search/resultAssignment?searchInput=Youngwoo%20Seo&id=48124-366}), filed: Sep 1, 2017 and issued: Jan 24, 2019.
-
-* Youngwoo Seo, Randol Aikin, and Kshitiz Garg, System and method for road friction coefficient estimation, [US 10442439](\href{https://assignment.uspto.gov/patent/index.html#/patent/search/resultAssignment?searchInput=Youngwoo%20Seo&id=50085-685}), filed: Aug 8, 2017 and issued: Aug 19, 2019.
-
 Honors and Awards
 ======
 * Nov 2018: Invited to give a talk ["AI for Transporation: Where We Are and What Are Challenges"](/files/aiic-sneakview.pdf) at International Conference on Artificial Intelligence (AIIC-18), hosted by the Korean [Ministry of Science and ICT](/files/181121-msit-letter-aiic-18.pdf), Seoul, Korea.
@@ -61,6 +53,14 @@ on Systems, Man and Cybernetics (SMC-12).
 * Jan 2007 – Apr 2012: Received Graduate Research Assistant Fellowship (full tuition and
 stipend) from the Robotics Institute, School of Computer Science, Carnegie Mellon University
 * May 2006: Awarded [Best Paper Honorable Mention](/files/isi-06-award.pdf) (second prize) from the IEEE International Conference on Intelligence and Security Informatics (ISI-2006)
+
+Patents
+======
+* Youngwoo Seo, Automated transfer of vehicle control for autonomous driving, [US 10717448](http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10717448.PN.&OS=PN/10717448&RS=PN/10717448), filed: Apr 30, 2019 and issued: July 21, 2020.
+  
+* Matisse J. Milovich, Youngwoo Seo, and Matthew E. Last, Database management for potential pull-off areas, [US 10262538](https://assignment.uspto.gov/patent/index.html#/patent/search/resultAssignment?searchInput=Youngwoo%20Seo&id=48124-366}), filed: Sep 1, 2017 and issued: Jan 24, 2019.
+
+* Youngwoo Seo, Randol Aikin, and Kshitiz Garg, System and method for road friction coefficient estimation, [US 10442439](\href{https://assignment.uspto.gov/patent/index.html#/patent/search/resultAssignment?searchInput=Youngwoo%20Seo&id=50085-685}), filed: Aug 8, 2017 and issued: Aug 19, 2019.
 
 Education
 ======
