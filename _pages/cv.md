@@ -36,6 +36,14 @@ Developed novel machine learning algorithms for multi-agent systems.
 * Graduate Research Assistant, [Artificial Intelligence Lab](http://bi.snu.ac.kr), School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
 Developed software agent systems for personalized and collaborative information filtering.
 
+Patents
+======
+* Youngwoo Seo, Automated transfer of vehicle control for autonomous driving, \href{http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10717448.PN.&OS=PN/10717448&RS=PN/10717448}{US 10717448}, filed: Apr 30, 2019 and issued: July 21, 2020.
+  
+* Matisse J. Milovich, Youngwoo Seo, and Matthew E. Last, Database management for potential pull-off areas, \href{https://assignment.uspto.gov/patent/index.html#/patent/search/resultAssignment?searchInput=Youngwoo%20Seo&id=48124-366}{US 10262538}, filed: Sep 1, 2017 and issued: Jan 24, 2019.
+
+* Youngwoo Seo, Randol Aikin, and Kshitiz Garg, System and method for road friction coefficient estimation, \href{https://assignment.uspto.gov/patent/index.html#/patent/search/resultAssignment?searchInput=Youngwoo%20Seo&id=50085-685}{US 10442439}, filed: Aug 8, 2017 and issued: Aug 19, 2019.
+
 Honors and Awards
 ======
 * Nov 2018: Invited to give a talk ["AI for Transporation: Where We Are and What Are Challenges"](/files/aiic-sneakview.pdf) at International Conference on Artificial Intelligence (AIIC-18), hosted by the Korean [Ministry of Science and ICT](/files/181121-msit-letter-aiic-18.pdf), Seoul, Korea.
