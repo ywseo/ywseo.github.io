@@ -60,7 +60,7 @@ Patents
   
 * Matisse J. Milovich, Youngwoo Seo, and Matthew E. Last, Database management for potential pull-off areas, [US 10262538](http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10262538.PN.&OS=PN/10262538&RS=PN/10262538), filed: Sep 1, 2017 and issued: Jan 24, 2019.
 
-* Youngwoo Seo, Randol Aikin, and Kshitiz Garg, System and method for road friction coefficient estimation, [US 10442439](https://assignment.uspto.gov/patent/index.html#/patent/search/resultAssignment?searchInput=Youngwoo%20Seo&id=50085-685), filed: Aug 8, 2017 and issued: Aug 19, 2019.
+* Youngwoo Seo, Randol Aikin, and Kshitiz Garg, System and method for road friction coefficient estimation, [US 10442439](http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=2&f=G&l=50&co1=AND&d=PTXT&s1=10442439&OS=10442439&RS=10442439), filed: Aug 8, 2017 and issued: Aug 19, 2019.
 
 Education
 ======
