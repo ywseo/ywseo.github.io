@@ -41,11 +41,9 @@ Honors and Awards
 * Nov 2018: Invited to give a talk ["AI for Transporation: Where We Are and What Are Challenges"](/files/aiic-sneakview.pdf) at International Conference on Artificial Intelligence (AIIC-18), hosted by the Korean [Ministry of Science and ICT](/files/181121-msit-letter-aiic-18.pdf), Seoul, Korea.
 * Aug 2017: Delivered the opening keynote, “[Envisioning the Future of Mobility](https://www.trunews.com/article/intro-the-autonomous-vehicles-2017-detroit-summit)” at Autonomous
 Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed Travel"](https://www.trunews.com/article/hyperloop-one-the-future-of-global-high-speed-travel))
-* Nov 2013: Received the CIT, Carnegie Institute of Technology, Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
+* Nov 2013: Received the Carnegie Institute of Technology (CIT) Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and
 dedications of the members of the GM-CMU, Autonomous Driving Collaborative Research Lab for
-demonstrating autonomous driving of a robotic car on public roads. These demos were reported at
-many news medias including CBS Evening News, IEEE Spectrum, the Associated Press, CNBC,
-Reuters, NBC, NPR, many others.
+demonstrating autonomous driving of a robotic car on public roads. 
 * Oct 2012: Finalist of the [Best Student Paper Award](/files/smc-2012-best-student-paper-finalist-award.pdf) from the IEEE International Conference
 on Systems, Man and Cybernetics (SMC-12).
 * Sep 2006 – Nov 2007: A member of the [Tartan Racing](http://www.tartanracing.org/) team that won the 1st place of the
