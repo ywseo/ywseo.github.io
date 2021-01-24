@@ -4,6 +4,8 @@ excerpt: "Analyzing cpu utilizatioin patterns to understand dynamic computationa
 collection: portfolio
 ---
 
+**[Autonomous Mobility by Shared Autonomy](https://ywseo.github.io/amsa/)** It is a software stack that based on driving contexts, automatically and seamlessly switches its autonomy back and forth between two driving modes: autonomous and remote.
+
 <img src="/images/software-architecture.jpg"/>
 
 **Analyzing CPU Utilizatioin Patterns to Understand Dynamic Computational Workload of a Self-driving Car** This study aims at developing a method that predicts the CPU usage patterns of software tasks running on a self-driving car. To ensure safety of such dynamic systems, the worst-case-based CPU utilization analysis has been used; however, the nature of dynamically changing driving contexts requires more flexible approach for an efficient computing resource management. To better understand the dynamic CPU usage patterns, this paper presents an effort of designing a feature vector to represent the information of driving environments and of predicting, using regression methods, the selected tasks’ CPU usage patterns given specific driving contexts. Experiments with real-world vehicle data show a promising result and validate the usefulness of the proposed method. Read the following papers to learn more about this work: 
