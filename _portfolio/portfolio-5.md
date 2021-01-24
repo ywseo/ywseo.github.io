@@ -6,6 +6,8 @@ collection: portfolio
 
 **Autonomous Mobility by Shared Autonomy** [Autonomous Mobility by Shared Autonomy](https://ywseo.github.io/amsa/) is a software stack that based on driving contexts, automatically and seamlessly switches its autonomy back and forth between two driving modes: autonomous and remote.
 
+<br>
+
 <img src="/images/software-architecture.jpg"/>
 **Analyzing CPU Utilizatioin Patterns to Understand Dynamic Computational Workload of a Self-driving Car** This study aims at developing a method that predicts the CPU usage patterns of software tasks running on a self-driving car. To ensure safety of such dynamic systems, the worst-case-based CPU utilization analysis has been used; however, the nature of dynamically changing driving contexts requires more flexible approach for an efficient computing resource management. To better understand the dynamic CPU usage patterns, this paper presents an effort of designing a feature vector to represent the information of driving environments and of predicting, using regression methods, the selected tasks’ CPU usage patterns given specific driving contexts. Experiments with real-world vehicle data show a promising result and validate the usefulness of the proposed method. Read the following papers to learn more about this work: 
 * **Young-Woo Seo**, Junsung Kim and Ragnunathan (Raj) Rajkumar, [Predicting dynamic computational workload of a self-driving car](https://ieeexplore.ieee.org/document/6974391/), In *Proceedings of the IEEE International Conference on Systems, Man and Cybernetics* (SMC-14), pp. 3030-3035, 2014.
@@ -16,9 +18,6 @@ collection: portfolio
 <img src="/images/boss-urban-challenge.jpg"/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wdjOk1pdMw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
 **[Tartan Racing](http://www.tartanracing.org/)** [Boss](https://en.wikipedia.org/wiki/Charles_F._Kettering) is an autonomous vehicle that uses on-board sensors (global positioning system,
 lasers, radars, and cameras) to track other vehicles, detect static obstacles, and localize
 itself relative to a road model. A three-layer planning system combines mission, behavioral, and motion planning to drive in urban environments. The mission planning layer
