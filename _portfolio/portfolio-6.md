@@ -20,7 +20,8 @@ collection: portfolio
 * Joseph Giampapa, Katia Sycara, Sean Owens, Robin Glinton, **Young-Woo Seo**, Bin Yu, Chuck Grindle, Yang Xu, and Mike Lewis, [An agent-based C4ISR testbed](https://ieeexplore.ieee.org/document/1592030/), In *Proceedings of the International Conference on Information Fusion* (Fusion-2005), Philadelphia, PA, July, 2005.
 * Joseph Giampapa, Katia Sycara, Sean Owens, Robin Glinton, **Young-Woo Seo**, Bin Yu, Chuck Grindle, and Mike Lewis, [Extending the OneSAF testbed into a C4ISR testbed](http://journals.sagepub.com/doi/10.1177/0037549704050348), *Simulation: Special Issue on Military Simulation Systems and Command and Control Systems Interoperability*, 80(12): 681-691, 2004. 
 
-<br>
+------
+
 <img src="/images/warren.jpg"/>
 
 **Multi-Agents System for Assisting Fincial Portfolio Management** The WARREN system, an application of the RETSINA multi-agent architecture, deploys a number of different, autonomous software agents that acquire information from and monitor changes to stock reporting databases. These agents also interpret stock information, suggest the near future of an investment, and track and filter relevant financial news articles for the user to read. Read the following papers to learn more about this work: 

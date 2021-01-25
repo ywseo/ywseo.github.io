@@ -11,7 +11,7 @@ collection: portfolio
 * **Young-Woo Seo** and Katia Sycara, [Text clustering for topic detection](https://www.ri.cmu.edu/publications/text-clustering-for-topic-detection/), *Tech Report CMU-RI-TR-04-03*, the Robotics Institute, Carnegie Mellon University, 2004.
 * Anupriya Ankolekar, **Young-Woo Seo**, and Katia P. Sycara, [Investigating semantic knowledge for text learning](https://www.ri.cmu.edu/publications/investigating-semantic-knowledge-for-text-learning/), In *Proceedings of the ACM SIGIR-2003 Workshop on Semantic Web*, pp. 9-17, Toronto, Canada, July, 2003.
 
-<br>
+------
 
 **Personalized Information Filtering** Document filtering is increasingly deployed in Web environments to reduce information overload
 of users. We formulate online information filtering as a reinforcement learning problem, i.e.

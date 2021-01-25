@@ -9,7 +9,7 @@ collection: portfolio
 **Robust Matching for More Accurate Feature Correspondences** For any indirect, visual SLAM solutions, to estimate the relative camera motion between two consecutive images, it is critical to find ``correct'' correspondence between features extracted from those images. Given a set of feature correspondents, one can use a n-point algorithm with robust M-estimators, to produce the best estimate to the relative camera pose. The accuracy of a motion estimate is heavily dependent upon the accuracy of the feature correspondence. Such a dependency is even more significant when features are extracted from the images of the scenes with drastic changes in viewpoints and illuminations, and presence of occlusions. To make a feature matching robust to such challenging scenes, we propose a new feature matching method that incrementally chooses a five pairs of matched features for a full DoF (Degree of Freedom) camera motion estimation. In particular, at the first stage, we use our 2-point algorithm to estimate a camera motion, and at the second stage, use this estimated motion to choose three more matched features. In addition, for more accurate outlier rejection, we use, instead of the epipolar constraint, a planar constraint. With this set of five matching features, we estimate a full DoF camera motion with scale ambiguity. Through the experiments with three real-world datasets, our method demonstrates its effectiveness and robustness by successfully matching features 1) from the images of a night market where presence of frequent occlusions and varying illuminations, 2) from the images of a night market taken by a handheld camera and by the Google street view, and 3) from the images of a same location taken daytime and nighttime. Read the following paper to learn more about this work:
 * Chih-Chung Chou, **YoungWoo Seo**, and Chieh-Chih Wang, [A two-stage sampling for robust feature matching](https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21778), *Journal of Field Robotics*, 35(5): 779-801, 2018.  
 
-<br>
+------
 
 <img src="/images/measurement-model-clothoid-1.jpg"/>
 
@@ -22,7 +22,7 @@ working frame-by-frame basis would fail to successfully detect the boundaries. T
 tracks, using a Bayes filter, the detected boundaries over frames. Experiments using real-world videos show promising results. Read the following paper to learn more about this work:
 * **Young-Woo Seo** and Raj Rajkumar, [Detection and tracking of boundary of unmarked roads](https://ieeexplore.ieee.org/document/6916256/?arnumber=6916256), In *Proceedings of the 17th International Conference on Information Fusion* (Fusion-2014), Salamanca, Spain, 2014.
 
-<br>
+------
 
 <img src="/images/instantaneous-driving-direction.png"/> 
 
@@ -32,7 +32,7 @@ tracks, using a Bayes filter, the detected boundaries over frames. Experiments u
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/51-DIrPunVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br> 
+------
 
 <img src="/images/uc-starting-chute.png"/>
 
