@@ -7,14 +7,14 @@ collection: portfolio
 
 **Autonomous Mobility by Shared Autonomy** [Autonomous Mobility by Shared Autonomy](https://ywseo.github.io/amsa/) is a software stack that based on driving contexts, automatically and seamlessly switches its autonomy back and forth between two driving modes: autonomous and remote.
 
-<br>
+------
 
 <img src="/images/software-architecture.jpg"/>
 **Analyzing CPU Utilizatioin Patterns to Understand Dynamic Computational Workload of a Self-driving Car** This study aims at developing a method that predicts the CPU usage patterns of software tasks running on a self-driving car. To ensure safety of such dynamic systems, the worst-case-based CPU utilization analysis has been used; however, the nature of dynamically changing driving contexts requires more flexible approach for an efficient computing resource management. To better understand the dynamic CPU usage patterns, this paper presents an effort of designing a feature vector to represent the information of driving environments and of predicting, using regression methods, the selected tasks’ CPU usage patterns given specific driving contexts. Experiments with real-world vehicle data show a promising result and validate the usefulness of the proposed method. Read the following papers to learn more about this work: 
 * **Young-Woo Seo**, Junsung Kim and Ragnunathan (Raj) Rajkumar, [Predicting dynamic computational workload of a self-driving car](https://ieeexplore.ieee.org/document/6974391/), In *Proceedings of the IEEE International Conference on Systems, Man and Cybernetics* (SMC-14), pp. 3030-3035, 2014.
 * Junsung Kim, **Young-Woo Seo**, Hyoseung Kim, and Raj Rajkumar, [Can cyber-physical systems to be predictable? inferring cyber-workloads from physical attributes](https://ieeexplore.ieee.org/document/6843732/), In *Proceedings of the ACM/IEEE International Conference on Cyber-Physical Systems* (ICCPS-2014), 2014.
 
-<br>
+------
 
 <img src="/images/boss-urban-challenge.jpg"/>
 
