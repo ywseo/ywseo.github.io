@@ -5,7 +5,7 @@ collection: portfolio
 ---
 <br>
 
-**Autonomous Mobility by Shared Autonomy** [Autonomous Mobility by Shared Autonomy](https://ywseo.github.io/amsa/) is a software stack that based on driving contexts, automatically and seamlessly switches its autonomy back and forth between two driving modes: autonomous and remote.
+**Autonomous Mobility by Shared Autonomy** A software stack that based on driving contexts, automatically and seamlessly switches its autonomy back and forth between two driving modes: autonomous and remote.
 
 ------
 
