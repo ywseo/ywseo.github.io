@@ -22,11 +22,11 @@ Led a team of engineers and contributed to deliver a part of Apple's next genera
 * Consultant, Cruise Automation Inc., Aug 2014 - Oct 2014<br/>
 Advised engineers on the issues of analyzing highway driving videos for vehicle control and developed a computer vision algorithm to track the boundaries of ego-lane.
 * Co-Investigator, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Oct 2012 - Jun 2014<br/>
-Provided technical guidance to the 2013 Korea Autonomous Vehicle Contest and investigated perception technologies for reliable autonomous driving.
+Provided technical guidance to the committee of the 2013 Korea Autonomous Vehicle Contest and investigated perception technologies for reliable autonomous driving.
 * Post-Doctoral Researcher, [Dept of Electrical Computer Engineering](http://www.ece.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jun 2012 - Jun 2014<br/>
 Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception efforts for autonomous driving demonstration on public roads.
 * Graduate Research Assistant, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jan 2007 - Apr 2012<br/>
-Developed perception algorithms that understand urban driving situations and model driving environments for reliable autonomous driving.
+Developed perception algorithms that understand and model urban driving environments for reliable autonomous driving.
 * Research Software Development Engineer Intern, Bing Imagery Technology R&D, Microsoft Corp, Jun - Aug, 2010<br />
 Developed a system that analyzes GPS tracks and learns to classify the type of intersections (e.g., stop, yield).
 * Full-Time Research Programmer, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Nov 2000 - Dec 2006<br/>
