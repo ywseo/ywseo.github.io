@@ -13,8 +13,8 @@ Work and Research Experience
 ======
 * Founder CEO, Atlas Robotics, Inc., May 2018 - Present<br/>
 Pushing the envelop to deliver a SW stack for autonomous mobility based on shared autonomy.
-* Senior Director, Autonomous System Dev, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Apr 2018<br/>
-Led the efforts of developing sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
+* Senior Director, [Hyperloop One](http://www.hyperloop-one.com), Jun 2017 - Apr 2018<br/>
+Led the efforts to develop sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, [Autel Robotics](http://www.autelrobotics.com), Aug 2016 - Jun 2017<br/>
 Led a team of engineers and delivered a target tracking pipeline for consumer-grade, quadropter drones.
 * Senior Scientist, Special Project Group, [Apple Inc](http://www.apple.com), Nov 2014 - Jul 2016<br/>
@@ -24,7 +24,7 @@ Advised engineers on the issues of analyzing highway driving videos for vehicle 
 * Co-Investigator, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Oct 2012 - Jun 2014<br/>
 Provided technical guidance to the 2013 Korea Autonomous Vehicle Contest and investigated perception technologies for reliable autonomous driving.
 * Post-Doctoral Researcher, [Dept of Electrical Computer Engineering](http://www.ece.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jun 2012 - Jun 2014<br/>
-Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception team for autonomous driving demonstration on public roads.
+Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception efforts for autonomous driving demonstration on public roads.
 * Graduate Research Assistant, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jan 2007 - Apr 2012<br/>
 Developed perception algorithms that understand urban driving situations and model driving environments for reliable autonomous driving.
 * Research Software Development Engineer Intern, Bing Imagery Technology R&D, Microsoft Corp, Jun - Aug, 2010<br />
