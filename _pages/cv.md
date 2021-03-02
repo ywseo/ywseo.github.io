@@ -19,7 +19,7 @@ Led the efforts to develop sensing and perception stacks, and mission-critical s
 Led a team of engineers and delivered a target tracking pipeline for consumer-grade, quadropter drones.
 * Senior Scientist, Special Project Group, [Apple Inc](http://www.apple.com), Nov 2014 - Jul 2016<br/>
 Led a team of engineers and contributed to deliver a part of Apple's next generation products.
-* Consultant, Cruise Automation Inc., Aug 2014 - Oct 2014<br/>
+* Consultant, Cruise Automation Inc., Aug 2014 - Sep 2014<br/>
 Advised engineers on the issues of analyzing highway driving videos for vehicle control and developed a computer vision algorithm to track the boundaries of ego-lane.
 * Co-Investigator, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Oct 2012 - Jun 2014<br/>
 Provided technical guidance to the committee of the 2013 Korea Autonomous Vehicle Contest and investigated perception technologies for reliable autonomous driving.
