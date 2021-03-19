@@ -23,7 +23,7 @@ Led a team of engineers and contributed to deliver a part of Apple's next genera
 Advised engineers on the issues of analyzing highway driving videos for vehicle control and developed a computer vision algorithm to track the boundaries of ego-lane.
 * Co-Investigator, the Robotics Institute, Carnegie Mellon University, Oct 2012 - Jun 2014<br/>
 Provided technical guidance to the committee of the 2013 Korea Autonomous Vehicle Contest and investigated perception technologies for reliable autonomous driving.
-* Post-Doctoral Researcher, [Dept of Electrical Computer Engineering](http://www.ece.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jun 2012 - Jun 2014<br/>
+* Post-Doctoral Researcher, [Dept of Electrical Computer Engineering](http://www.ece.cmu.edu), Carnegie Mellon University, Jun 2012 - Jun 2014<br/>
 Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception efforts for autonomous driving demonstration on public roads.
 * Graduate Research Assistant, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jan 2007 - Apr 2012<br/>
 Developed perception algorithms that understand and model urban driving environments for reliable autonomous driving.
