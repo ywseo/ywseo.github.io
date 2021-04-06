@@ -57,7 +57,7 @@ Patents
 
 Education
 ======
-* Ph.D in Robotics, [the Robotics Institute](http://www.ri.cmu.edu), School of Computer Science, [Carnegie Mellon University](http://www.cmu.edu), Apr 2012.
+* Ph.D in Robotics, [the Robotics Institute](http://www.ri.cmu.edu), [School of Computer Science](https://www.scs.cmu.edu/), [Carnegie Mellon University](http://www.cmu.edu), Apr 2012.
 * M.S. in Robotics, the Robotics Institute, School of Computer Science, Carnegie Mellon University, Dec 2005.
 * M.S. in Computer Science, School of Computer Science and Engineering, Seoul National University, Feb 2000.
 * B.S. in Computer Science, Dept of Computer Science, Konkuk University, Feb 1998.
