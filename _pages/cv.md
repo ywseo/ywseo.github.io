@@ -36,7 +36,7 @@ Developed software agent systems for personalized and collaborative information 
 
 Honors and Awards
 ======
-* Nov 29, 2018: Invited to give a talk ["AI for Transporation: Where We Are and What Are Challenges"](/files/aiic-sneakview.pdf) at International Conference on Artificial Intelligence (AIIC-18), hosted by the Korean [Ministry of Science and ICT](/files/181121-msit-letter-aiic-18.pdf), Seoul, Korea.
+* Nov 29, 2018: Invited to give a talk ["AI for Transporation: Where We Stand and What Are the Challenges"](/files/aiic-sneakview.pdf) at International Conference on Artificial Intelligence (AIIC-18), hosted by the Korean [Ministry of Science and ICT](/files/181121-msit-letter-aiic-18.pdf), Seoul, Korea.
 * Aug 23, 2017: Delivered the opening keynote, “[Envisioning the Future of Mobility](https://www.trunews.com/article/intro-the-autonomous-vehicles-2017-detroit-summit)” at Autonomous
 Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed Travel"](https://www.trunews.com/article/hyperloop-one-the-future-of-global-high-speed-travel)).
 * Nov 2013: Received the Carnegie Institute of Technology (CIT) Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and dedications of the members of the GM-CMU, Autonomous Driving Collaborative Research Lab for demonstrating autonomous driving of a robotic car on public roads. 
