@@ -20,7 +20,7 @@ a heavy emphasis on regular, regressive system testing. During the National Qual
 Event and the 85-km Urban Challenge Final Event, Boss demonstrated some of its
 capabilities, qualifying first and winning the challenge.
 
-[Download paper here](http://www.fieldrobotics.org/users/alonzo/pubs/papers/JFR_08_Boss.pdf)
+[Download paper here](https://link.springer.com/chapter/10.1007/978-3-642-03991-1_1)
 
 Chris Urmson, Joshua Anhalt, Drew Bagnell, Christopher Baker, Robert Bittner, M. N. Clark, John
 Dolan, Dave Duggins, Tugrul Galatali, Chris Geyer, Michele Gittleman, Sam Harbaugh, Martial
