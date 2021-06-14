@@ -7,7 +7,7 @@ collection: portfolio
 
 <img src="/images/amsa-logo.png" width="600"/>
 
-**Autonomous Mobility by Shared Autonomy** A software stack that based on driving contexts, automatically and seamlessly switches its autonomy back and forth between two driving modes: autonomous and remote.
+**Autonomous Mobility by Shared Autonomy** A software stack that based on driving contexts, automatically and seamlessly switches its autonomy back and forth between two driving modes: autonomous and remote. Read the business statement to learn more about this endeavor.
 
 ------
 
