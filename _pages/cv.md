@@ -29,7 +29,7 @@ Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception e
 Developed [perception algorithms](http://www.cs.cmu.edu/~youngwoo/research.html) that understand and model urban driving environments for reliable autonomous driving.
 * Research Software Development Engineer Intern, Bing Imagery Technology R&D, Microsoft Corp, Jun - Aug, 2010<br />
 Developed a system that analyzes GPS tracks and learns to classify the type of intersections (e.g., stop, yield).
-* Full-Time Research Programmer, the Robotics Institute, Carnegie Mellon University, Nov 2000 - Dec 2006<br/>
+* Research Programmer, the Robotics Institute, Carnegie Mellon University, Nov 2000 - Dec 2006<br/>
 Developed novel machine learning algorithms for multi-agent systems.
 * Graduate Research Assistant, [Artificial Intelligence Lab](http://bi.snu.ac.kr), School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
 Developed software agent systems for personalized and collaborative information filtering.
