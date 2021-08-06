@@ -25,8 +25,8 @@ Advised engineers on the issues of analyzing highway driving videos for vehicle 
 Provided technical guidance to the committee of the 2013 Korea Autonomous Vehicle Contest and investigated perception technologies for reliable autonomous driving.
 * Post-Doctoral Researcher, Dept of Electrical Computer Engineering, Carnegie Mellon University, Jun 2012 - Jun 2014<br/>
 Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception efforts for autonomous driving demonstration on public roads.
-* Graduate Research Assistant, [the Robotics Institute](http://ri.cmu.edu), [Carnegie Mellon University](http://www.cmu.edu), Jan 2007 - Apr 2012<br/>
-Developed [perception algorithms](http://www.cs.cmu.edu/~youngwoo/research.html) that understand and model urban driving environments for reliable autonomous driving.
+* Graduate Research Assistant, the Robotics Institute, Carnegie Mellon University, Jan 2007 - Apr 2012<br/>
+Developed [perception algorithms](http://www.cs.cmu.edu/~youngwoo/research.html) to understand and model urban driving environments for reliable autonomous driving.
 * Research Software Development Engineer Intern, Bing Imagery Technology R&D, Microsoft Corp, Jun - Aug, 2010<br />
 Developed a system that analyzes GPS tracks and learns to classify the type of intersections (e.g., stop, yield).
 * Research Programmer, the Robotics Institute, Carnegie Mellon University, Nov 2000 - Dec 2006<br/>
