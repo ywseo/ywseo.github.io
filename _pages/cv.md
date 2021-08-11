@@ -12,7 +12,7 @@ redirect_from:
 Work and Research Experience
 ======
 * Founder CEO, Atlas Robotics Inc., May 2018 - Jul 2021<br/>
-Worked on developing a technology stack for autonomous mobility based on shared autonomy.
+Worked on a technology stack for autonomous mobility based on shared autonomy.
 * Senior Director, Hyperloop One (now Virgin Hyperloop), Jun 2017 - Apr 2018<br/>
 Led the efforts to develop sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
 * Engineering Manager, Autel Robotics, Aug 2016 - Jun 2017<br/>
