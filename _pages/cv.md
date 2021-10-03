@@ -11,6 +11,7 @@ redirect_from:
 
 Work and Research Experience
 ======
+* Executive Vice President, Hanwha Defense, Sep 2021 - Present<br/>
 * Founder CEO, Atlas Robotics Inc., May 2018 - Jul 2021<br/>
 Worked on a technology stack for autonomous mobility based on shared autonomy.
 * Senior Director, Hyperloop One (now Virgin Hyperloop), Jun 2017 - Apr 2018<br/>
