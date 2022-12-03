@@ -11,7 +11,9 @@ redirect_from:
 
 Work and Research Experience
 ======
-* Executive Vice President, Hanwha Defense, Sep 2021 - Present<br/>
+* Executive Vice President, Hanwha Aerospace, Nov 2022 - Present<br/>
+Land Systems Business Group, leading Hanwha Aerospace's endeavors of developing unmanned ground vehicles, and of stepping up the company's game to become a global defense solution provider.
+* Executive Vice President, Hanwha Defense, Sep 2021 - Oct 2022<br/>
 Head of Dept. of Robotics and Autonomous Systems Development, leading Hanwha Defense's endeavors of developing robotics and autonomous systems, and of stepping up the company's game to become a global defense solution provider.
 * Founder CEO, Atlas Robotics Inc., May 2018 - Jul 2021<br/>
 Worked on a technology stack for autonomous mobility based on shared autonomy.
