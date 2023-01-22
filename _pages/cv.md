@@ -14,7 +14,7 @@ Work and Research Experience
 * Executive Vice President, Land Systems Business Group, Hanwha Aerospace, Nov 2022 - Present<br/>
 Leading Hanwha Aerospace's endeavors of developing unmanned ground vehicles, and of stepping up the company's game to become a global defense solution provider.
 * Executive Vice President, Hanwha Defense, Sep 2021 - Oct 2022<br/>
-Head of Dept. of Robotics and Autonomous Systems Development, led Hanwha Defense's endeavors of developing robotics and autonomous systems, and of stepping up the company's game to become a global defense solution provider.
+Head of Dept. of Robotics and Autonomous Systems Development, took initiatives, led the way, and put a dent in the way the company has been doing the business.
 * Founder CEO, Atlas Robotics Inc., May 2018 - Jul 2021<br/>
 Worked on a technology stack for autonomous mobility based on shared autonomy.
 * Senior Director, Hyperloop One (now Virgin Hyperloop), Jun 2017 - Apr 2018<br/>
