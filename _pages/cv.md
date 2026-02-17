@@ -12,9 +12,9 @@ redirect_from:
 Work and Research Experience
 ======
 * Executive Vice President, Strategic Planning, Hanwha
-Aerospace, Nov 2025 - Present<br/> Spearheading the endeavors of stepping up the company's game to  become a global top-tier, defense solution provider. To that end, among other responsibilities, I'm leading and overseeing robotics and autonomous systems R\&D, particularly development of autonomy stacks for ground, maritime, and air operations, carving out international unmanned systems market, and playing a role of technology evangelist.
+Aerospace, Nov 2025 - Present<br/> Leading and overseeing robotics and autonomous systems R&D, particularly development of autonomy stacks for ground, maritime, and air operations, carving out international unmanned systems market, and playing a role of technology evangelist.
 * Executive Vice President, Land Systems Business Group, Hanwha
-Aerospace, Nov 2022 - Nov 2025<br/> Led and oversaw robotics and autonomous systems R\&D, engaged with foreign customers to carve out the oversea unmanned systems market, and played a role of technology evangelist on AI, ML, robotics and SW engineering. 
+Aerospace, Nov 2022 - Nov 2025<br/> Led and oversaw robotics and autonomous systems R&D, engaged with foreign customers to carve out the oversea unmanned systems market, and played a role of technology evangelist on AI, ML, robotics and SW engineering. 
 * Executive Vice President, Hanwha Defense, Sep 2021 - Oct 2022<br/>
 Head of Dept. of Robotics and Autonomous Systems Development, took initiatives, led the way, and put a dent in the way the company has been doing the business.
 * Founder CEO, Atlas Robotics Inc., May 2018 - Jul 2021<br/>
