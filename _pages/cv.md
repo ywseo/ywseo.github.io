@@ -42,6 +42,7 @@ Developed software agent systems for personalized and collaborative information 
 
 Honors and Awards
 ======
+* Sep 2025 - Present: A member of Presidential Council on National Artificial Intelligence Strategy to come up with ROK's national AI strategies and oversee governmental agencies' executions of AI strategy
 * Nov 29, 2018: Invited to give a talk ["AI for Transporation: Where We Stand and What Are the Challenges"](/files/aiic-sneakview.pdf) at International Conference on Artificial Intelligence (AIIC-18), hosted by the Korean [Ministry of Science and ICT](/files/181121-msit-letter-aiic-18.pdf), Seoul, Korea.
 * Aug 23, 2017: Delivered the opening keynote, “[Envisioning the Future of Mobility](https://www.trunews.com/article/intro-the-autonomous-vehicles-2017-detroit-summit)” at Autonomous
 Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed Travel"](https://www.trunews.com/article/hyperloop-one-the-future-of-global-high-speed-travel)).
