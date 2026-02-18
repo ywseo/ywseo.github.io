@@ -24,7 +24,7 @@ Led the efforts to develop sensing and perception stacks, and mission-critical s
 * Engineering Manager, Autel Robotics, Aug 2016 - Jun 2017<br/>
 Led a team of engineers and delivered a target tracking pipeline for consumer-grade, quadropter drones.
 * Senior Scientist, Special Project Group, Apple Inc, Nov 2014 - Jul 2016<br/>
-Led a team of engineers and contributed to deliver a part of Apple's next generation products.
+Led a team of engineers and contributed to deliver a part of Apple's [next generation products](https://www.bloomberg.com/news/articles/2017-06-13/cook-says-apple-is-focusing-on-making-an-autonomous-car-system?embedded-checkout=true).
 * Consultant, Cruise Automation Inc., Aug 2014 - Sep 2014<br/>
 Advised engineers on the issues of analyzing highway driving videos for vehicle control and developed a computer vision algorithm to track the boundaries of ego-lane.
 * Co-Investigator, the Robotics Institute, Carnegie Mellon University, Oct 2012 - Jun 2014<br/>
