@@ -50,7 +50,7 @@ Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed 
 * Oct 2012: Finalist of the [Best Student Paper Award](/files/smc-2012-best-student-paper-finalist-award.pdf) from the IEEE International Conference
 on Systems, Man and Cybernetics (SMC-12).
 * Nov 3, 2007: A member of the [Tartan Racing](http://www.tartanracing.org/) team that won the 1st place of the
-2007 [DARPA Urban Challenge](http://archive.darpa.mil/grandchallenge/) ([wiki](https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2007))), Victorville, CA.
+2007 [DARPA Urban Challenge](http://grandchallenge.org) ([wiki](https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2007))), Victorville, CA.
 * Jan 2007 – Apr 2012: Received Graduate Research Assistant Fellowship (full tuition and
 stipend) from the Robotics Institute, School of Computer Science, Carnegie Mellon University.
 * May 23, 2006: Awarded [Best Paper Honorable Mention](/files/isi-06-award.pdf) (second prize) from the IEEE International Conference on Intelligence and Security Informatics (ISI-2006).
