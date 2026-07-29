@@ -12,7 +12,7 @@ redirect_from:
 Work and Research Experience
 ======
 * Executive Vice President, Strategic Planning, Hanwha
-Aerospace, Nov 2025 - Present<br/> Leading and overseeing robotics and autonomous systems R&D, particularly development of autonomy stacks for ground, maritime, and air operations, carving out international unmanned systems market, and playing a role of technology evangelist.
+Aerospace, Nov 2025 - Present<br/> Leading and overseeing robotics and autonomous systems R&D, particularly development of autonomy stacks for ground and air operations, carving out international unmanned systems market, and playing a role of technology evangelist.
 * Executive Vice President, Land Systems Business Group, Hanwha
 Aerospace, Nov 2022 - Nov 2025<br/> Led and oversaw robotics and autonomous systems R&D, engaged with foreign customers to carve out the oversea unmanned systems market, and played a role of technology evangelist on AI, ML, robotics and SW engineering. 
 * Executive Vice President, Hanwha Defense, Sep 2021 - Oct 2022<br/>
