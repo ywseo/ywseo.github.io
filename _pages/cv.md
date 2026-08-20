@@ -57,6 +57,7 @@ stipend) from the Robotics Institute, School of Computer Science, Carnegie Mello
 
 Patents
 ======
+* Seung Uk AHN, Youngwoo Seo, Unmanned vehicle and dynamic obstacle tracking method, [US 18/241,515](https://patents.google.com/patent/US20240273914A1/en?inventor=Youngwoo+Seo&oq=inventor:(Youngwoo+Seo)), filed: Sep 01, 2023 and pending.
 * Youngwoo Seo, Automated transfer of vehicle control for autonomous driving, [US 10717448](http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10717448.PN.&OS=PN/10717448&RS=PN/10717448), filed: Apr 30, 2019 and issued: July 21, 2020.  
 * Matisse J. Milovich, Youngwoo Seo, and Matthew E. Last, Database management for potential pull-off areas, [US 10262538](https://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10262538.PN.&OS=PN/10262538&RS=PN/10262538), filed: Sep 1, 2017 and issued: Jan 24, 2019.
 * Youngwoo Seo, Randol Aikin, and Kshitiz Garg, System and method for road friction coefficient estimation, [US 10442439](https://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10442439.PN.&OS=PN/10442439&RS=PN/10442439), filed: Aug 8, 2017 and issued: Aug 19, 2019.
