@@ -12,7 +12,7 @@ redirect_from:
 Work and Research Experience
 ======
 * Executive Vice President, Strategic Planning, Hanwha
-Aerospace, Nov 2025 - Present<br/> Leading and overseeing robotics and autonomous systems R&D, particularly development of autonomy stacks for ground and air operations, carving out international unmanned systems market, and playing a role of technology evangelist.
+Aerospace, Nov 2025 - Present<br/> Leading and overseeing robotics and autonomous systems R&D, particularly development of autonomy stacks for ground and air operations, carving out international unmanned systems market, and playing a role of technology catalyst.
 * Executive Vice President, Land Systems Business Group, Hanwha
 Aerospace, Nov 2022 - Nov 2025<br/> Led and oversaw robotics and autonomous systems R&D, engaged with foreign customers to carve out the oversea unmanned systems market, and played a role of technology evangelist on AI, ML, robotics and SW engineering. 
 * Executive Vice President, Hanwha Defense, Sep 2021 - Oct 2022<br/>
@@ -49,7 +49,7 @@ Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed 
 * Nov 2013: Received the Carnegie Institute of Technology (CIT) Headliner Award from College of Engineering, Carnegie Mellon University. This was awarded to appreciate the efforts and dedications of the members of the GM-CMU, Autonomous Driving Collaborative Research Lab for demonstrating autonomous driving of a robotic car on public roads. 
 * Oct 2012: Finalist of the [Best Student Paper Award](/files/smc-2012-best-student-paper-finalist-award.pdf) from the IEEE International Conference
 on Systems, Man and Cybernetics (SMC-12).
-* Nov 3, 2007: A member of the [Tartan Racing](http://www.tartanracing.org/) team that won the 1st place of the
+* Nov 3, 2007: A member of the [Tartan Racing](http://www.tartanracing.org/) team that won the [1st place](https://www.cmu.edu/homepage/practical/2007/fall/victory.shtml) of the
 2007 [DARPA Urban Challenge](http://grandchallenge.org) ([wiki](https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2007))), Victorville, CA.
 * Jan 2007 – Apr 2012: Received Graduate Research Assistant Fellowship (full tuition and
 stipend) from the Robotics Institute, School of Computer Science, Carnegie Mellon University.
