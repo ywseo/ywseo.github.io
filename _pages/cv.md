@@ -12,37 +12,37 @@ redirect_from:
 Work and Research Experience
 ======
 * Executive Vice President, Strategic Planning, Hanwha
-Aerospace, Nov 2025 - Present<br/> Leading and overseeing robotics and autonomous systems R&D, particularly development of autonomy stacks for ground and air operations, carving out international unmanned systems market, and playing a role of technology catalyst.
+Aerospace, Nov 2025 - Present<br/> Spearheading strategic initiatives to elevate corporate capabilities and transition the enterprise into a leading global defense solution provider.
 * Executive Vice President, Land Systems Business Group, Hanwha
-Aerospace, Nov 2022 - Nov 2025<br/> Led and oversaw robotics and autonomous systems R&D, engaged with foreign customers to carve out the oversea unmanned systems market, and played a role of technology evangelist on AI, ML, robotics and SW engineering. 
+Aerospace, Nov 2022 - Nov 2025<br/> Accelerated international growth by empowering oversea branches to scale their market presence while directing R&D initiatives for unmanned systems. 
 * Executive Vice President, Hanwha Defense, Sep 2021 - Oct 2022<br/>
 Head of Dept. of Robotics and Autonomous Systems Development, took initiatives, led the way, and put a dent in the way the company has been doing the business.
 * Founder CEO, Atlas Robotics Inc., May 2018 - Jul 2021<br/>
-Worked on a technology stack for autonomous mobility based on shared autonomy.
+Worked on a technology stack for autonomous mobility stack powered by shared autonomy.
 * Senior Director, Hyperloop One (now Virgin Hyperloop), Jun 2017 - Apr 2018<br/>
-Led the efforts to develop sensing and perception stacks, and mission-critical systems for an unconventional mass-transport system -- Hyperloop One System.
+Led the engineering lifecycle for sensing, perception, and mission-critical systems for an unconventional mass-transit infrastructure -- Hyperloop One System.
 * Engineering Manager, Autel Robotics, Aug 2016 - Jun 2017<br/>
-Led a team of engineers and delivered a target tracking pipeline for consumer-grade, quadropter drones.
+Led a cross-functional and cross-border engineering teams to successfully deliver an autonomous flight stack.
 * Senior Scientist, Special Project Group, Apple Inc, Nov 2014 - Jul 2016<br/>
-Led a team of engineers and contributed to deliver a part of Apple's [next generation products](https://www.bloomberg.com/news/articles/2017-06-13/cook-says-apple-is-focusing-on-making-an-autonomous-car-system?embedded-checkout=true).
+Led a team of engineers and directly contributed to the delivery of core components for Apple's [next generation products](https://www.bloomberg.com/news/articles/2017-06-13/cook-says-apple-is-focusing-on-making-an-autonomous-car-system?embedded-checkout=true).
 * Consultant, Cruise Automation Inc., Aug 2014 - Sep 2014<br/>
-Advised engineers on the issues of analyzing highway driving videos for vehicle control and developed a computer vision algorithm to track the boundaries of ego-lane.
+Advised and upskilled a team of engineers on computer vision algorithms for vehicle control, whlie individually developing a lane-detection algorithm to track ego-lane boundaries under dynamic highway conditions. 
 * Co-Investigator, the Robotics Institute, Carnegie Mellon University, Oct 2012 - Jun 2014<br/>
-Provided technical guidance to the committee of the 2013 Korea Autonomous Vehicle Contest and investigated perception technologies for reliable autonomous driving.
+Served as a technical advisor to the steering committee of the 2013 Korea Autonomous Vehicle Contest, while conducting a rigorous landscape investigation into high-reliability perception technologies for autonomous driving systems. 
 * Post-Doctoral Researcher, Dept of Electrical Computer Engineering, Carnegie Mellon University, Jun 2012 - Jun 2014<br/>
-Led GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception efforts for autonomous driving demonstration on public roads.
+Spearheaded GM-CMU Autonomous Driving Collaborative Research Lab (AD-CRL)'s perception team, managing the development and integration of high-reliability sensing and perception frameworks public road autonomous vehicle deployments. 
 * Graduate Research Assistant, the Robotics Institute, Carnegie Mellon University, Jan 2007 - Apr 2012<br/>
-Developed [perception algorithms](http://www.cs.cmu.edu/~youngwoo/research.html) to understand and model urban driving environments for reliable autonomous driving.
+Dissertation focused on the design and implementation of advanced [perception algorithms](http://www.cs.cmu.edu/~youngwoo/research.html) capable of interpreting and modeling complex urban environments to ensure high-reliability autonomous driving.
 * Research Software Development Engineer Intern, Bing Imagery Technology R&D, Microsoft Corp, Jun - Aug, 2010<br />
-Developed a system that analyzes GPS tracks and learns to classify the type of intersections (e.g., stop, yield).
+Developed a machine learning system that analyzes GPS tracks to automatically classify intersection types.
 * Research Programmer, the Robotics Institute, Carnegie Mellon University, Nov 2000 - Dec 2006<br/>
-Developed novel machine learning algorithms for multi-agent systems.
+Developed advanced multi-agent, machine learning algorithms for collaborative task execution under unpredictable, real-world operational contraints.
 * Graduate Research Assistant, Artificial Intelligence Lab, School of Computer Science and Engineering, Seoul National University, Dec 1997 - Aug 2000<br/>
-Developed software agent systems for personalized and collaborative information filtering.
+Master's Thesis focused on the design and implementation of intelligent software agent systems for personalized and collaborative information filtering.
 
 Honors and Awards
 ======
-* Sep 2025 - Present: Serving as a member of the [Presidential Council on National Artificial Intelligence Strategy](https://www.aikorea.go.kr) to come up with ROK's national AI strategies and oversee how effectively governmental agencies execute them
+* Sep 2025 - Present: Serving as a member of the [Presidential Council on National Artificial Intelligence Strategy](https://www.aikorea.go.kr) to formulate ROK's national AI strategies and audit action plan execution across governmental agencies
 * Nov 29, 2018: Invited to give a talk ["AI for Transporation: Where We Stand and What Are the Challenges"](/files/aiic-sneakview.pdf) at International Conference on Artificial Intelligence (AIIC-18), hosted by the Korean [Ministry of Science and ICT](/files/181121-msit-letter-aiic-18.pdf), Seoul, Korea.
 * Aug 23, 2017: Delivered the opening keynote, “[Envisioning the Future of Mobility](https://www.trunews.com/article/intro-the-autonomous-vehicles-2017-detroit-summit)” at Autonomous
 Vehicles (AV17), Detroit, MI. (["Hyperloop One: The Future of Global High Speed Travel"](https://www.trunews.com/article/hyperloop-one-the-future-of-global-high-speed-travel)).
